@@ -1,0 +1,2 @@
+this is the file that was tracked at first
+and than decidet that must be ignored
