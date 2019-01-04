@@ -1,4 +1,5 @@
 Git/Git Basics/file_to_ignore.txt
+Git/Git Basics/file_to_untrack_and_ignore.txt
 *.zip
 *.gz
 assets/
