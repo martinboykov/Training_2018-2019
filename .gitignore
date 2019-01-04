@@ -1,0 +1,4 @@
+Git/Git Basics/file_to_ignore.txt
+*.zip
+*.gz
+assets/
