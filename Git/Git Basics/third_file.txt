@@ -1,4 +1,5 @@
 third file
 modification 1
 modification 2 - made in branch new-feature
-modification 3 - made in branch shorten_title
+modification 3 - made in branch shorten_title with change 1
+
