@@ -2,5 +2,6 @@ fouth_file created
 add modification 0.1
 add modification 1
 add modification 2
-add modification 3.1 (merge conflict source)
 add modification 3
+add modification 3.1 (merge conflict source)
+add modificarion 3.2 (stach change)
