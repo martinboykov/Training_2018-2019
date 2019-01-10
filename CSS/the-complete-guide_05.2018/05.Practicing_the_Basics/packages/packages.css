@@ -1,0 +1,67 @@
+main {
+    padding-top: 32px;
+}
+
+.plan {
+    width: 85%;
+    margin: 20px 0 10px 0;
+    padding: 50px 20px 50px 20px;
+    border: 4px solid #23462b;
+    border-left: 0px;
+}
+
+.plan:hover,
+.plan:active {
+    border: 4px solid #f87269;
+    border-left: 0px;
+}
+
+.plan.plus {
+    background: #e7ffef;
+}
+
+.free {
+    margin-left: 15%;
+    border: 4px solid #23462b;
+    border-right: 0px;
+    text-align: right;
+}
+
+.free:hover,
+.free:active {
+    border: 4px solid #f87269;
+    border-right: 0px;
+}
+
+.plan.premium {
+    background: #295737;
+}
+
+.plan a {
+    text-decoration: none;
+    color: black;
+}
+
+.plan-heading {
+    margin: 0;
+    padding-bottom: 15px;
+}
+
+.premium .plan-heading {
+    color: white;
+}
+
+.plan-subheading {
+    margin: 0;
+    padding-bottom: 10px;
+    color: #96a399;
+}
+
+.plan-description {
+    margin: 0;
+    display: inline-block;
+    padding: 15px;
+    background: white;
+    border: 1px solid #7e9b80;
+    width: 100%;
+}

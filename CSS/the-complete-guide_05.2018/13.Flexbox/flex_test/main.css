@@ -1,0 +1,65 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    background: lightslategrey;
+    height: 100vh;
+    /* or inline-flex */
+    display: flex;
+    /* flex-direction: row | row-reverse | column | column-reverse; */
+    /* flex-direction: row; */
+    /* flex-wrap: nowrap | wrap | wrap-reverse; */
+    /* flex-wrap: wrap; */
+    /* flex-flow = flex-direction + flex-wrap */
+    flex-flow: row wrap;
+    /* justify-content: flex-start | flex-end | center | space-between | space-around | space-evenly; */
+    justify-content: center;
+    /* align-items: flex-start | flex-end | center | baseline | stretch; */
+    /* align-items: center; */
+    /* align-content: flex-start | flex-end | center | space-between | space-around | stretch; */
+    align-content: center;
+}
+
+.item {
+    background: tomato;
+    color: white;
+    font-weight: bold;
+  font-size: 1.5em;
+    text-align: center;
+    line-height: 50px;
+    /* height: 50px; */
+    width: 50px;
+    margin: 5px;
+    /* order: 4; */
+    align-self: center ;
+
+
+}
+
+.item:nth-child(1) {
+    /* align-self: auto | flex-start | flex-end | center | baseline | stretch; */
+    align-self: center ;
+    /* flex-grow: 3; */
+    /* order: 3; */
+    /* default is 0 */
+}
+
+.item:nth-child(2) {
+    /* order: 2; */
+    /* default is 0 */
+}
+
+.item:nth-child(3) {
+    /* width: 100px; */
+    /* flex-shrink: 1; */
+    /* order: 1; */
+    /* default is 0 */
+}
+
+.item:nth-child(8) {
+    /* flex-grow: 3; */
+    /* order: 4; */
+    /* default is 0 */
+}
