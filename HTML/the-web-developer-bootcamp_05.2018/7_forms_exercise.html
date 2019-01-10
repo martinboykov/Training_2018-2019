@@ -1,0 +1,80 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1">
+  <meta http-equiv="refresh"
+        content="111">
+  <title>Forms</title>
+</head>
+
+<body>
+  <form action=""
+        method="GET">
+    <h1>Register </h1>
+    <dir>
+      <label for="firstName">First Name:</label>
+      <input type="text"
+             name="firstName"
+             required>
+      <label for="lastName">Last Name:</label>
+      <input type="text"
+             name="lastName"
+             required>
+    </dir>
+    <dir>
+      <label for="gender">Male:</label>
+      <input type="radio"
+             name="gender"
+             value="male">
+      <label for="gender">Female:</label>
+      <input type="radio"
+             name="gender"
+             value="female">
+      <label for="gender">Other:</label>
+      <input type="radio"
+             name="gender"
+             value="other">
+    </dir>
+    <dir>
+      <label for="Email">Email:</label>
+      <input type="text"
+             name="email"
+             required>
+      <label for="password">Password:</label>
+      <input type="text"
+             name="password"
+             required
+             minlength="5"
+             maxlength="10">
+    </dir>
+    <dir>
+      <label for="birthday">Birthday:</label>
+      <select name="birthdayMonth"
+              id="birthdayMonth">
+        <option selected>Month</option>
+        <option value="january">January</option>
+      </select>
+      <select name="birthdayDay"
+              id="birthdayDay">
+        <option selected>Day</option>
+        <option value="Day">1</option>
+      </select>
+      <select name="birthdayYear"
+              id="birthdayYear">
+        <option selected>Year</option>
+        <option value="Year">1901</option>
+      </select>
+    </dir>
+    <dir>
+      <label for="agreament">I agree to the terms and condition</label>
+      <input type="checkbox"
+             name="agreament"
+             id="agreament">
+    </dir>
+    <input type="submit">
+  </form>
+</body>
+
+</html>
