@@ -1,0 +1,30 @@
+@import '_variables';
+@import '_mixins';
+input[type="range"] {
+    // Add your styles here
+    -webkit-appearance: none;
+    margin: 18px 0;
+    width: 100%;
+    &:focus {
+        outline: none;
+    }
+    @include range-thumb() {
+        border: 1px solid #000000;
+        box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+        height: 36px;
+        width: 16px;
+        border-radius: 3px;
+        background: $white;
+        cursor: $pointer;
+    }
+    @include range-track() {
+        width: 100%;
+        height: 8.4px;
+        cursor: $pointer;
+        animate: 0.2s;
+        border-radius: 1.3px;
+        border: 0.2px solid $black;
+        box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+        background: $darkblue;
+    }
+}
