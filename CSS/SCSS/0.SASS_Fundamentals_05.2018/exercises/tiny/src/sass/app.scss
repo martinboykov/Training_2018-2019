@@ -1,0 +1,14 @@
+$margins: (m-t-: top, m-b-: bottom, m-l-:left, m-r-: right);
+$paddings: (p-t-: top, p-b-: bottom, p-l-:left, p-r-: right);
+@for $i from 1 through 5 {
+    @each $key, $value in $margins {
+        .#{$key}#{$i*5} {
+            margin-#{$value}: $i*5px;
+        }
+    }
+    @each $key, $value in $paddings {
+        .#{$key}#{$i*5} {
+            padding-#{$value}: $i*5px;
+        }
+    }
+}
