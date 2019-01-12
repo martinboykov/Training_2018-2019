@@ -6,5 +6,5 @@ Courses taken in 2018 in the area of Front End and Back End Development, as cont
 | ------------------------------------------- | --------------------------------------------------------------------- | --------------------------------- |
 | HTML                                        | [The Web Developer Bootcamp](HTML/the-web-developer-bootcamp_05.2018) | 05.2018 - 05.2018                 |
 | CSS                                         | [The Complete Guide](CSS/the-complete-guide_05.2018)                  | 05.2018 - 05.2018                 |
-| SCSS                                        | [SASS Fundamentals](SCSS/0.SASS_Fundamentals_05.2018)                 | 05.2018 - 05.2018                 |
+| CSS/SCSS                                    | [SASS Fundamentals](CSS/SCSS/0.SASS_Fundamentals_05.2018)             | 05.2018 - 05.2018                 |
 
