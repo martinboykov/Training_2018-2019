@@ -2,9 +2,11 @@
 
 Courses taken in 2018 in the area of Front End and Back End Development, as continuation to [Teleric Academy 2016-2017](https://github.com/martinboykov/Telerik_Academy) training.
 
-| Area                                        | Course                                                                | Period                            |
-| ------------------------------------------- | --------------------------------------------------------------------- | --------------------------------- |
-| HTML                                        | [The Web Developer Bootcamp](HTML/the-web-developer-bootcamp_05.2018) | 05.2018 - 05.2018                 |
-| CSS                                         | [The Complete Guide](CSS/the-complete-guide_05.2018)                  | 05.2018 - 05.2018                 |
-| CSS/SCSS                                    | [SASS Fundamentals](CSS/SCSS/0.SASS_Fundamentals_05.2018)             | 05.2018 - 05.2018                 |
+| Area                                        | Course                                                                                                   | Period                            |
+| ------------------------------------------- | -------------------------------------------------------------------------------------------------------- | --------------------------------- |
+| HTML                                        | [The Web Developer Bootcamp](HTML/the-web-developer-bootcamp_05.2018)                                    | 05.2018 - 05.2018                 |
+| CSS                                         | [The Complete Guide](CSS/the-complete-guide_05.2018)                                                     | 05.2018 - 05.2018                 |
+| CSS/SCSS                                    | [SASS Fundamentals](CSS/SCSS/0.SASS_Fundamentals_05.2018)                                                | 05.2018 - 05.2018                 |
+| Javascript/Fundamentals/DOM                 | [The Complete JavaScript Course](Javascript/__FUNDAMENTALS/_DOM/The_Complete_JavaScript_Course_06.2018)  | 06.2018 - 06.2018                 |
+| Javascript/Fundamentals/DOM                 | [The Web Developer Bootcamp](Javascript/__FUNDAMENTALS/_DOM/The_Web_Developer_Bootcamp_06.2018)          | 06.2018 - 06.2018                 |
 

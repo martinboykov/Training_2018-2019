@@ -1,0 +1,321 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+@import url("https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i");
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  display: flex;
+  flex-flow: row nowrap;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(rgba(62, 20, 20, 0.4), rgba(62, 20, 20, 0.4)), url("../images/back.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+body .container {
+  width: 1000px;
+  height: 600px;
+  background-image: linear-gradient(to right, #f7f7f7 50%, white 50%);
+  box-shadow: 0px 0px 10px 1px #aaaaaa;
+  font-size: 20px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 100;
+  color: #555555;
+  position: relative;
+  z-index: 1;
+}
+
+body .container .overlay {
+  position: absolute;
+  width: 100%;
+  background: transparent;
+  display: flex;
+  flex-flow: column nowrap;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+}
+
+body .container .overlay a {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  color: #555555;
+}
+
+body .container .overlay a img {
+  align-self: center;
+  margin-right: 17px;
+  animation: shrink 400ms 0.1ms 1 ease-in-out backwards;
+}
+
+body .container .overlay a span {
+  line-height: 26px;
+  align-self: center;
+}
+
+body .container .overlay a:hover img,
+body .container .overlay a:active img {
+  animation: grow 400ms 100ms 1 ease-in-out forwards;
+}
+
+body .container .overlay__new-game {
+  margin-top: 45px;
+}
+
+body .container .overlay__new-game img {
+  height: 26px;
+  margin-right: 0;
+}
+
+body .container .overlay__dice {
+  margin-top: 108px;
+  height: 100px;
+  width: 100px;
+  height: 100px;
+  background-image: url("../images/dice-0.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-shadow: 0px 0px 10px 1px #c5c5c5;
+}
+
+body .container .overlay__dice img {
+  height: 100px;
+  width: 100px;
+}
+
+body .container .overlay__roll-dice {
+  margin-top: 122px;
+}
+
+body .container .overlay__roll-dice img {
+  height: 26px;
+}
+
+body .container .overlay__hold {
+  margin-top: 38px;
+}
+
+body .container .overlay__hold img {
+  height: 24px;
+}
+
+body .container .wrapper {
+  position: absolute;
+  display: flex;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+body .container .wrapper__left-side {
+  display: flex;
+  flex-flow: column nowrap;
+  align-content: center;
+  align-items: center;
+  height: 100%;
+  width: 50%;
+  background: transparent;
+}
+
+body .container .wrapper__right-side {
+  display: flex;
+  flex-flow: column nowrap;
+  align-content: center;
+  align-items: center;
+  height: 100%;
+  width: 50%;
+  background: transparent;
+}
+
+body .container .wrapper .top {
+  display: flex;
+  align-content: center;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: 126px;
+  width: 100%;
+}
+
+body .container .wrapper .top .player {
+  margin-left: 155px;
+  font-size: 42px;
+  letter-spacing: 1.2px;
+  align-self: center;
+  line-height: 38px;
+}
+
+body .container .wrapper .on-turn .player {
+  font-weight: 300;
+  transition: font-weight 2s;
+  transition: all 600ms cubic-bezier(0.77, 0, 0.175, 1);
+}
+
+body .container .wrapper .on-turn .dot {
+  margin-left: 23px;
+  height: 12px;
+  width: 12px;
+  background-color: red;
+  border-radius: 50%;
+  align-self: center;
+  transition: all 600ms cubic-bezier(0.77, 0, 0.175, 1);
+}
+
+body .container .wrapper .middle {
+  margin-top: 22px;
+  font-size: 80px;
+  color: red;
+  font-weight: 100;
+}
+
+body .container .wrapper .bottom {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: 138px;
+  width: 120px;
+  height: 85px;
+  background: #eb4d4d;
+}
+
+body .container .wrapper .bottom .current {
+  margin-top: 14px;
+  font-size: 12px;
+  color: #222222;
+}
+
+body .container .wrapper .bottom .score-hold {
+  margin-top: 16px;
+  font-size: 28px;
+  color: white;
+}
+
+@keyframes grow {
+  0% {
+    margin-right: 17px;
+  }
+  100% {
+    margin-right: 26px;
+  }
+}
+
+@keyframes shrink {
+  0% {
+    margin-right: 26px;
+  }
+  100% {
+    margin-right: 17px;
+  }
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotateZ(0deg);
+    background-image: url("../images/dice-1.png");
+  }
+  20% {
+    transform: rotateZ(90deg);
+    background-image: url("../images/dice-2.png");
+  }
+  40% {
+    transform: rotateZ(180deg);
+    background-image: url("../images/dice-3.png");
+  }
+  60% {
+    transform: rotateZ(270deg);
+    background-image: url("../images/dice-4.png");
+  }
+  80% {
+    transform: rotateZ(270deg);
+    background-image: url("../images/dice-5.png");
+  }
+  100% {
+    transform: rotateZ(360deg);
+    background-image: url("../images/dice-6.png");
+  }
+}
+
+@keyframes scaling {
+  0% {
+    transform: scale(1.05);
+  }
+  25% {
+    transform: scale(1.1);
+  }
+  50% {
+    transform: scale(1.15);
+  }
+  75% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1.05);
+  }
+}
+/*# sourceMappingURL=style.css.map */
