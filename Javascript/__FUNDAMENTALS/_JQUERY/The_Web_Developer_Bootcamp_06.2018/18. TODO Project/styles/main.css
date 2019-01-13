@@ -1,0 +1,149 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+@import url("https://fonts.googleapis.com/css?family=Roboto:100,300,400,700");
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+body {
+  background: linear-gradient(to right, #46c2ff, #f5fecd);
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: top;
+  font-family: 'Roboto', sans-serif;
+}
+
+.container {
+  display: flex;
+  flex-flow: column nowrap;
+  margin-top: 12.5%;
+}
+
+.container .header {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+  background: #3679cf;
+  color: white;
+  font-size: 25px;
+  height: 57px;
+}
+
+.container .header__text {
+  margin-left: 27px;
+}
+
+.container .header__icon {
+  margin-right: 27px;
+}
+
+.container .main {
+  display: flex;
+  flex-flow: column nowrap;
+  background: white;
+  width: 400px;
+  flex: 0 1 auto;
+}
+
+.container .main__add--new-todo {
+  padding: 15px 30px 15px 30px;
+  color: #afafae;
+  font-size: 18px;
+  border: none;
+}
+
+.container .main__add--new-todo:hover, .container .main__add--new-todo:active {
+  padding: 15px 30px 15px 30px;
+  color: #4E9FF1;
+  font-size: 18px;
+  border: none;
+}
+
+.container .main__list {
+  font-size: 16px;
+  font-weight: 700;
+  color: #838382;
+  flex-shrink: 1;
+}
+
+.container .main__list--item {
+  display: flex;
+  flex-flow: row nowrap;
+}
+
+.container .main__list--item-icon {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  background: #ee541e;
+  color: white;
+  font-size: 20px;
+  opacity: 0;
+  width: 0px;
+  height: 48px;
+  transition: 0.4s linear;
+}
+
+.container .main__list--item-text {
+  height: 48px;
+  margin-left: 30px;
+  line-height: 48px;
+}
+
+.container .main__list--item:hover .main__list--item-icon {
+  opacity: 1;
+  width: 52px;
+}
+/*# sourceMappingURL=main.css.map */
