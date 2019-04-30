@@ -1,0 +1,23 @@
+:host{
+  display: block;
+  margin-top: 1rem;
+}
+.info-text{
+  text-align: center;
+}
+
+mat-spinner {
+  margin: auto;
+}
+
+.example-header-image {
+  background-size: cover;
+}
+
+.header-title{
+  vertical-align: center;
+  align-items: center;
+  text-align: center;
+  padding-left: 20px;
+  padding-top: 10px;
+}

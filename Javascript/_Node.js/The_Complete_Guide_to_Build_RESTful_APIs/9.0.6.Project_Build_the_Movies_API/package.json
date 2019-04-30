@@ -1,0 +1,23 @@
+{
+  "name": "5.0.0.Excercise_parts_4_5",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "restart": "set NODE_ENV=development&&set DEBUG=app:startup&& nodemon index.js",
+    "start": "set NODE_ENV=production&&set DEBUG=app:startup&& node index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "config": "^2.0.1",
+    "debug": "^3.1.0",
+    "express": "^4.16.3",
+    "helmet": "^3.13.0",
+    "joi": "^13.6.0",
+    "mongoose": "^5.0.1",
+    "morgan": "^1.9.0",
+    "pug": "^2.0.3"
+  }
+}

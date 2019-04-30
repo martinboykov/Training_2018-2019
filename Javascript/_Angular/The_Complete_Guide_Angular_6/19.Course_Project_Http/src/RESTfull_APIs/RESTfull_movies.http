@@ -1,0 +1,27 @@
+GET http://127.0.0.1:3000/api/movies
+
+GET http://127.0.0.1:3000/api/movies/5b8d06ce1d8c932fd4106ba4
+
+POST http://127.0.0.1:3000/api/movies
+x-auth-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1YjliYjUxYjMxNTRiOTMwODRiNTQyMmUiLCJpc0FkbWluIjp0cnVlLCJpYXQiOjE1MzY5MzEyMTB9.Da9HWfokykQtFr56AAYJKe5gcOMcmOMn626uJZ2k1ME
+content-type: application/json
+
+{
+    "title": "Constantine",
+    "genre": {
+        "name": "Triler"
+    },
+    "numberInStock": 7,
+    "dailyRentalRate": 38
+}
+
+
+PUT https://recipe-book-angular-6-project.firebaseio.com/
+content-type: application/json
+
+{
+    "title": "Updated"
+}
+
+DELETE http://127.0.0.1:3000/api/movies/5b900054ad5b2209383c0c37
+x-auth-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1YjhmZWYyNzJjMWViNjIwM2M2Mjk3M2UiLCJpYXQiOjE1MzYxNTk1Mjd9.hHKhw12d-3DJmxnZrw-yYRzvoLbPPnyLfBu4HCocMKs

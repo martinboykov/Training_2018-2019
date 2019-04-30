@@ -1,0 +1,53 @@
+<div class="row">
+  <div class="col-xs-12">
+    <form [formGroup]="form"
+          (ngSubmit)="onSubmit()">
+      <div class="row">
+        <div class="col-sm-6 form-group">
+          <label for="name">Name</label>
+          <input formControlName="name"
+                 type="text"
+                 id="name"
+                 class="form-control">
+          <span *ngIf="name.touched && name.invalid"
+                class="help-block">Please enter name</span>
+        </div>
+
+        <div class="col-sm-6 form-group">
+          <label for="amount">Amount [kg]</label>
+          <input formControlName="amount"
+                 type="number"
+                 step=".01"
+                 id="amount"
+                 class="form-control">
+          <span *ngIf="amount.touched && amount.invalid"
+                class="help-block">Please enter amount</span>
+        </div>
+
+      </div>
+      <div class="row">
+        <div class="col-xs-12">
+          <button *ngIf="add"
+                  class="btn btn-success"
+                  type="submit"
+                  style="width: 70px;">Add</button>
+          <button *ngIf="update"
+                  (click)="onUpdate()"
+                  class="btn btn-success"
+                  type="button"
+                  style="width: 70px;">Update</button>
+          <button [disabled]="empty"
+                  (click)="onClearItem()"
+                  class="btn btn-primary"
+                  type="button"
+                  style="width: 70px;">Clear</button>
+          <button [disabled]="!update"
+                  (click)="onDeleteItem()"
+                  class="btn btn-danger"
+                  type="button"
+                  style="width: 70px;">Delete</button>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>

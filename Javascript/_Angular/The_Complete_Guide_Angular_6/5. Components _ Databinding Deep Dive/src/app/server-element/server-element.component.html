@@ -1,0 +1,22 @@
+<div class="panel panel-default">
+  <div class="panel-heading" #heading>{{ element.name }}</div>
+  <div class="panel-body">
+    <!-- <p >
+      <strong *ngIf="element.type === 'server'"
+              style="color: red">{{ element.content }}</strong>
+      <strong *ngIf="element.type === 'blueprint'"
+              style="color: blue">{{ element.content }}</strong>
+
+
+      <em *ngIf="element.version"> - Version: {{element.version}}</em>
+    </p> -->
+    <!-- // only for demp purpose, so we can see ngOnChanges in Action -->
+    <!-- ng-content ==> best for widgets, where big html data is not suitable for property binding etc -->
+    <ng-content></ng-content>
+  </div>
+  <button class="btn btn-default"
+          (click)="onChange()"
+          style="margin-right:5px">ngOnChanges</button>
+  <button class="btn btn-danger"
+          (click)="onDestroy()">ngOnCDestroy</button>
+</div>

@@ -1,0 +1,57 @@
+<form [formGroup]="form"
+      (ngSubmit)="login()">
+  <div *ngIf="form.errors"
+       class="alert alert-warning">
+    The username or password is invalid
+  </div>
+  <div formGroupName="account">
+    <div class="form-group">
+      <label for="username">Username</label>
+      <input formControlName="username"
+             id="username"
+             type="text"
+             class="form-control">
+
+      <!-- waiting for async data -->
+      <div *ngIf="username.pending">Checking for uniqueness...</div>
+
+      <!-- username -->
+      <div *ngIf="username.touched && username.invalid"
+           class="alert alert-danger">
+        <div *ngIf="!!username.errors.required">Username is required</div>
+        <div *ngIf="!!username.errors.minlength">Username must contain at least
+          {{username.errors.minlength.requiredLength}} characters</div>
+        <div *ngIf="!!username.errors.maxlength">Username must contain not more than
+          {{username.errors.maxlength.requiredLength}} characters</div>
+        <div *ngIf="!!username.errors.cannotContainSpace">Username cannot contain empty spaces</div>
+        <div *ngIf="!!username.errors.shouldBeUnique">Username cannot be vulgar word</div>
+      </div>
+    </div>
+
+    <!-- password -->
+    <div class="form-group">
+      <label for="password">Password</label>
+      <input formControlName="password"
+             id="password"
+             type="password"
+             class="form-control">
+      <div *ngIf="password.touched && password.invalid"
+           class="alert alert-danger">
+        <div *ngIf="!!password.errors.required">Password is required</div>
+        <div *ngIf="!!password.errors.minlength">Password must contain at least
+          {{password.errors.minlength.requiredLength}} characters</div>
+        <div *ngIf="!!password.errors.maxlength">Password must contain not more than
+          {{password.errors.maxlength.requiredLength}} characters</div>
+      </div>
+    </div>
+    <div style="background: rgb(247, 149, 149); margin:10px; padding:10px; border-radius: 15px; "
+         *ngIf="form.dirty">
+      <p><b>For Development Environment only:</b></p>
+      <p>{{username.errors | json}}</p>
+      <p>{{password.errors | json}}</p>
+      <p><b>Form Status: {{ form.status }}</b></p>
+    </div>
+  </div>
+  <button class="btn btn-primary"
+          type="submit">Sign Up</button>
+</form>

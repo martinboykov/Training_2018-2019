@@ -1,0 +1,555 @@
+{"level":"info","message":"Server is listening at port 3000","timestamp":"2018-09-15T17:53:05.706Z"}
+{"level":"info","message":"Connected to mongodb://localhost/project-restful-api...","timestamp":"2018-09-15T17:53:06.745Z"}
+{"level":"info","message":"Connected to mongodb://localhost/project-restful-api_tests...","timestamp":"2018-09-15T17:53:13.141Z"}
+{"level":"info","message":"Connected to mongodb://localhost/project-restful-api_tests...","timestamp":"2018-09-15T17:53:13.159Z"}
+{"level":"info","message":"Connected to mongodb://localhost/project-restful-api_tests...","timestamp":"2018-09-15T17:53:13.171Z"}
+{"level":"info","message":"Server is listening at port 3000","timestamp":"2018-09-15T17:58:30.931Z"}
+{"level":"info","message":"Connected to mongodb://localhost/project-restful-api...","timestamp":"2018-09-15T17:58:31.961Z"}
+{"level":"info","message":"Connected to mongodb://localhost/project-restful-api_tests...","timestamp":"2018-09-15T17:58:37.536Z"}
+{"level":"info","message":"Connected to mongodb://localhost/project-restful-api_tests...","timestamp":"2018-09-15T17:58:37.550Z"}
+{"level":"info","message":"Connected to mongodb://localhost/project-restful-api_tests...","timestamp":"2018-09-15T17:58:37.586Z"}
+{"level":"info","message":"Server is listening at port 3000","timestamp":"2018-09-15T17:59:57.441Z"}
+{"level":"info","message":"Connected to mongodb://localhost/project-restful-api...","timestamp":"2018-09-15T17:59:58.465Z"}
+{"level":"info","message":"Connected to mongodb://localhost/project-restful-api_tests...","timestamp":"2018-09-15T18:00:02.028Z"}
+{"level":"info","message":"Connected to mongodb://localhost/project-restful-api_tests...","timestamp":"2018-09-15T18:00:02.068Z"}
+{"level":"info","message":"Connected to mongodb://localhost/project-restful-api_tests...","timestamp":"2018-09-15T18:00:02.083Z"}
+{"level":"info","message":"Server is listening at port 3000","timestamp":"2018-09-15T18:01:57.043Z"}
+{"level":"info","message":"Connected to mongodb://localhost/project-restful-api...","timestamp":"2018-09-15T18:01:58.066Z"}
+{"level":"info","message":"Connected to mongodb://localhost/project-restful-api_tests...","timestamp":"2018-09-15T18:02:03.497Z"}
+{"level":"info","message":"Connected to mongodb://localhost/project-restful-api_tests...","timestamp":"2018-09-15T18:02:03.512Z"}
+{"level":"info","message":"Connected to mongodb://localhost/project-restful-api_tests...","timestamp":"2018-09-15T18:02:03.587Z"}
+{"level":"info","message":"Server is listening at port 3000","timestamp":"2018-09-15T18:05:10.584Z"}
+{"level":"info","message":"Connected to mongodb://localhost/project-restful-api...","timestamp":"2018-09-15T18:05:11.614Z"}
+{"level":"info","message":"Connected to mongodb://localhost/project-restful-api_tests...","timestamp":"2018-09-15T18:05:17.003Z"}
+{"level":"info","message":"Connected to mongodb://localhost/project-restful-api_tests...","timestamp":"2018-09-15T18:05:17.022Z"}
+{"level":"info","message":"Connected to mongodb://localhost/project-restful-api_tests...","timestamp":"2018-09-15T18:05:17.055Z"}
+{"level":"info","message":"Server is listening at port 3000","timestamp":"2018-09-15T18:06:03.911Z"}
+{"level":"info","message":"Connected to mongodb://localhost/project-restful-api...","timestamp":"2018-09-15T18:06:04.948Z"}
+{"level":"info","message":"Connected to mongodb://localhost/project-restful-api_tests...","timestamp":"2018-09-15T18:06:10.325Z"}
+{"level":"info","message":"Connected to mongodb://localhost/project-restful-api_tests...","timestamp":"2018-09-15T18:06:10.404Z"}
+{"level":"info","message":"Connected to mongodb://localhost/project-restful-api_tests...","timestamp":"2018-09-15T18:06:10.461Z"}
+{"level":"info","message":"Server is listening at port 3000","timestamp":"2018-09-15T18:07:13.574Z"}
+{"level":"info","message":"Connected to mongodb://localhost/project-restful-api...","timestamp":"2018-09-15T18:07:14.608Z"}
+{"level":"info","message":"Connected to mongodb://localhost/project-restful-api_tests...","timestamp":"2018-09-15T18:07:20.898Z"}
+{"level":"info","message":"Connected to mongodb://localhost/project-restful-api_tests...","timestamp":"2018-09-15T18:07:20.906Z"}
+{"level":"info","message":"Connected to mongodb://localhost/project-restful-api_tests...","timestamp":"2018-09-15T18:07:20.968Z"}
+{"level":"info","message":"Server is listening at port 3000","timestamp":"2018-09-15T18:10:16.198Z"}
+{"level":"info","message":"Connected to mongodb://localhost/project-restful-api...","timestamp":"2018-09-15T18:10:17.257Z"}
+{"level":"info","message":"Connected to mongodb://localhost/project-restful-api_tests...","timestamp":"2018-09-15T18:10:22.794Z"}
+{"level":"info","message":"Connected to mongodb://localhost/project-restful-api_tests...","timestamp":"2018-09-15T18:10:22.843Z"}
+{"level":"info","message":"Connected to mongodb://localhost/project-restful-api_tests...","timestamp":"2018-09-15T18:10:22.850Z"}
+{"level":"info","message":"Server is listening at port 3000","timestamp":"2018-09-15T18:11:14.959Z"}
+{"level":"info","message":"Connected to mongodb://localhost/project-restful-api...","timestamp":"2018-09-15T18:11:15.985Z"}
+{"level":"info","message":"Connected to mongodb://localhost/project-restful-api_tests...","timestamp":"2018-09-15T18:11:21.682Z"}
+{"level":"info","message":"Connected to mongodb://localhost/project-restful-api_tests...","timestamp":"2018-09-15T18:11:21.720Z"}
+{"level":"info","message":"Connected to mongodb://localhost/project-restful-api_tests...","timestamp":"2018-09-15T18:11:21.720Z"}
+{"level":"info","message":"Server is listening at port 3000","timestamp":"2018-09-15T18:11:45.293Z"}
+{"level":"info","message":"Connected to mongodb://localhost/project-restful-api...","timestamp":"2018-09-15T18:11:46.325Z"}
+{"level":"info","message":"Connected to mongodb://localhost/project-restful-api_tests...","timestamp":"2018-09-15T18:11:51.727Z"}
+{"level":"info","message":"Connected to mongodb://localhost/project-restful-api_tests...","timestamp":"2018-09-15T18:11:51.747Z"}
+{"level":"info","message":"Connected to mongodb://localhost/project-restful-api_tests...","timestamp":"2018-09-15T18:11:51.797Z"}
+{"level":"info","message":"Server is listening at port 3000","timestamp":"2018-09-15T18:13:50.254Z"}
+{"level":"info","message":"Connected to mongodb://localhost/project-restful-api...","timestamp":"2018-09-15T18:13:51.276Z"}
+{"level":"info","message":"Server is listening at port 3000","timestamp":"2018-09-15T18:13:55.949Z"}
+{"level":"info","message":"Connected to mongodb://localhost/project-restful-api...","timestamp":"2018-09-15T18:13:56.969Z"}
+{"level":"info","message":"Connected to mongodb://localhost/project-restful-api_tests...","timestamp":"2018-09-15T18:13:57.713Z"}
+{"level":"info","message":"Connected to mongodb://localhost/project-restful-api_tests...","timestamp":"2018-09-15T18:13:57.759Z"}
+{"level":"info","message":"Connected to mongodb://localhost/project-restful-api_tests...","timestamp":"2018-09-15T18:13:57.776Z"}
+{"level":"info","message":"Server is listening at port 3000","timestamp":"2018-09-15T18:14:14.957Z"}
+{"level":"info","message":"Connected to mongodb://localhost/project-restful-api...","timestamp":"2018-09-15T18:14:15.981Z"}
+{"level":"info","message":"Connected to mongodb://localhost/project-restful-api_tests...","timestamp":"2018-09-15T18:14:20.859Z"}
+{"level":"info","message":"Connected to mongodb://localhost/project-restful-api_tests...","timestamp":"2018-09-15T18:14:20.914Z"}
+{"level":"info","message":"Connected to mongodb://localhost/project-restful-api_tests...","timestamp":"2018-09-15T18:14:20.922Z"}
+{"level":"info","message":"Server is listening at port 3000","timestamp":"2018-09-15T18:55:14.908Z"}
+{"level":"info","message":"Connected to mongodb://localhost/project-restful-api...","timestamp":"2018-09-15T18:55:15.935Z"}
+{"level":"info","message":"Connected to mongodb://localhost/project-restful-api_tests...","timestamp":"2018-09-15T18:55:19.301Z"}
+{"level":"info","message":"Connected to mongodb://localhost/project-restful-api_tests...","timestamp":"2018-09-15T18:55:19.321Z"}
+{"level":"info","message":"Connected to mongodb://localhost/project-restful-api_tests...","timestamp":"2018-09-15T18:55:19.349Z"}
+{"level":"info","message":"Server is listening at port 3000","timestamp":"2018-09-15T18:56:37.048Z"}
+{"level":"info","message":"Connected to mongodb://localhost/project-restful-api...","timestamp":"2018-09-15T18:56:38.073Z"}
+{"level":"info","message":"Connected to mongodb://localhost/project-restful-api_tests...","timestamp":"2018-09-15T18:56:42.751Z"}
+{"level":"info","message":"Connected to mongodb://localhost/project-restful-api_tests...","timestamp":"2018-09-15T18:56:42.779Z"}
+{"level":"info","message":"Connected to mongodb://localhost/project-restful-api_tests...","timestamp":"2018-09-15T18:56:42.799Z"}
+{"level":"info","message":"Server is listening at port 3000","timestamp":"2018-09-15T18:56:48.305Z"}
+{"level":"info","message":"Connected to mongodb://localhost/project-restful-api...","timestamp":"2018-09-15T18:56:49.328Z"}
+{"level":"info","message":"Connected to mongodb://localhost/project-restful-api_tests...","timestamp":"2018-09-15T18:56:54.095Z"}
+{"level":"info","message":"Connected to mongodb://localhost/project-restful-api_tests...","timestamp":"2018-09-15T18:56:54.107Z"}
+{"level":"info","message":"Connected to mongodb://localhost/project-restful-api_tests...","timestamp":"2018-09-15T18:56:54.169Z"}
+{"level":"info","message":"Server is listening at port 3000","timestamp":"2018-09-15T18:58:58.984Z"}
+{"level":"info","message":"Connected to mongodb://localhost/project-restful-api...","timestamp":"2018-09-15T18:59:00.019Z"}
+{"level":"info","message":"Connected to mongodb://localhost/project-restful-api_tests...","timestamp":"2018-09-15T18:59:04.290Z"}
+{"level":"info","message":"Connected to mongodb://localhost/project-restful-api_tests...","timestamp":"2018-09-15T18:59:04.310Z"}
+{"level":"info","message":"Connected to mongodb://localhost/project-restful-api_tests...","timestamp":"2018-09-15T18:59:04.329Z"}
+{"level":"info","message":"Server is listening at port 3000","timestamp":"2018-09-15T18:59:15.353Z"}
+{"level":"info","message":"Connected to mongodb://localhost/project-restful-api...","timestamp":"2018-09-15T18:59:16.379Z"}
+{"level":"info","message":"Connected to mongodb://localhost/project-restful-api_tests...","timestamp":"2018-09-15T18:59:19.693Z"}
+{"level":"info","message":"Connected to mongodb://localhost/project-restful-api_tests...","timestamp":"2018-09-15T18:59:19.729Z"}
+{"level":"info","message":"Connected to mongodb://localhost/project-restful-api_tests...","timestamp":"2018-09-15T18:59:19.743Z"}
+{"level":"info","message":"Server is listening at port 3000","timestamp":"2018-09-15T19:02:33.317Z"}
+{"level":"info","message":"Server is listening at port 3000","timestamp":"2018-09-15T19:02:38.775Z"}
+{"level":"info","message":"Connected to mongodb://localhost/project-restful-api...","timestamp":"2018-09-15T19:02:39.801Z"}
+{"level":"info","message":"Connected to mongodb://localhost/project-restful-api_tests...","timestamp":"2018-09-15T19:02:43.041Z"}
+{"level":"info","message":"Connected to mongodb://localhost/project-restful-api_tests...","timestamp":"2018-09-15T19:02:43.062Z"}
+{"level":"info","message":"Connected to mongodb://localhost/project-restful-api_tests...","timestamp":"2018-09-15T19:02:43.132Z"}
+{"level":"info","message":"Connected to mongodb://localhost/project-restful-api_tests...","timestamp":"2018-09-15T19:02:46.478Z"}
+{"level":"info","message":"Server is listening at port 3000","timestamp":"2018-09-15T19:02:56.563Z"}
+{"level":"info","message":"Connected to mongodb://localhost/project-restful-api...","timestamp":"2018-09-15T19:02:57.593Z"}
+{"level":"info","message":"Connected to mongodb://localhost/project-restful-api_tests...","timestamp":"2018-09-15T19:03:03.464Z"}
+{"level":"info","message":"Connected to mongodb://localhost/project-restful-api_tests...","timestamp":"2018-09-15T19:03:03.503Z"}
+{"level":"info","message":"Connected to mongodb://localhost/project-restful-api_tests...","timestamp":"2018-09-15T19:03:03.534Z"}
+{"level":"info","message":"Connected to mongodb://localhost/project-restful-api_tests...","timestamp":"2018-09-15T19:03:04.241Z"}
+{"level":"info","message":"Server is listening at port 3000","timestamp":"2018-09-15T19:04:01.029Z"}
+{"level":"info","message":"Connected to mongodb://localhost/project-restful-api...","timestamp":"2018-09-15T19:04:02.059Z"}
+{"level":"info","message":"Connected to mongodb://localhost/project-restful-api_tests...","timestamp":"2018-09-15T19:04:05.471Z"}
+{"level":"info","message":"Connected to mongodb://localhost/project-restful-api_tests...","timestamp":"2018-09-15T19:04:05.469Z"}
+{"level":"info","message":"Connected to mongodb://localhost/project-restful-api_tests...","timestamp":"2018-09-15T19:04:05.496Z"}
+{"level":"info","message":"Connected to mongodb://localhost/project-restful-api_tests...","timestamp":"2018-09-15T19:04:06.453Z"}
+{"level":"info","message":"Server is listening at port 3000","timestamp":"2018-09-15T19:12:40.072Z"}
+{"level":"info","message":"Server is listening at port 3000","timestamp":"2018-09-15T19:12:43.681Z"}
+{"level":"info","message":"Connected to mongodb://localhost/project-restful-api...","timestamp":"2018-09-15T19:12:44.710Z"}
+{"level":"info","message":"Connected to mongodb://localhost/project-restful-api_tests...","timestamp":"2018-09-15T19:12:50.276Z"}
+{"level":"info","message":"Connected to mongodb://localhost/project-restful-api_tests...","timestamp":"2018-09-15T19:12:50.277Z"}
+{"level":"info","message":"Connected to mongodb://localhost/project-restful-api_tests...","timestamp":"2018-09-15T19:12:50.309Z"}
+{"level":"info","message":"Connected to mongodb://localhost/project-restful-api_tests...","timestamp":"2018-09-15T19:12:51.123Z"}
+{"level":"info","message":"Server is listening at port 3000","timestamp":"2018-09-15T19:13:00.207Z"}
+{"level":"info","message":"Connected to mongodb://localhost/project-restful-api...","timestamp":"2018-09-15T19:13:01.239Z"}
+{"level":"info","message":"Connected to mongodb://localhost/project-restful-api_tests...","timestamp":"2018-09-15T19:13:08.335Z"}
+{"level":"info","message":"Connected to mongodb://localhost/project-restful-api_tests...","timestamp":"2018-09-15T19:13:08.384Z"}
+{"level":"info","message":"Connected to mongodb://localhost/project-restful-api_tests...","timestamp":"2018-09-15T19:13:08.397Z"}
+{"level":"info","message":"Connected to mongodb://localhost/project-restful-api_tests...","timestamp":"2018-09-15T19:13:09.263Z"}
+{"level":"info","message":"Server is listening at port 3000","timestamp":"2018-09-15T19:13:27.062Z"}
+{"level":"info","message":"Connected to mongodb://localhost/project-restful-api...","timestamp":"2018-09-15T19:13:28.099Z"}
+{"level":"info","message":"Connected to mongodb://localhost/project-restful-api_tests...","timestamp":"2018-09-15T19:13:32.944Z"}
+{"level":"info","message":"Connected to mongodb://localhost/project-restful-api_tests...","timestamp":"2018-09-15T19:13:32.977Z"}
+{"level":"info","message":"Connected to mongodb://localhost/project-restful-api_tests...","timestamp":"2018-09-15T19:13:33.031Z"}
+{"level":"info","message":"Connected to mongodb://localhost/project-restful-api_tests...","timestamp":"2018-09-15T19:13:33.896Z"}
+{"level":"info","message":"Server is listening at port 3000","timestamp":"2018-09-15T19:14:05.847Z"}
+{"level":"info","message":"Connected to mongodb://localhost/project-restful-api...","timestamp":"2018-09-15T19:14:06.882Z"}
+{"level":"info","message":"Connected to mongodb://localhost/project-restful-api_tests...","timestamp":"2018-09-15T19:14:11.976Z"}
+{"level":"info","message":"Connected to mongodb://localhost/project-restful-api_tests...","timestamp":"2018-09-15T19:14:12.055Z"}
+{"level":"info","message":"Connected to mongodb://localhost/project-restful-api_tests...","timestamp":"2018-09-15T19:14:12.082Z"}
+{"level":"info","message":"Connected to mongodb://localhost/project-restful-api_tests...","timestamp":"2018-09-15T19:14:12.874Z"}
+{"level":"info","message":"Server is listening at port 3000","timestamp":"2018-09-15T19:16:02.194Z"}
+{"level":"info","message":"Connected to mongodb://localhost/project-restful-api...","timestamp":"2018-09-15T19:16:03.226Z"}
+{"level":"info","message":"Connected to mongodb://localhost/project-restful-api_tests...","timestamp":"2018-09-15T19:16:08.825Z"}
+{"level":"info","message":"Connected to mongodb://localhost/project-restful-api_tests...","timestamp":"2018-09-15T19:16:08.873Z"}
+{"level":"info","message":"Connected to mongodb://localhost/project-restful-api_tests...","timestamp":"2018-09-15T19:16:08.888Z"}
+{"level":"info","message":"Connected to mongodb://localhost/project-restful-api_tests...","timestamp":"2018-09-15T19:16:10.055Z"}
+{"level":"info","message":"Server is listening at port 3000","timestamp":"2018-09-15T19:17:57.152Z"}
+{"level":"info","message":"Connected to mongodb://localhost/project-restful-api...","timestamp":"2018-09-15T19:17:58.189Z"}
+{"level":"info","message":"Connected to mongodb://localhost/project-restful-api_tests...","timestamp":"2018-09-15T19:18:02.371Z"}
+{"level":"info","message":"Connected to mongodb://localhost/project-restful-api_tests...","timestamp":"2018-09-15T19:18:02.483Z"}
+{"level":"info","message":"Connected to mongodb://localhost/project-restful-api_tests...","timestamp":"2018-09-15T19:18:02.493Z"}
+{"level":"info","message":"Connected to mongodb://localhost/project-restful-api_tests...","timestamp":"2018-09-15T19:18:03.230Z"}
+{"level":"info","message":"Server is listening at port 3000","timestamp":"2018-09-15T19:20:58.564Z"}
+{"level":"info","message":"Connected to mongodb://localhost/project-restful-api...","timestamp":"2018-09-15T19:20:59.595Z"}
+{"level":"info","message":"Connected to mongodb://localhost/project-restful-api_tests...","timestamp":"2018-09-15T19:21:06.097Z"}
+{"level":"info","message":"Connected to mongodb://localhost/project-restful-api_tests...","timestamp":"2018-09-15T19:21:06.112Z"}
+{"level":"info","message":"Connected to mongodb://localhost/project-restful-api_tests...","timestamp":"2018-09-15T19:21:06.148Z"}
+{"level":"info","message":"Connected to mongodb://localhost/project-restful-api_tests...","timestamp":"2018-09-15T19:21:06.935Z"}
+{"level":"info","message":"Server is listening at port 3000","timestamp":"2018-09-15T19:23:28.775Z"}
+{"level":"info","message":"Connected to mongodb://localhost/project-restful-api...","timestamp":"2018-09-15T19:23:29.798Z"}
+{"level":"info","message":"Connected to mongodb://localhost/project-restful-api_tests...","timestamp":"2018-09-15T19:23:34.284Z"}
+{"level":"info","message":"Connected to mongodb://localhost/project-restful-api_tests...","timestamp":"2018-09-15T19:23:34.319Z"}
+{"level":"info","message":"Connected to mongodb://localhost/project-restful-api_tests...","timestamp":"2018-09-15T19:23:34.317Z"}
+{"level":"info","message":"Connected to mongodb://localhost/project-restful-api_tests...","timestamp":"2018-09-15T19:23:35.079Z"}
+{"level":"info","message":"Server is listening at port 3000","timestamp":"2018-09-15T19:23:56.512Z"}
+{"level":"info","message":"Connected to mongodb://localhost/project-restful-api...","timestamp":"2018-09-15T19:23:57.535Z"}
+{"level":"info","message":"Connected to mongodb://localhost/project-restful-api_tests...","timestamp":"2018-09-15T19:24:41.228Z"}
+{"level":"info","message":"Connected to mongodb://localhost/project-restful-api_tests...","timestamp":"2018-09-15T19:24:41.247Z"}
+{"level":"info","message":"Connected to mongodb://localhost/project-restful-api_tests...","timestamp":"2018-09-15T19:24:41.267Z"}
+{"level":"info","message":"Connected to mongodb://localhost/project-restful-api_tests...","timestamp":"2018-09-15T19:24:41.285Z"}
+{"level":"info","message":"Server is listening at port 3000","timestamp":"2018-09-15T19:26:29.448Z"}
+{"level":"info","message":"Connected to mongodb://localhost/project-restful-api...","timestamp":"2018-09-15T19:26:30.470Z"}
+{"level":"info","message":"Connected to mongodb://localhost/project-restful-api_tests...","timestamp":"2018-09-15T19:26:35.268Z"}
+{"level":"info","message":"Connected to mongodb://localhost/project-restful-api_tests...","timestamp":"2018-09-15T19:26:35.304Z"}
+{"level":"info","message":"Connected to mongodb://localhost/project-restful-api_tests...","timestamp":"2018-09-15T19:26:35.325Z"}
+{"level":"info","message":"Connected to mongodb://localhost/project-restful-api_tests...","timestamp":"2018-09-15T19:26:35.983Z"}
+{"level":"info","message":"Server is listening at port 3000","timestamp":"2018-09-15T19:26:59.388Z"}
+{"level":"info","message":"Connected to mongodb://localhost/project-restful-api...","timestamp":"2018-09-15T19:27:00.420Z"}
+{"level":"info","message":"Connected to mongodb://localhost/project-restful-api_tests...","timestamp":"2018-09-15T19:27:05.581Z"}
+{"level":"info","message":"Connected to mongodb://localhost/project-restful-api_tests...","timestamp":"2018-09-15T19:27:05.616Z"}
+{"level":"info","message":"Connected to mongodb://localhost/project-restful-api_tests...","timestamp":"2018-09-15T19:27:05.615Z"}
+{"level":"info","message":"Connected to mongodb://localhost/project-restful-api_tests...","timestamp":"2018-09-15T19:27:06.290Z"}
+{"level":"info","message":"Server is listening at port 3000","timestamp":"2018-09-15T19:27:43.214Z"}
+{"level":"info","message":"Connected to mongodb://localhost/project-restful-api...","timestamp":"2018-09-15T19:27:44.239Z"}
+{"level":"info","message":"Connected to mongodb://localhost/project-restful-api_tests...","timestamp":"2018-09-15T19:27:47.678Z"}
+{"level":"info","message":"Connected to mongodb://localhost/project-restful-api_tests...","timestamp":"2018-09-15T19:27:47.763Z"}
+{"level":"info","message":"Connected to mongodb://localhost/project-restful-api_tests...","timestamp":"2018-09-15T19:27:47.814Z"}
+{"level":"info","message":"Connected to mongodb://localhost/project-restful-api_tests...","timestamp":"2018-09-15T19:27:48.403Z"}
+{"level":"info","message":"Server is listening at port 3000","timestamp":"2018-09-15T19:28:57.471Z"}
+{"level":"info","message":"Connected to mongodb://localhost/project-restful-api...","timestamp":"2018-09-15T19:28:58.510Z"}
+{"level":"info","message":"Connected to mongodb://localhost/project-restful-api_tests...","timestamp":"2018-09-15T19:29:02.911Z"}
+{"level":"info","message":"Connected to mongodb://localhost/project-restful-api_tests...","timestamp":"2018-09-15T19:29:03.113Z"}
+{"level":"info","message":"Connected to mongodb://localhost/project-restful-api_tests...","timestamp":"2018-09-15T19:29:03.128Z"}
+{"level":"info","message":"Connected to mongodb://localhost/project-restful-api_tests...","timestamp":"2018-09-15T19:29:04.492Z"}
+{"level":"info","message":"Server is listening at port 3000","timestamp":"2018-09-15T19:29:13.225Z"}
+{"level":"info","message":"Connected to mongodb://localhost/project-restful-api...","timestamp":"2018-09-15T19:29:14.259Z"}
+{"level":"info","message":"Connected to mongodb://localhost/project-restful-api_tests...","timestamp":"2018-09-15T19:29:17.423Z"}
+{"level":"info","message":"Connected to mongodb://localhost/project-restful-api_tests...","timestamp":"2018-09-15T19:29:17.480Z"}
+{"level":"info","message":"Connected to mongodb://localhost/project-restful-api_tests...","timestamp":"2018-09-15T19:29:17.576Z"}
+{"level":"info","message":"Connected to mongodb://localhost/project-restful-api_tests...","timestamp":"2018-09-15T19:29:18.269Z"}
+{"level":"info","message":"Server is listening at port 3000","timestamp":"2018-09-15T19:30:32.332Z"}
+{"level":"info","message":"Server is listening at port 3000","timestamp":"2018-09-15T19:30:35.822Z"}
+{"level":"info","message":"Connected to mongodb://localhost/project-restful-api...","timestamp":"2018-09-15T19:30:36.845Z"}
+{"level":"info","message":"Connected to mongodb://localhost/project-restful-api_tests...","timestamp":"2018-09-15T19:30:41.045Z"}
+{"level":"info","message":"Connected to mongodb://localhost/project-restful-api_tests...","timestamp":"2018-09-15T19:30:41.058Z"}
+{"level":"info","message":"Connected to mongodb://localhost/project-restful-api_tests...","timestamp":"2018-09-15T19:30:41.071Z"}
+{"level":"info","message":"Connected to mongodb://localhost/project-restful-api_tests...","timestamp":"2018-09-15T19:30:41.745Z"}
+{"level":"info","message":"Server is listening at port 3000","timestamp":"2018-09-15T19:33:38.248Z"}
+{"level":"info","message":"Connected to mongodb://localhost/project-restful-api...","timestamp":"2018-09-15T19:33:39.273Z"}
+{"level":"info","message":"Connected to mongodb://localhost/project-restful-api_tests...","timestamp":"2018-09-15T19:33:43.321Z"}
+{"level":"info","message":"Connected to mongodb://localhost/project-restful-api_tests...","timestamp":"2018-09-15T19:33:43.382Z"}
+{"level":"info","message":"Connected to mongodb://localhost/project-restful-api_tests...","timestamp":"2018-09-15T19:33:43.385Z"}
+{"level":"info","message":"Connected to mongodb://localhost/project-restful-api_tests...","timestamp":"2018-09-15T19:33:44.040Z"}
+{"level":"info","message":"Server is listening at port 3000","timestamp":"2018-09-15T19:34:02.939Z"}
+{"level":"info","message":"Connected to mongodb://localhost/project-restful-api...","timestamp":"2018-09-15T19:34:03.977Z"}
+{"level":"info","message":"Connected to mongodb://localhost/project-restful-api_tests...","timestamp":"2018-09-15T19:34:09.960Z"}
+{"level":"info","message":"Connected to mongodb://localhost/project-restful-api_tests...","timestamp":"2018-09-15T19:34:09.966Z"}
+{"level":"info","message":"Connected to mongodb://localhost/project-restful-api_tests...","timestamp":"2018-09-15T19:34:10.085Z"}
+{"level":"info","message":"Connected to mongodb://localhost/project-restful-api_tests...","timestamp":"2018-09-15T19:34:10.452Z"}
+{"level":"info","message":"Server is listening at port 3000","timestamp":"2018-09-15T19:34:55.135Z"}
+{"level":"info","message":"Connected to mongodb://localhost/project-restful-api...","timestamp":"2018-09-15T19:34:56.168Z"}
+{"level":"info","message":"Connected to mongodb://localhost/project-restful-api_tests...","timestamp":"2018-09-15T19:35:00.506Z"}
+{"level":"info","message":"Connected to mongodb://localhost/project-restful-api_tests...","timestamp":"2018-09-15T19:35:00.519Z"}
+{"level":"info","message":"Connected to mongodb://localhost/project-restful-api_tests...","timestamp":"2018-09-15T19:35:00.552Z"}
+{"level":"info","message":"Connected to mongodb://localhost/project-restful-api_tests...","timestamp":"2018-09-15T19:35:01.182Z"}
+{"level":"info","message":"Server is listening at port 3000","timestamp":"2018-09-15T19:35:23.225Z"}
+{"level":"info","message":"Connected to mongodb://localhost/project-restful-api...","timestamp":"2018-09-15T19:35:24.252Z"}
+{"level":"info","message":"Connected to mongodb://localhost/project-restful-api_tests...","timestamp":"2018-09-15T19:35:28.991Z"}
+{"level":"info","message":"Connected to mongodb://localhost/project-restful-api_tests...","timestamp":"2018-09-15T19:35:29.002Z"}
+{"level":"info","message":"Connected to mongodb://localhost/project-restful-api_tests...","timestamp":"2018-09-15T19:35:29.050Z"}
+{"level":"info","message":"Connected to mongodb://localhost/project-restful-api_tests...","timestamp":"2018-09-15T19:35:29.065Z"}
+{"level":"info","message":"Server is listening at port 3000","timestamp":"2018-09-15T19:36:59.193Z"}
+{"level":"info","message":"Connected to mongodb://localhost/project-restful-api...","timestamp":"2018-09-15T19:37:00.225Z"}
+{"level":"info","message":"Connected to mongodb://localhost/project-restful-api_tests...","timestamp":"2018-09-15T19:37:04.596Z"}
+{"level":"info","message":"Connected to mongodb://localhost/project-restful-api_tests...","timestamp":"2018-09-15T19:37:04.690Z"}
+{"level":"info","message":"Connected to mongodb://localhost/project-restful-api_tests...","timestamp":"2018-09-15T19:37:04.690Z"}
+{"level":"info","message":"Connected to mongodb://localhost/project-restful-api_tests...","timestamp":"2018-09-15T19:37:05.303Z"}
+{"level":"info","message":"Server is listening at port 3000","timestamp":"2018-09-15T19:37:28.751Z"}
+{"level":"info","message":"Connected to mongodb://localhost/project-restful-api...","timestamp":"2018-09-15T19:37:29.789Z"}
+{"level":"info","message":"Connected to mongodb://localhost/project-restful-api_tests...","timestamp":"2018-09-15T19:37:35.199Z"}
+{"level":"info","message":"Connected to mongodb://localhost/project-restful-api_tests...","timestamp":"2018-09-15T19:37:35.287Z"}
+{"level":"info","message":"Connected to mongodb://localhost/project-restful-api_tests...","timestamp":"2018-09-15T19:37:35.298Z"}
+{"level":"info","message":"Connected to mongodb://localhost/project-restful-api_tests...","timestamp":"2018-09-15T19:37:35.967Z"}
+{"level":"info","message":"Server is listening at port 3000","timestamp":"2018-09-15T19:39:11.611Z"}
+{"level":"info","message":"Connected to mongodb://localhost/project-restful-api...","timestamp":"2018-09-15T19:39:12.643Z"}
+{"level":"info","message":"Connected to mongodb://localhost/project-restful-api_tests...","timestamp":"2018-09-15T19:39:16.982Z"}
+{"level":"info","message":"Connected to mongodb://localhost/project-restful-api_tests...","timestamp":"2018-09-15T19:39:16.984Z"}
+{"level":"info","message":"Connected to mongodb://localhost/project-restful-api_tests...","timestamp":"2018-09-15T19:39:17.045Z"}
+{"level":"info","message":"Connected to mongodb://localhost/project-restful-api_tests...","timestamp":"2018-09-15T19:39:17.692Z"}
+{"level":"info","message":"Server is listening at port 3000","timestamp":"2018-09-15T19:39:28.296Z"}
+{"level":"info","message":"Connected to mongodb://localhost/project-restful-api...","timestamp":"2018-09-15T19:39:29.327Z"}
+{"level":"info","message":"Connected to mongodb://localhost/project-restful-api_tests...","timestamp":"2018-09-15T19:39:34.110Z"}
+{"level":"info","message":"Connected to mongodb://localhost/project-restful-api_tests...","timestamp":"2018-09-15T19:39:34.124Z"}
+{"level":"info","message":"Connected to mongodb://localhost/project-restful-api_tests...","timestamp":"2018-09-15T19:39:34.216Z"}
+{"level":"info","message":"Connected to mongodb://localhost/project-restful-api_tests...","timestamp":"2018-09-15T19:39:34.990Z"}
+{"level":"info","message":"Server is listening at port 3000","timestamp":"2018-09-15T19:39:53.737Z"}
+{"level":"info","message":"Connected to mongodb://localhost/project-restful-api...","timestamp":"2018-09-15T19:39:54.764Z"}
+{"level":"info","message":"Connected to mongodb://localhost/project-restful-api_tests...","timestamp":"2018-09-15T19:39:59.404Z"}
+{"level":"info","message":"Connected to mongodb://localhost/project-restful-api_tests...","timestamp":"2018-09-15T19:39:59.434Z"}
+{"level":"info","message":"Connected to mongodb://localhost/project-restful-api_tests...","timestamp":"2018-09-15T19:39:59.485Z"}
+{"level":"info","message":"Connected to mongodb://localhost/project-restful-api_tests...","timestamp":"2018-09-15T19:40:00.192Z"}
+{"level":"info","message":"Connected to mongodb://localhost/project-restful-api_tests...","timestamp":"2018-09-15T19:40:33.284Z"}
+{"level":"info","message":"Connected to mongodb://localhost/project-restful-api_tests...","timestamp":"2018-09-15T19:40:33.317Z"}
+{"level":"info","message":"Connected to mongodb://localhost/project-restful-api_tests...","timestamp":"2018-09-15T19:40:33.333Z"}
+{"level":"info","message":"Connected to mongodb://localhost/project-restful-api_tests...","timestamp":"2018-09-15T19:40:33.400Z"}
+{"level":"info","message":"Server is listening at port 3000","timestamp":"2018-09-15T19:41:03.032Z"}
+{"level":"info","message":"Connected to mongodb://localhost/project-restful-api...","timestamp":"2018-09-15T19:41:04.055Z"}
+{"level":"info","message":"Connected to mongodb://localhost/project-restful-api_tests...","timestamp":"2018-09-15T19:41:08.384Z"}
+{"level":"info","message":"Connected to mongodb://localhost/project-restful-api_tests...","timestamp":"2018-09-15T19:41:08.451Z"}
+{"level":"info","message":"Connected to mongodb://localhost/project-restful-api_tests...","timestamp":"2018-09-15T19:41:08.492Z"}
+{"level":"info","message":"Connected to mongodb://localhost/project-restful-api_tests...","timestamp":"2018-09-15T19:41:09.093Z"}
+{"level":"info","message":"Server is listening at port 3000","timestamp":"2018-09-15T19:41:37.438Z"}
+{"level":"info","message":"Connected to mongodb://localhost/project-restful-api...","timestamp":"2018-09-15T19:41:38.460Z"}
+{"level":"info","message":"Connected to mongodb://localhost/project-restful-api_tests...","timestamp":"2018-09-15T19:41:42.144Z"}
+{"level":"info","message":"Connected to mongodb://localhost/project-restful-api_tests...","timestamp":"2018-09-15T19:41:42.148Z"}
+{"level":"info","message":"Connected to mongodb://localhost/project-restful-api_tests...","timestamp":"2018-09-15T19:41:42.204Z"}
+{"level":"info","message":"Connected to mongodb://localhost/project-restful-api_tests...","timestamp":"2018-09-15T19:41:42.898Z"}
+{"level":"info","message":"Server is listening at port 3000","timestamp":"2018-09-15T19:43:38.235Z"}
+{"level":"info","message":"Connected to mongodb://localhost/project-restful-api...","timestamp":"2018-09-15T19:43:39.261Z"}
+{"level":"info","message":"Connected to mongodb://localhost/project-restful-api_tests...","timestamp":"2018-09-15T19:43:43.632Z"}
+{"level":"info","message":"Connected to mongodb://localhost/project-restful-api_tests...","timestamp":"2018-09-15T19:43:43.687Z"}
+{"level":"info","message":"Connected to mongodb://localhost/project-restful-api_tests...","timestamp":"2018-09-15T19:43:43.693Z"}
+{"level":"info","message":"Connected to mongodb://localhost/project-restful-api_tests...","timestamp":"2018-09-15T19:43:43.681Z"}
+{"level":"info","message":"Server is listening at port 3000","timestamp":"2018-09-15T19:45:37.874Z"}
+{"level":"info","message":"Connected to mongodb://localhost/project-restful-api...","timestamp":"2018-09-15T19:45:38.902Z"}
+{"level":"info","message":"Connected to mongodb://localhost/project-restful-api_tests...","timestamp":"2018-09-15T19:45:42.922Z"}
+{"level":"info","message":"Connected to mongodb://localhost/project-restful-api_tests...","timestamp":"2018-09-15T19:45:42.931Z"}
+{"level":"info","message":"Connected to mongodb://localhost/project-restful-api_tests...","timestamp":"2018-09-15T19:45:42.975Z"}
+{"level":"info","message":"Connected to mongodb://localhost/project-restful-api_tests...","timestamp":"2018-09-15T19:45:43.001Z"}
+{"level":"info","message":"Server is listening at port 3000","timestamp":"2018-09-15T19:46:20.403Z"}
+{"level":"info","message":"Connected to mongodb://localhost/project-restful-api...","timestamp":"2018-09-15T19:46:21.436Z"}
+{"level":"info","message":"Connected to mongodb://localhost/project-restful-api_tests...","timestamp":"2018-09-15T19:46:25.947Z"}
+{"level":"info","message":"Connected to mongodb://localhost/project-restful-api_tests...","timestamp":"2018-09-15T19:46:25.944Z"}
+{"level":"info","message":"Connected to mongodb://localhost/project-restful-api_tests...","timestamp":"2018-09-15T19:46:25.960Z"}
+{"level":"info","message":"Connected to mongodb://localhost/project-restful-api_tests...","timestamp":"2018-09-15T19:46:26.665Z"}
+{"level":"info","message":"Server is listening at port 3000","timestamp":"2018-09-15T19:46:31.926Z"}
+{"level":"info","message":"Connected to mongodb://localhost/project-restful-api...","timestamp":"2018-09-15T19:46:32.953Z"}
+{"level":"info","message":"Connected to mongodb://localhost/project-restful-api_tests...","timestamp":"2018-09-15T19:46:37.650Z"}
+{"level":"info","message":"Connected to mongodb://localhost/project-restful-api_tests...","timestamp":"2018-09-15T19:46:37.747Z"}
+{"level":"info","message":"Connected to mongodb://localhost/project-restful-api_tests...","timestamp":"2018-09-15T19:46:37.819Z"}
+{"level":"info","message":"Connected to mongodb://localhost/project-restful-api_tests...","timestamp":"2018-09-15T19:46:38.457Z"}
+{"level":"info","message":"Server is listening at port 3000","timestamp":"2018-09-15T19:48:08.939Z"}
+{"level":"info","message":"Connected to mongodb://localhost/project-restful-api...","timestamp":"2018-09-15T19:48:09.970Z"}
+{"level":"info","message":"Connected to mongodb://localhost/project-restful-api_tests...","timestamp":"2018-09-15T19:48:16.136Z"}
+{"level":"info","message":"Connected to mongodb://localhost/project-restful-api_tests...","timestamp":"2018-09-15T19:48:16.149Z"}
+{"level":"info","message":"Connected to mongodb://localhost/project-restful-api_tests...","timestamp":"2018-09-15T19:48:16.196Z"}
+{"level":"info","message":"Connected to mongodb://localhost/project-restful-api_tests...","timestamp":"2018-09-15T19:48:17.031Z"}
+{"level":"info","message":"Server is listening at port 3000","timestamp":"2018-09-15T19:48:38.662Z"}
+{"level":"info","message":"Connected to mongodb://localhost/project-restful-api...","timestamp":"2018-09-15T19:48:39.685Z"}
+{"level":"info","message":"Connected to mongodb://localhost/project-restful-api_tests...","timestamp":"2018-09-15T19:48:43.876Z"}
+{"level":"info","message":"Connected to mongodb://localhost/project-restful-api_tests...","timestamp":"2018-09-15T19:48:43.881Z"}
+{"level":"info","message":"Connected to mongodb://localhost/project-restful-api_tests...","timestamp":"2018-09-15T19:48:43.951Z"}
+{"level":"info","message":"Connected to mongodb://localhost/project-restful-api_tests...","timestamp":"2018-09-15T19:48:44.692Z"}
+{"level":"info","message":"Server is listening at port 3000","timestamp":"2018-09-15T19:49:10.320Z"}
+{"level":"info","message":"Connected to mongodb://localhost/project-restful-api...","timestamp":"2018-09-15T19:49:11.347Z"}
+{"level":"info","message":"Connected to mongodb://localhost/project-restful-api_tests...","timestamp":"2018-09-15T19:49:15.841Z"}
+{"level":"info","message":"Connected to mongodb://localhost/project-restful-api_tests...","timestamp":"2018-09-15T19:49:15.908Z"}
+{"level":"info","message":"Connected to mongodb://localhost/project-restful-api_tests...","timestamp":"2018-09-15T19:49:15.934Z"}
+{"level":"info","message":"Connected to mongodb://localhost/project-restful-api_tests...","timestamp":"2018-09-15T19:49:16.546Z"}
+{"level":"info","message":"Server is listening at port 3000","timestamp":"2018-09-15T19:50:41.926Z"}
+{"level":"info","message":"Server is listening at port 3000","timestamp":"2018-09-15T19:50:45.786Z"}
+{"level":"info","message":"Connected to mongodb://localhost/project-restful-api...","timestamp":"2018-09-15T19:50:46.811Z"}
+{"level":"info","message":"Connected to mongodb://localhost/project-restful-api_tests...","timestamp":"2018-09-15T19:50:51.131Z"}
+{"level":"info","message":"Connected to mongodb://localhost/project-restful-api_tests...","timestamp":"2018-09-15T19:50:51.153Z"}
+{"level":"info","message":"Connected to mongodb://localhost/project-restful-api_tests...","timestamp":"2018-09-15T19:50:51.178Z"}
+{"level":"info","message":"Connected to mongodb://localhost/project-restful-api_tests...","timestamp":"2018-09-15T19:50:51.212Z"}
+{"level":"info","message":"Server is listening at port 3000","timestamp":"2018-09-15T19:51:14.713Z"}
+{"level":"info","message":"Connected to mongodb://localhost/project-restful-api...","timestamp":"2018-09-15T19:51:15.737Z"}
+{"level":"info","message":"Connected to mongodb://localhost/project-restful-api_tests...","timestamp":"2018-09-15T19:51:20.754Z"}
+{"level":"info","message":"Connected to mongodb://localhost/project-restful-api_tests...","timestamp":"2018-09-15T19:51:20.767Z"}
+{"level":"info","message":"Connected to mongodb://localhost/project-restful-api_tests...","timestamp":"2018-09-15T19:51:20.793Z"}
+{"level":"info","message":"Connected to mongodb://localhost/project-restful-api_tests...","timestamp":"2018-09-15T19:51:20.808Z"}
+{"level":"info","message":"Server is listening at port 3000","timestamp":"2018-09-15T19:52:11.100Z"}
+{"level":"info","message":"Server is listening at port 3000","timestamp":"2018-09-15T19:52:14.642Z"}
+{"level":"info","message":"Connected to mongodb://localhost/project-restful-api...","timestamp":"2018-09-15T19:52:15.666Z"}
+{"level":"info","message":"Connected to mongodb://localhost/project-restful-api_tests...","timestamp":"2018-09-15T19:52:20.070Z"}
+{"level":"info","message":"Connected to mongodb://localhost/project-restful-api_tests...","timestamp":"2018-09-15T19:52:20.100Z"}
+{"level":"info","message":"Connected to mongodb://localhost/project-restful-api_tests...","timestamp":"2018-09-15T19:52:20.102Z"}
+{"level":"info","message":"Connected to mongodb://localhost/project-restful-api_tests...","timestamp":"2018-09-15T19:52:20.116Z"}
+{"level":"info","message":"Server is listening at port 3000","timestamp":"2018-09-15T19:53:31.559Z"}
+{"level":"info","message":"Connected to mongodb://localhost/project-restful-api...","timestamp":"2018-09-15T19:53:32.591Z"}
+{"level":"info","message":"Connected to mongodb://localhost/project-restful-api_tests...","timestamp":"2018-09-15T19:53:38.676Z"}
+{"level":"info","message":"Connected to mongodb://localhost/project-restful-api_tests...","timestamp":"2018-09-15T19:53:38.722Z"}
+{"level":"info","message":"Connected to mongodb://localhost/project-restful-api_tests...","timestamp":"2018-09-15T19:53:38.768Z"}
+{"level":"info","message":"Connected to mongodb://localhost/project-restful-api_tests...","timestamp":"2018-09-15T19:53:38.805Z"}
+{"level":"info","message":"Server is listening at port 3000","timestamp":"2018-09-15T19:53:40.477Z"}
+{"level":"info","message":"Connected to mongodb://localhost/project-restful-api...","timestamp":"2018-09-15T19:53:41.496Z"}
+{"level":"info","message":"Server is listening at port 3000","timestamp":"2018-09-15T19:53:47.000Z"}
+{"level":"info","message":"Connected to mongodb://localhost/project-restful-api...","timestamp":"2018-09-15T19:53:48.032Z"}
+{"level":"info","message":"Connected to mongodb://localhost/project-restful-api_tests...","timestamp":"2018-09-15T19:53:52.865Z"}
+{"level":"info","message":"Connected to mongodb://localhost/project-restful-api_tests...","timestamp":"2018-09-15T19:53:52.882Z"}
+{"level":"info","message":"Connected to mongodb://localhost/project-restful-api_tests...","timestamp":"2018-09-15T19:53:52.992Z"}
+{"level":"info","message":"Connected to mongodb://localhost/project-restful-api_tests...","timestamp":"2018-09-15T19:53:53.706Z"}
+{"level":"info","message":"Server is listening at port 3000","timestamp":"2018-09-15T19:54:19.960Z"}
+{"level":"info","message":"Connected to mongodb://localhost/project-restful-api...","timestamp":"2018-09-15T19:54:20.983Z"}
+{"level":"info","message":"Connected to mongodb://localhost/project-restful-api_tests...","timestamp":"2018-09-15T19:54:25.939Z"}
+{"level":"info","message":"Connected to mongodb://localhost/project-restful-api_tests...","timestamp":"2018-09-15T19:54:25.941Z"}
+{"level":"info","message":"Connected to mongodb://localhost/project-restful-api_tests...","timestamp":"2018-09-15T19:54:25.956Z"}
+{"level":"info","message":"Connected to mongodb://localhost/project-restful-api_tests...","timestamp":"2018-09-15T19:54:26.643Z"}
+{"level":"info","message":"Server is listening at port 3000","timestamp":"2018-09-15T19:55:19.472Z"}
+{"level":"info","message":"Connected to mongodb://localhost/project-restful-api...","timestamp":"2018-09-15T19:55:20.500Z"}
+{"level":"info","message":"Connected to mongodb://localhost/project-restful-api_tests...","timestamp":"2018-09-15T19:55:25.857Z"}
+{"level":"info","message":"Connected to mongodb://localhost/project-restful-api_tests...","timestamp":"2018-09-15T19:55:25.895Z"}
+{"level":"info","message":"Connected to mongodb://localhost/project-restful-api_tests...","timestamp":"2018-09-15T19:55:25.901Z"}
+{"level":"info","message":"Connected to mongodb://localhost/project-restful-api_tests...","timestamp":"2018-09-15T19:55:26.000Z"}
+{"level":"info","message":"Server is listening at port 3000","timestamp":"2018-09-15T19:56:44.837Z"}
+{"level":"info","message":"Connected to mongodb://localhost/project-restful-api...","timestamp":"2018-09-15T19:56:45.861Z"}
+{"level":"info","message":"Connected to mongodb://localhost/project-restful-api_tests...","timestamp":"2018-09-15T19:56:51.216Z"}
+{"level":"info","message":"Connected to mongodb://localhost/project-restful-api_tests...","timestamp":"2018-09-15T19:56:51.220Z"}
+{"level":"info","message":"Connected to mongodb://localhost/project-restful-api_tests...","timestamp":"2018-09-15T19:56:51.233Z"}
+{"level":"info","message":"Connected to mongodb://localhost/project-restful-api_tests...","timestamp":"2018-09-15T19:56:51.272Z"}
+{"level":"info","message":"Server is listening at port 3000","timestamp":"2018-09-15T19:57:29.954Z"}
+{"level":"info","message":"Connected to mongodb://localhost/project-restful-api...","timestamp":"2018-09-15T19:57:30.991Z"}
+{"level":"info","message":"Connected to mongodb://localhost/project-restful-api_tests...","timestamp":"2018-09-15T19:57:36.129Z"}
+{"level":"info","message":"Connected to mongodb://localhost/project-restful-api_tests...","timestamp":"2018-09-15T19:57:36.207Z"}
+{"level":"info","message":"Connected to mongodb://localhost/project-restful-api_tests...","timestamp":"2018-09-15T19:57:36.209Z"}
+{"level":"info","message":"Connected to mongodb://localhost/project-restful-api_tests...","timestamp":"2018-09-15T19:57:36.272Z"}
+{"level":"info","message":"Server is listening at port 3000","timestamp":"2018-09-15T20:06:23.928Z"}
+{"level":"info","message":"Server is listening at port 3000","timestamp":"2018-09-15T20:06:27.646Z"}
+{"level":"info","message":"Connected to mongodb://localhost/project-restful-api...","timestamp":"2018-09-15T20:06:28.677Z"}
+{"level":"info","message":"Connected to mongodb://localhost/project-restful-api_tests...","timestamp":"2018-09-15T20:06:33.500Z"}
+{"level":"info","message":"Connected to mongodb://localhost/project-restful-api_tests...","timestamp":"2018-09-15T20:06:33.514Z"}
+{"level":"info","message":"Connected to mongodb://localhost/project-restful-api_tests...","timestamp":"2018-09-15T20:06:33.552Z"}
+{"level":"info","message":"Connected to mongodb://localhost/project-restful-api_tests...","timestamp":"2018-09-15T20:06:34.245Z"}
+{"level":"info","message":"Server is listening at port 3000","timestamp":"2018-09-15T20:06:42.188Z"}
+{"level":"info","message":"Connected to mongodb://localhost/project-restful-api...","timestamp":"2018-09-15T20:06:43.218Z"}
+{"level":"info","message":"Connected to mongodb://localhost/project-restful-api_tests...","timestamp":"2018-09-15T20:06:48.405Z"}
+{"level":"info","message":"Connected to mongodb://localhost/project-restful-api_tests...","timestamp":"2018-09-15T20:06:48.473Z"}
+{"level":"info","message":"Connected to mongodb://localhost/project-restful-api_tests...","timestamp":"2018-09-15T20:06:48.498Z"}
+{"level":"info","message":"Server is listening at port 3000","timestamp":"2018-09-15T20:09:12.608Z"}
+{"level":"info","message":"Server is listening at port 3000","timestamp":"2018-09-15T20:09:17.271Z"}
+{"level":"info","message":"Connected to mongodb://localhost/project-restful-api...","timestamp":"2018-09-15T20:09:18.296Z"}
+{"level":"info","message":"Connected to mongodb://localhost/project-restful-api_tests...","timestamp":"2018-09-15T20:09:21.533Z"}
+{"level":"info","message":"Connected to mongodb://localhost/project-restful-api_tests...","timestamp":"2018-09-15T20:09:21.570Z"}
+{"level":"info","message":"Connected to mongodb://localhost/project-restful-api_tests...","timestamp":"2018-09-15T20:09:21.617Z"}
+{"level":"info","message":"Connected to mongodb://localhost/project-restful-api_tests...","timestamp":"2018-09-15T20:09:24.453Z"}
+{"level":"info","message":"Server is listening at port 3000","timestamp":"2018-09-15T20:39:24.901Z"}
+{"level":"info","message":"Connected to mongodb://localhost/project-restful-api...","timestamp":"2018-09-15T20:39:25.935Z"}
+{"level":"info","message":"Connected to mongodb://localhost/project-restful-api_tests...","timestamp":"2018-09-15T20:39:30.566Z"}
+{"level":"info","message":"Connected to mongodb://localhost/project-restful-api_tests...","timestamp":"2018-09-15T20:39:30.638Z"}
+{"level":"info","message":"Connected to mongodb://localhost/project-restful-api_tests...","timestamp":"2018-09-15T20:39:30.707Z"}
+{"level":"info","message":"Connected to mongodb://localhost/project-restful-api_tests...","timestamp":"2018-09-15T20:39:31.467Z"}
+{"level":"info","message":"Server is listening at port 3000","timestamp":"2018-09-15T20:39:33.417Z"}
+{"level":"info","message":"Connected to mongodb://localhost/project-restful-api...","timestamp":"2018-09-15T20:39:34.435Z"}
+{"level":"info","message":"Server is listening at port 3000","timestamp":"2018-09-15T20:39:42.939Z"}
+{"level":"info","message":"Connected to mongodb://localhost/project-restful-api...","timestamp":"2018-09-15T20:39:43.963Z"}
+{"level":"info","message":"Connected to mongodb://localhost/project-restful-api_tests...","timestamp":"2018-09-15T20:39:47.700Z"}
+{"level":"info","message":"Connected to mongodb://localhost/project-restful-api_tests...","timestamp":"2018-09-15T20:39:47.731Z"}
+{"level":"info","message":"Connected to mongodb://localhost/project-restful-api_tests...","timestamp":"2018-09-15T20:39:47.746Z"}
+{"level":"info","message":"Connected to mongodb://localhost/project-restful-api_tests...","timestamp":"2018-09-15T20:39:48.534Z"}
+{"level":"info","message":"Server is listening at port 3000","timestamp":"2018-09-15T20:40:02.078Z"}
+{"level":"info","message":"Connected to mongodb://localhost/project-restful-api...","timestamp":"2018-09-15T20:40:03.110Z"}
+{"level":"info","message":"Connected to mongodb://localhost/project-restful-api_tests...","timestamp":"2018-09-15T20:40:09.235Z"}
+{"level":"info","message":"Connected to mongodb://localhost/project-restful-api_tests...","timestamp":"2018-09-15T20:40:09.267Z"}
+{"level":"info","message":"Connected to mongodb://localhost/project-restful-api_tests...","timestamp":"2018-09-15T20:40:09.344Z"}
+{"level":"info","message":"Connected to mongodb://localhost/project-restful-api_tests...","timestamp":"2018-09-15T20:40:10.171Z"}
+{"level":"info","message":"Server is listening at port 3000","timestamp":"2018-09-15T20:41:43.329Z"}
+{"level":"info","message":"Connected to mongodb://localhost/project-restful-api...","timestamp":"2018-09-15T20:41:44.391Z"}
+{"level":"info","message":"Connected to mongodb://localhost/project-restful-api_tests...","timestamp":"2018-09-15T20:41:49.713Z"}
+{"level":"info","message":"Connected to mongodb://localhost/project-restful-api_tests...","timestamp":"2018-09-15T20:41:49.771Z"}
+{"level":"info","message":"Connected to mongodb://localhost/project-restful-api_tests...","timestamp":"2018-09-15T20:41:49.776Z"}
+{"level":"info","message":"Connected to mongodb://localhost/project-restful-api_tests...","timestamp":"2018-09-15T20:41:50.703Z"}
+{"level":"info","message":"Connected to mongodb://localhost/project-restful-api_tests...","timestamp":"2018-09-15T20:42:42.877Z"}
+{"level":"info","message":"Connected to mongodb://localhost/project-restful-api_tests...","timestamp":"2018-09-15T20:42:43.320Z"}
+{"level":"info","message":"Connected to mongodb://localhost/project-restful-api_tests...","timestamp":"2018-09-15T20:42:43.441Z"}
+{"level":"info","message":"Connected to mongodb://localhost/project-restful-api_tests...","timestamp":"2018-09-15T20:42:44.607Z"}
+{"level":"info","message":"Server is listening at port 3000","timestamp":"2018-09-15T20:42:45.573Z"}
+{"level":"info","message":"Connected to mongodb://localhost/project-restful-api...","timestamp":"2018-09-15T20:42:46.598Z"}
+{"level":"info","message":"Server is listening at port 3000","timestamp":"2018-09-15T20:43:26.357Z"}
+{"level":"info","message":"Connected to mongodb://localhost/project-restful-api...","timestamp":"2018-09-15T20:43:27.402Z"}
+{"level":"info","message":"Connected to mongodb://localhost/project-restful-api_tests...","timestamp":"2018-09-15T20:43:35.018Z"}
+{"level":"info","message":"Connected to mongodb://localhost/project-restful-api_tests...","timestamp":"2018-09-15T20:43:35.069Z"}
+{"level":"info","message":"Connected to mongodb://localhost/project-restful-api_tests...","timestamp":"2018-09-15T20:43:35.314Z"}
+{"level":"info","message":"Connected to mongodb://localhost/project-restful-api_tests...","timestamp":"2018-09-15T20:43:36.281Z"}
+{"level":"info","message":"Server is listening at port 3000","timestamp":"2018-09-15T20:43:52.200Z"}
+{"level":"info","message":"Connected to mongodb://localhost/project-restful-api...","timestamp":"2018-09-15T20:43:53.232Z"}
+{"level":"info","message":"Connected to mongodb://localhost/project-restful-api_tests...","timestamp":"2018-09-15T20:43:59.862Z"}
+{"level":"info","message":"Connected to mongodb://localhost/project-restful-api_tests...","timestamp":"2018-09-15T20:43:59.932Z"}
+{"level":"info","message":"Connected to mongodb://localhost/project-restful-api_tests...","timestamp":"2018-09-15T20:43:59.971Z"}
+{"level":"info","message":"Connected to mongodb://localhost/project-restful-api_tests...","timestamp":"2018-09-15T20:44:00.142Z"}
+{"level":"info","message":"Server is listening at port 3000","timestamp":"2018-09-15T20:44:53.172Z"}
+{"level":"info","message":"Connected to mongodb://localhost/project-restful-api...","timestamp":"2018-09-15T20:44:54.201Z"}
+{"level":"info","message":"Connected to mongodb://localhost/project-restful-api_tests...","timestamp":"2018-09-15T20:45:01.719Z"}
+{"level":"info","message":"Connected to mongodb://localhost/project-restful-api_tests...","timestamp":"2018-09-15T20:45:01.723Z"}
+{"level":"info","message":"Connected to mongodb://localhost/project-restful-api_tests...","timestamp":"2018-09-15T20:45:01.788Z"}
+{"level":"info","message":"Connected to mongodb://localhost/project-restful-api_tests...","timestamp":"2018-09-15T20:45:01.788Z"}
+{"level":"info","message":"Server is listening at port 3000","timestamp":"2018-09-15T20:54:57.280Z"}
+{"level":"info","message":"Connected to mongodb://localhost/project-restful-api...","timestamp":"2018-09-15T20:54:58.304Z"}
+{"level":"info","message":"Connected to mongodb://localhost/project-restful-api_tests...","timestamp":"2018-09-15T20:55:02.781Z"}
+{"level":"info","message":"Connected to mongodb://localhost/project-restful-api_tests...","timestamp":"2018-09-15T20:55:02.780Z"}
+{"level":"info","message":"Connected to mongodb://localhost/project-restful-api_tests...","timestamp":"2018-09-15T20:55:03.984Z"}
+{"level":"info","message":"Connected to mongodb://localhost/project-restful-api_tests...","timestamp":"2018-09-15T20:55:04.010Z"}
+{"level":"info","message":"Server is listening at port 3000","timestamp":"2018-09-15T20:55:28.278Z"}
+{"level":"info","message":"Connected to mongodb://localhost/project-restful-api...","timestamp":"2018-09-15T20:55:29.304Z"}
+{"level":"info","message":"Connected to mongodb://localhost/project-restful-api_tests...","timestamp":"2018-09-15T20:55:33.428Z"}
+{"level":"info","message":"Connected to mongodb://localhost/project-restful-api_tests...","timestamp":"2018-09-15T20:55:33.489Z"}
+{"level":"info","message":"Connected to mongodb://localhost/project-restful-api_tests...","timestamp":"2018-09-15T20:55:34.084Z"}
+{"level":"info","message":"Connected to mongodb://localhost/project-restful-api_tests...","timestamp":"2018-09-15T20:55:34.136Z"}
+{"level":"info","message":"Server is listening at port 3000","timestamp":"2018-09-15T20:57:43.276Z"}
+{"level":"info","message":"Connected to mongodb://localhost/project-restful-api...","timestamp":"2018-09-15T20:57:44.299Z"}
+{"level":"info","message":"Connected to mongodb://localhost/project-restful-api_tests...","timestamp":"2018-09-15T20:57:49.937Z"}
+{"level":"info","message":"Connected to mongodb://localhost/project-restful-api_tests...","timestamp":"2018-09-15T20:57:49.952Z"}
+{"level":"info","message":"Connected to mongodb://localhost/project-restful-api_tests...","timestamp":"2018-09-15T20:57:50.632Z"}
+{"level":"info","message":"Connected to mongodb://localhost/project-restful-api_tests...","timestamp":"2018-09-15T20:57:50.681Z"}
+{"level":"info","message":"Server is listening at port 3000","timestamp":"2018-09-15T20:58:10.679Z"}
+{"level":"info","message":"Connected to mongodb://localhost/project-restful-api...","timestamp":"2018-09-15T20:58:11.711Z"}
+{"level":"info","message":"Connected to mongodb://localhost/project-restful-api_tests...","timestamp":"2018-09-15T20:58:16.004Z"}
+{"level":"info","message":"Connected to mongodb://localhost/project-restful-api_tests...","timestamp":"2018-09-15T20:58:16.049Z"}
+{"level":"info","message":"Connected to mongodb://localhost/project-restful-api_tests...","timestamp":"2018-09-15T20:58:16.036Z"}
+{"level":"info","message":"Connected to mongodb://localhost/project-restful-api_tests...","timestamp":"2018-09-15T20:58:16.073Z"}
+{"level":"info","message":"Server is listening at port 3000","timestamp":"2018-09-15T20:59:38.521Z"}
+{"level":"info","message":"Connected to mongodb://localhost/project-restful-api...","timestamp":"2018-09-15T20:59:39.544Z"}
+{"level":"info","message":"Connected to mongodb://localhost/project-restful-api_tests...","timestamp":"2018-09-15T20:59:43.448Z"}
+{"level":"info","message":"Connected to mongodb://localhost/project-restful-api_tests...","timestamp":"2018-09-15T20:59:43.450Z"}
+{"level":"info","message":"Connected to mongodb://localhost/project-restful-api_tests...","timestamp":"2018-09-15T20:59:43.463Z"}
+{"level":"info","message":"Connected to mongodb://localhost/project-restful-api_tests...","timestamp":"2018-09-15T20:59:43.475Z"}
+{"level":"info","message":"Server is listening at port 3000","timestamp":"2018-09-15T21:01:35.542Z"}
+{"level":"info","message":"Connected to mongodb://localhost/project-restful-api...","timestamp":"2018-09-15T21:01:36.570Z"}
+{"level":"info","message":"Connected to mongodb://localhost/project-restful-api_tests...","timestamp":"2018-09-15T21:01:41.716Z"}
+{"level":"info","message":"Connected to mongodb://localhost/project-restful-api_tests...","timestamp":"2018-09-15T21:01:41.734Z"}
+{"level":"info","message":"Connected to mongodb://localhost/project-restful-api_tests...","timestamp":"2018-09-15T21:01:42.259Z"}
+{"level":"info","message":"Connected to mongodb://localhost/project-restful-api_tests...","timestamp":"2018-09-15T21:01:42.267Z"}
+{"level":"info","message":"Server is listening at port 3000","timestamp":"2018-09-15T21:02:17.484Z"}
+{"level":"info","message":"Connected to mongodb://localhost/project-restful-api...","timestamp":"2018-09-15T21:02:18.531Z"}
+{"level":"info","message":"Connected to mongodb://localhost/project-restful-api_tests...","timestamp":"2018-09-15T21:02:24.604Z"}
+{"level":"info","message":"Connected to mongodb://localhost/project-restful-api_tests...","timestamp":"2018-09-15T21:02:24.635Z"}
+{"level":"info","message":"Connected to mongodb://localhost/project-restful-api_tests...","timestamp":"2018-09-15T21:02:25.210Z"}
+{"level":"info","message":"Connected to mongodb://localhost/project-restful-api_tests...","timestamp":"2018-09-15T21:02:25.253Z"}
+{"level":"info","message":"Server is listening at port 3000","timestamp":"2018-09-15T21:02:33.245Z"}
+{"level":"info","message":"Connected to mongodb://localhost/project-restful-api...","timestamp":"2018-09-15T21:02:34.281Z"}
+{"level":"info","message":"Connected to mongodb://localhost/project-restful-api_tests...","timestamp":"2018-09-15T21:02:39.611Z"}
+{"level":"info","message":"Connected to mongodb://localhost/project-restful-api_tests...","timestamp":"2018-09-15T21:02:39.653Z"}
+{"level":"info","message":"Connected to mongodb://localhost/project-restful-api_tests...","timestamp":"2018-09-15T21:02:39.669Z"}
+{"level":"info","message":"Connected to mongodb://localhost/project-restful-api_tests...","timestamp":"2018-09-15T21:02:39.702Z"}
+{"level":"info","message":"Server is listening at port 3000","timestamp":"2018-09-15T21:03:37.392Z"}
+{"level":"info","message":"Connected to mongodb://localhost/project-restful-api...","timestamp":"2018-09-15T21:03:38.414Z"}
+{"level":"info","message":"Connected to mongodb://localhost/project-restful-api_tests...","timestamp":"2018-09-15T21:03:43.379Z"}
+{"level":"info","message":"Connected to mongodb://localhost/project-restful-api_tests...","timestamp":"2018-09-15T21:03:43.387Z"}
+{"level":"info","message":"Connected to mongodb://localhost/project-restful-api_tests...","timestamp":"2018-09-15T21:03:43.406Z"}
+{"level":"info","message":"Connected to mongodb://localhost/project-restful-api_tests...","timestamp":"2018-09-15T21:03:43.425Z"}
+{"level":"info","message":"Server is listening at port 3000","timestamp":"2018-09-15T21:04:12.714Z"}
+{"level":"info","message":"Connected to mongodb://localhost/project-restful-api...","timestamp":"2018-09-15T21:04:13.737Z"}
+{"level":"info","message":"Connected to mongodb://localhost/project-restful-api_tests...","timestamp":"2018-09-15T21:04:20.056Z"}
+{"level":"info","message":"Connected to mongodb://localhost/project-restful-api_tests...","timestamp":"2018-09-15T21:04:20.074Z"}
+{"level":"info","message":"Connected to mongodb://localhost/project-restful-api_tests...","timestamp":"2018-09-15T21:04:20.135Z"}
+{"level":"info","message":"Connected to mongodb://localhost/project-restful-api_tests...","timestamp":"2018-09-15T21:04:20.145Z"}
+{"level":"info","message":"Server is listening at port 3000","timestamp":"2018-09-15T21:05:40.878Z"}
+{"level":"info","message":"Connected to mongodb://localhost/project-restful-api...","timestamp":"2018-09-15T21:05:41.903Z"}
+{"level":"info","message":"Connected to mongodb://localhost/project-restful-api_tests...","timestamp":"2018-09-15T21:05:45.565Z"}
+{"level":"info","message":"Connected to mongodb://localhost/project-restful-api_tests...","timestamp":"2018-09-15T21:05:45.586Z"}
+{"level":"info","message":"Connected to mongodb://localhost/project-restful-api_tests...","timestamp":"2018-09-15T21:05:46.378Z"}
+{"level":"info","message":"Connected to mongodb://localhost/project-restful-api_tests...","timestamp":"2018-09-15T21:05:46.414Z"}
+{"level":"info","message":"Server is listening at port 3000","timestamp":"2018-09-15T21:06:02.712Z"}
+{"level":"info","message":"Connected to mongodb://localhost/project-restful-api...","timestamp":"2018-09-15T21:06:03.737Z"}
+{"level":"info","message":"Connected to mongodb://localhost/project-restful-api_tests...","timestamp":"2018-09-15T21:06:08.156Z"}
+{"level":"info","message":"Connected to mongodb://localhost/project-restful-api_tests...","timestamp":"2018-09-15T21:06:08.180Z"}
+{"level":"info","message":"Connected to mongodb://localhost/project-restful-api_tests...","timestamp":"2018-09-15T21:06:08.187Z"}
+{"level":"info","message":"Connected to mongodb://localhost/project-restful-api_tests...","timestamp":"2018-09-15T21:06:08.161Z"}
+{"level":"info","message":"Server is listening at port 3000","timestamp":"2018-09-15T21:06:38.597Z"}
+{"level":"info","message":"Connected to mongodb://localhost/project-restful-api...","timestamp":"2018-09-15T21:06:39.637Z"}
+{"level":"info","message":"Connected to mongodb://localhost/project-restful-api_tests...","timestamp":"2018-09-15T21:06:45.638Z"}
+{"level":"info","message":"Connected to mongodb://localhost/project-restful-api_tests...","timestamp":"2018-09-15T21:06:45.744Z"}
+{"level":"info","message":"Connected to mongodb://localhost/project-restful-api_tests...","timestamp":"2018-09-15T21:06:46.429Z"}
+{"level":"info","message":"Connected to mongodb://localhost/project-restful-api_tests...","timestamp":"2018-09-15T21:06:46.521Z"}
+{"level":"info","message":"Server is listening at port 3000","timestamp":"2018-09-15T21:06:52.389Z"}
+{"level":"info","message":"Connected to mongodb://localhost/project-restful-api...","timestamp":"2018-09-15T21:06:53.426Z"}
+{"level":"info","message":"Connected to mongodb://localhost/project-restful-api_tests...","timestamp":"2018-09-15T21:06:59.763Z"}
+{"level":"info","message":"Connected to mongodb://localhost/project-restful-api_tests...","timestamp":"2018-09-15T21:06:59.777Z"}
+{"level":"info","message":"Connected to mongodb://localhost/project-restful-api_tests...","timestamp":"2018-09-15T21:06:59.816Z"}
+{"level":"info","message":"Connected to mongodb://localhost/project-restful-api_tests...","timestamp":"2018-09-15T21:06:59.848Z"}
+{"level":"info","message":"Server is listening at port 3000","timestamp":"2018-09-15T21:07:30.603Z"}
+{"level":"info","message":"Connected to mongodb://localhost/project-restful-api...","timestamp":"2018-09-15T21:07:31.621Z"}
+{"level":"info","message":"Connected to mongodb://localhost/project-restful-api_tests...","timestamp":"2018-09-15T21:07:48.864Z"}
+{"level":"info","message":"Connected to mongodb://localhost/project-restful-api_tests...","timestamp":"2018-09-15T21:07:48.884Z"}
+{"level":"info","message":"Connected to mongodb://localhost/project-restful-api_tests...","timestamp":"2018-09-15T21:07:48.889Z"}
+{"level":"info","message":"Connected to mongodb://localhost/project-restful-api_tests...","timestamp":"2018-09-15T21:07:48.906Z"}
+{"level":"info","message":"Server is listening at port 3000","timestamp":"2018-09-15T21:08:16.088Z"}
+{"level":"info","message":"Connected to mongodb://localhost/project-restful-api...","timestamp":"2018-09-15T21:08:17.108Z"}
+{"level":"info","message":"Connected to mongodb://localhost/project-restful-api_tests...","timestamp":"2018-09-15T21:08:35.645Z"}
+{"level":"info","message":"Connected to mongodb://localhost/project-restful-api_tests...","timestamp":"2018-09-15T21:08:35.645Z"}
+{"level":"info","message":"Connected to mongodb://localhost/project-restful-api_tests...","timestamp":"2018-09-15T21:08:35.672Z"}
+{"level":"info","message":"Connected to mongodb://localhost/project-restful-api_tests...","timestamp":"2018-09-15T21:08:35.705Z"}
+{"level":"info","message":"Server is listening at port 3000","timestamp":"2018-09-15T21:09:01.279Z"}
+{"level":"info","message":"Connected to mongodb://localhost/project-restful-api...","timestamp":"2018-09-15T21:09:02.295Z"}
+{"level":"info","message":"Server is listening at port 3000","timestamp":"2018-09-15T21:09:04.709Z"}
+{"level":"info","message":"Connected to mongodb://localhost/project-restful-api...","timestamp":"2018-09-15T21:09:05.726Z"}
+{"level":"info","message":"Server is listening at port 3000","timestamp":"2018-09-15T21:09:10.785Z"}
+{"level":"info","message":"Connected to mongodb://localhost/project-restful-api...","timestamp":"2018-09-15T21:09:11.807Z"}
+{"level":"info","message":"Connected to mongodb://localhost/project-restful-api_tests...","timestamp":"2018-09-15T21:09:35.721Z"}
+{"level":"info","message":"Connected to mongodb://localhost/project-restful-api_tests...","timestamp":"2018-09-15T21:09:35.744Z"}
+{"level":"info","message":"Connected to mongodb://localhost/project-restful-api_tests...","timestamp":"2018-09-15T21:09:35.778Z"}
+{"level":"info","message":"Connected to mongodb://localhost/project-restful-api_tests...","timestamp":"2018-09-15T21:09:35.801Z"}
+{"level":"info","message":"Connected to mongodb://localhost/project-restful-api_tests...","timestamp":"2018-09-15T21:09:52.750Z"}
+{"level":"info","message":"Connected to mongodb://localhost/project-restful-api_tests...","timestamp":"2018-09-15T21:09:52.775Z"}
+{"level":"info","message":"Connected to mongodb://localhost/project-restful-api_tests...","timestamp":"2018-09-15T21:09:52.809Z"}
+{"level":"info","message":"Connected to mongodb://localhost/project-restful-api_tests...","timestamp":"2018-09-15T21:09:52.810Z"}
+{"level":"info","message":"Connected to mongodb://localhost/project-restful-api_tests...","timestamp":"2018-09-15T21:10:16.773Z"}
+{"level":"info","message":"Connected to mongodb://localhost/project-restful-api_tests...","timestamp":"2018-09-15T21:10:16.779Z"}
+{"level":"info","message":"Connected to mongodb://localhost/project-restful-api_tests...","timestamp":"2018-09-15T21:10:16.795Z"}
+{"level":"info","message":"Connected to mongodb://localhost/project-restful-api_tests...","timestamp":"2018-09-15T21:10:17.420Z"}
+{"level":"info","message":"Connected to mongodb://localhost/project-restful-api_tests...","timestamp":"2018-09-15T21:10:38.394Z"}
+{"level":"info","message":"Connected to mongodb://localhost/project-restful-api_tests...","timestamp":"2018-09-15T21:10:38.402Z"}
+{"level":"info","message":"Connected to mongodb://localhost/project-restful-api_tests...","timestamp":"2018-09-15T21:10:38.492Z"}
+{"level":"info","message":"Connected to mongodb://localhost/project-restful-api_tests...","timestamp":"2018-09-15T21:10:39.283Z"}

@@ -1,0 +1,17 @@
+<app-header (routSelected)="onRoutChange($event)"></app-header>
+<!-- With routSelected we are listening for the required value (rout) -> (STREAM IS FROM CHILD -> PARENT) -->
+<div class="container">
+  <div class="row">
+    <div class="col-md-12  ">
+      <app-recipes *ngIf="routName === 'Recipes'"></app-recipes>
+      <app-shopping-list *ngIf="routName !== 'Recipes'"></app-shopping-list>
+    </div>
+    <!-- SECOND OPTION FOR ROUTING -->
+    <!-- <div class="col-md-12  recipe-component" [ngStyle]="{display: onRoutChangeRecipe()}">
+      <app-recipes></app-recipes>
+    </div>
+    <div class="col-md-12  shopping-list-component" [ngStyle]="{display: onRoutChangeShoppingList()}">
+      <app-shopping-list></app-shopping-list>
+    </div> -->
+  </div>
+</div>

@@ -1,0 +1,17 @@
+GET http://127.0.0.1:3000/api/users
+
+GET http://127.0.0.1:3000/api/users/5b8e8c3aaccd1f5b5c7a9d1b
+
+GET http://127.0.0.1:3000/api/users/me
+x-auth-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1YjhlYThhZTgxMDMyODQyNzhhNzFlMzYiLCJpYXQiOjE1MzYxNjQzNzV9.bOSpwc7RXmM4r67cdbVKK6_tgtR0Ce2lMe8YtAspjsQ
+
+POST http://127.0.0.1:3000/api/users
+content-type: application/json
+
+{
+    "name": "Test",
+    "email": "test@abv.bg",
+    "password": "123456"
+}
+
+

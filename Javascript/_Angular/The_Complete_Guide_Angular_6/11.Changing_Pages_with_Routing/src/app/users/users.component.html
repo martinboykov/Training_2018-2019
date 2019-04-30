@@ -1,0 +1,29 @@
+<div class="row">
+  <div class="col-sm-8 col-xs-12">
+    <div class="list-group">
+      <a [routerLink]="['/users', user.id]"
+         class="list-group-item"
+         *ngFor="let user of users"
+         (click)="selectUser(user)">
+        {{ user.name }}
+      </a>
+    </div>
+  </div>
+  <!-- <div class="col-sm-4 col-xs-12">
+    <app-user *ngIf="user; else infoText"
+              [user]="user">
+    </app-user>
+    <ng-template #infoText>
+      <p>Please select an User!</p>
+    </ng-template>
+  </div> -->
+
+  <div class="col-sm-4 col-xs-12">
+    <router-outlet></router-outlet>
+    <p *ngIf="isActive"
+       class="text-primary">
+      Please select an User!
+    </p>
+  </div>
+
+</div>

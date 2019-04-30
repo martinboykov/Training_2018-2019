@@ -1,0 +1,45 @@
+<div class="row">
+  <div class="col col-xs-12">
+    <span class="glyphicon"
+          [class.glyphicon-star]="isFavorite"
+          [class.glyphicon-star-empty]="!isFavorite"
+          (click)="onClick()">
+    </span>
+  </div>
+  <div class="col col-xs-12">
+    <button class="btn btn-primary"
+            [class.btn-primary]="buttonToggleDangerPrimary"
+            [class.btn-danger]="!buttonToggleDangerPrimary"
+            (click)="onButtonClick()">Change State</button>
+  </div>
+  <hr>
+  <div class="col col-xs-12">
+    <form>
+      <div class="form-group">
+        <h5>id: {{dataCloned.id}}</h5>
+        <label for="name">Name</label>
+        <input type="text"
+               class="form-control"
+               name="name"
+               [(ngModel)]="dataCloned.name">
+        <label for="name">Email</label>
+        <input type="email"
+               class="form-control"
+               name="email"
+               [(ngModel)]="dataCloned.email">
+      </div>
+      <div class="form-group"
+           *ngFor="let element of dataCloned.collection, let i = index">
+        <label for="name">property {{i+1}}</label>
+        <input type="text"
+               class="form-control"
+               name="property"
+               [(ngModel)]="element.property"
+               [ngModelOptions]="{standalone: true, updateOn: 'blur'}">
+      </div>
+      <button type="submit"
+              class="btn btn-primary"
+              (click)="onFormSubmit()">Submit Changes</button>
+    </form>
+  </div>
+</div>

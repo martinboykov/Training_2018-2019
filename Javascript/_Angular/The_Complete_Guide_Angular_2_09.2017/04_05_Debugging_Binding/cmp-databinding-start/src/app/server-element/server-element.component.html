@@ -1,0 +1,18 @@
+<div class="panel panel-default">
+  <div class="panel-heading">{{ element.name }}</div>
+  <div class="panel-body">
+      <ng-content></ng-content>
+    <!-- if we use ng-content to get the projection of whats inside APP-SERVER-ELEMENT
+    in APP.COMPONENT
+    <p>
+      <strong class="server-strong"
+              *ngIf="element.type === 'server'">
+              {{ element.content }}
+        </strong>
+      <em *ngIf="element.type === 'blueprint'">
+           {{ element.content }}
+      </em>
+    </p> -->
+  </div>
+</div>
+

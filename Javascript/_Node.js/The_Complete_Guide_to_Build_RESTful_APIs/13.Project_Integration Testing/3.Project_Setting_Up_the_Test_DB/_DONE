@@ -1,0 +1,7 @@
+as we are adding/removing data in the tests =>
+=> we need another data for testing
+1.1 In config/default.js adding  "db": "mongodb://localhost/project-restful-api"
+1.2 In config/test.js adding "db": "mongodb://localhost/project-restful-api_tests"
+so we connext to different db wenn in dev_mode and in test_mode
+
+2. In startup/db.js adding the connection link via config.get()

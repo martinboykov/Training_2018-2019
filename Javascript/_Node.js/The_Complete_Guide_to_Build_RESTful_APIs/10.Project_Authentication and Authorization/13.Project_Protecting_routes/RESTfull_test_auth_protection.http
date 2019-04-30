@@ -1,0 +1,19 @@
+# @name login
+POST http://127.0.0.1:3000/api/auth HTTP/1.1
+Content-Type: application/json
+
+{
+    "email": "pesho@abv.bg",
+    "password": "123456"
+}
+
+###
+
+# @name createGenre
+POST http://127.0.0.1:3000/api/genres
+x-auth-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1YjhmZWYyNzJjMWViNjIwM2M2Mjk3M2UiLCJpYXQiOjE1MzYxNTk1Mjd9.hHKhw12d-3DJmxnZrw-yYRzvoLbPPnyLfBu4HCocMKs
+content-type: application/json
+
+{
+    "name": "Test1"
+}

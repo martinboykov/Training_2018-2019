@@ -1,0 +1,8 @@
+<button (click)="loadCourses()"
+        class="btn btn-primary">Load Courses</button>
+<ul>
+  <!-- trackBy is used to change the default behaviour of Angular for tracking objects by their location in memory -->
+  <li *ngFor="let course of courses; trackBy: trackCourse">
+    {{course.name}}
+  </li>
+</ul>

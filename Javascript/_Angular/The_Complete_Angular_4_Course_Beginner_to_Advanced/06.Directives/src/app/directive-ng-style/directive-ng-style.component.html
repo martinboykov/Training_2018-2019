@@ -1,0 +1,17 @@
+<!-- with style binding -->
+<button [style.backgroundColor]="canSave ? 'blue': 'green'"
+        [style.color]="canSave ? 'white': 'black'"
+        [style.fontWeight]="canSave ? 'bold': 'normal'"
+        (click)="changeCanSave()"
+        class="btn btn-primary"
+        style="outline: none">Save</button>
+
+<!-- with ngStyle -->
+<button [ngStyle]="{
+        'backgroundColor': canSave ? 'blue': 'green',
+        'color': canSave ? 'white': 'black',
+        'fontWeight': canSave ? 'bold': 'normal'
+      }"
+        (click)="changeCanSave()"
+        class="btn btn-primary"
+        style="outline: none">Save</button>

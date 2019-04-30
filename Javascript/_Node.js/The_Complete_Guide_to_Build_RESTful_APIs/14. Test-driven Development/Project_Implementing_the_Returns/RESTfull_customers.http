@@ -1,0 +1,21 @@
+GET http://127.0.0.1:3000/api/customers
+
+GET http://127.0.0.1:3000/api/customers/5b8a7649f79f863dd85091b6
+
+POST http://127.0.0.1:3000/api/customers
+x-auth-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1YjliYjUxYjMxNTRiOTMwODRiNTQyMmUiLCJpc0FkbWluIjp0cnVlLCJpYXQiOjE1MzY5MzEyMTB9.Da9HWfokykQtFr56AAYJKe5gcOMcmOMn626uJZ2k1ME
+content-type: application/json
+
+{
+    "name": "Customer #4",
+    "phone": "1234567891011"
+}
+
+PUT http://127.0.0.1:3000/api/customers/5b8a82b2591b9c38bc5f0d3c
+content-type: application/json
+
+{
+    "phone": "9871"
+}
+
+DELETE http://127.0.0.1:3000/api/customers/5b8a84843d2ed14598bf88f4

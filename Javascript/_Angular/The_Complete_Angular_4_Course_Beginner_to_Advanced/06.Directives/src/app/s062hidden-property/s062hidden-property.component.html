@@ -1,0 +1,10 @@
+<!-- 4rd Approach (Property binding - hidden attribute)-->
+<!-- elements in the dom is hidden, not removed => takes memory => not best for large trees -->
+<!-- ----------------------------- -->
+<div [hidden]="courses.length === 0">
+    <b>List of Courses:</b>
+    <div *ngFor="let course of courses, let index;">Course: {{index}}</div>
+  </div>
+  <div [hidden]="courses.length > 0">
+    No courses yet!
+  </div>

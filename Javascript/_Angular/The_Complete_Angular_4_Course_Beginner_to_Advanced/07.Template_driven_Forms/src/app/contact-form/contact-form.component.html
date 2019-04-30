@@ -1,0 +1,105 @@
+<form #form="ngForm"
+      (ngSubmit)="submit(form, submitButton)">
+
+  <!-- Input Field -->
+  <!-- ------------------ -->
+  <div ngModelGroup="contact"
+       #contact="ngModelGroup">
+    <!-- <div *ngIf="!contact.valid"></div> -->
+    <div class="form-group">
+      <label for="comment">First Name</label>
+      <input ngModel
+             name="firstName"
+             #firstName="ngModel"
+             (change)="log(firstName)"
+             required
+             minlength="3"
+             maxlength="10"
+             pattern="[a-zA-Z]+"
+             type="text"
+             id="comment"
+             class="form-control">
+      <div class="alert alert-danger"
+           *ngIf="firstName.touched && !firstName.valid">
+        <div *ngIf="firstName?.errors.required">First Name is required</div>
+        <div *ngIf="firstName?.errors.minlength">
+          First Name should be at least
+          {{firstName?.errors.minlength.requiredLength}}
+          characters long
+        </div>
+        <div *ngIf="firstName?.errors.pattern">
+          First Name should consist of letters only
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Textarea -->
+  <!-- ------------------ -->
+  <div class="form-group">
+    <label for="comment">Comment</label>
+    <textarea ngModel
+              name="comment"
+              id="comment"
+              cols="30"
+              rows="10"
+              class="form-control"></textarea>
+  </div>
+
+  <!-- Radio Buttons -->
+  <!-- ------------------ -->
+  <div class="radio"
+       *ngFor="let contactMethodRadio of contactMethodsList">
+    <label>
+      <input ngModel
+             required
+             type="radio"
+             name="contactMethodRadio"
+             [value]="contactMethodRadio.id">
+      {{contactMethodRadio.name}}
+    </label>
+  </div>
+
+  <!-- Droplist -->
+  <!-- ------------------ -->
+  <div class="form-group">
+    <label for="contactMethodSelect"></label>
+    <!-- for single selection remove multiple -->
+    <select multiple
+            ngModel
+            name="contactMethodSelect"
+            required
+            id="contactMethodSelect"
+            class="form-control">
+      <option value="">...</option>
+      <!-- getting entire object {id:1, name:Phone} -->
+      <!-- <option *ngFor="let contactMethod of contactMethodsList"
+              [ngValue]="contactMethod"> -->
+
+      <option *ngFor="let contactMethodSelect of contactMethodsList"
+              [value]="contactMethodSelect.id">
+        {{contactMethodSelect.name}}
+      </option>
+    </select>
+  </div>
+
+  <!-- Checkbox -->
+  <!-- ------------------ -->
+  <div class="checkbox">
+    <label for="">
+      <input ngModel
+             name="isSubscribed"
+             type="checkbox"> Subscribe to mailing list
+    </label>
+  </div>
+
+  <!-- For Debugging only -->
+  <!-- ------------------ -->
+  <div style="background: rgb(247, 149, 149); padding:10px "
+       *ngIf="form.dirty">
+    <p>For Development Environment only:</p>
+    <p> {{form.value | json}}</p>
+  </div>
+  <button class="btn btn-primary"
+          [disabled]="!form.valid">Submit</button>
+</form>

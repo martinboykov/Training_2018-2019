@@ -1,0 +1,25 @@
+GET http://127.0.0.1:3000/api/movies
+
+GET http://127.0.0.1:3000/api/movies/5b8d06ce1d8c932fd4106ba4
+
+POST http://127.0.0.1:3000/api/movies
+content-type: application/json
+
+{
+    "title": "The Notebook",
+    "genre": {
+        "name": "Romance"
+    },
+    "numberInStock": 7,
+    "dailyRentalRate": 38
+}
+
+
+PUT http://127.0.0.1:3000/api/movies/5b8d07641d8c932fd4106ba9
+content-type: application/json
+
+{
+    "title": "Updated"
+}
+
+DELETE http://127.0.0.1:3000/api/movies/5b8d0813020201091404adbe

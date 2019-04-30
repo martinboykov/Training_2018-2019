@@ -1,0 +1,147 @@
+@import './reset.scss';
+$primary-color: #507ec4;
+$font-color: #272726;
+:root {
+    --cube-color: white;
+}
+// $cube-one-color:#306343;
+html {
+    height: 100%;
+}
+
+body {
+    height: 100%; // background: $font-color;
+}
+
+.header {
+    height: 13.5625rem;
+    color: white;
+    background: $primary-color;
+    font-size: 1rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: flex-end;
+    h1 {
+        font-size: 5.325rem;
+        margin-bottom: 0.5rem;
+    }
+    h2 {
+        font-size: 2.675rem;
+    }
+    h2:nth-child(3) {
+        margin-bottom: 0.7rem;
+    }
+}
+
+.nav {
+    height: 2.25rem;
+    width: 48.7rem;
+    margin: 0 auto;
+    background: white;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-content: center;
+    justify-content: space-between;
+    &-left,
+    &-right {
+        display: inline-block;
+        a {
+            text-decoration: none;
+            display: inline-block;
+            padding: 0 1.0rem;
+            line-height: 2.25rem;
+        }
+        h3 {
+            font-size: 1.275rem;
+            font-weight: 700;
+        }
+        &__new--colors {
+            color: $primary-color;
+        }
+    }
+    &-right {
+        &__easy,
+        &__hard {
+            color: $primary-color;
+            &.highlighted {
+                background: $primary-color;
+                color: white;
+                margin-right: 1rem;
+            }
+        }
+    }
+}
+
+.main {
+    height: calc(100% - 13.5625rem - 2.25rem);
+    background: $font-color;
+    .container {
+        width: 48.7rem;
+        margin: 0 auto;
+        padding-top: 34px;
+        display: grid;
+        grid-template-columns: repeat(3, 246px);
+        grid-template-rows: repeat(3, 220px);
+        grid-column-gap: 23px;
+        grid-row-gap: 22px;
+
+        [class*='cube'] {
+            border: none;
+            outline: none;
+            border-radius: 40px;
+            background: $font-color;
+            font-size: 1.5rem;
+            // &>* {
+            //     animation: scale-text 400ms 0.1ms 4 ease-in-out none;
+            // }
+                .text-animation{
+                    animation: scaling 400ms 0.1ms infinite ease-in-out none;
+                }
+        }
+        [class*='cube']:active,
+        [class*='cube']:hover {
+
+            // background: lighten($color: $cube-one-color, $amount: 25%)
+            animation: wiggle 400ms 0.1ms 4 ease-in-out none;
+        }
+    }
+}
+
+@keyframes wiggle {
+    0% {
+        transform: rotateZ(0deg);
+    }
+    25% {
+        transform: rotateZ(-5deg);
+    }
+    50% {
+        transform: rotateZ(-10deg);
+    }
+    75% {
+        transform: rotateZ(5deg);
+    }
+    100% {
+        transform: rotateZ(10deg);
+    }
+}
+
+@keyframes scaling {
+    0% {
+        transform: scale(1.05);
+    }
+    25% {
+        transform: scale(1.1);
+    }
+    50% {
+        transform: scale(1.15);
+    }
+    75% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1.05);
+    }
+}

@@ -1,0 +1,76 @@
+<%- include('../includes/head.ejs') %>
+<link rel="stylesheet"
+      href="/css/main.css">
+<link rel="stylesheet"
+      href="/css/forms.css">
+<link rel="stylesheet"
+      href="/css/auth.css">
+</head>
+
+<%- include('../includes/header.ejs') %>
+
+<main>
+  <form class="login-form"
+        action="/signup"
+        method="POST"
+        novalidate>
+    <div class="form-control">
+      <label for="username">Username</label>
+      <input type="text"
+             name="username"
+             id="username"
+             value="<%= oldInput.username %>"
+             class="<%= validationErrors.find((obj) => obj.param === 'username') ? 'invalid' : '' %>">
+    </div>
+    <% if(errorMessageUsername) { %>
+    <div class="user-message user-message--error">
+      <%= errorMessageUsername %>
+    </div>
+    <% } %>
+    <div class="form-control">
+      <label for="email">E-Mail</label>
+      <input type="email"
+             name="email"
+             id="email"
+             value="<%= oldInput.email %>"
+             class="<%= validationErrors.find((obj) => obj.param  === 'email') ? 'invalid' : '' %>">
+    </div>
+    <% if(errorMessageUserAlreadyExist) { %>
+    <div class="user-message user-message--error">
+      <%= errorMessageUserAlreadyExist %>
+    </div>
+    <% } %>
+    <div class="form-control">
+      <label for="password">Pasword</label>
+      <input type="password"
+             name="password"
+             id="password"
+             value="<%= oldInput.password %>"
+             class="<%= validationErrors.find((obj) => obj.param === 'password') ? 'invalid' : '' %>">
+    </div>
+    <% if(errorMessagePassword) { %>
+    <div class="user-message user-message--error">
+      <%= errorMessagePassword %>
+    </div>
+    <% } %>
+    <div class="form-control">
+      <label for="password">Confirm Pasword</label>
+      <input type="password"
+             name="passwordConfirm"
+             id="password"
+             value="<%= oldInput.passwordConfirm %>"
+             class="<%= validationErrors.find((obj) => obj.param === 'passwordConfirm') ? 'invalid' : '' %>">
+    </div>
+    <% if(errorMessagePasswordConfirm) { %>
+    <div class="user-message user-message--error">
+      <%= errorMessagePasswordConfirm %>
+    </div>
+    <% } %>
+    <input type="hidden"
+           name="_csrf"
+           value="<%= csrfToken %>">
+    <button type="submit"
+            class="btn">Signup</button>
+  </form>
+</main>
+<%- include('../includes/footer.ejs') %>

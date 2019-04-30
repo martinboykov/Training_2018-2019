@@ -1,0 +1,19 @@
+mat-card {
+    width: 100%;
+    margin: auto;
+}
+
+mat-form-field,
+textarea {
+    width: 100%;
+}
+/*
+textarea {
+    border: 1px solid gray  ;
+    border-color: rgba(128, 128, 128, 0.3);
+    border-bottom: 0;
+} */
+
+mat-error{
+  margin-bottom: 15px;
+}

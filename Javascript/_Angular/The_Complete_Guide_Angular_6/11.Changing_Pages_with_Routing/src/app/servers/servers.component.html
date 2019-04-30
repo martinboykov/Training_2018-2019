@@ -1,0 +1,43 @@
+<div class="row">
+  <div class="col-xs-12" *ngIf="isActive">
+    <table class="table table-condensed">
+      <tr class="active">
+        <th>ID</th>
+        <th>Name</th>
+        <th>Status</th>
+        <th></th>
+      </tr>
+      <tr *ngFor="let server of servers"
+          class="success">
+        <td>{{ server?.id }}</td>
+        <td>
+          <!-- <a [routerLink]="[ '/servers', server.id ]"
+          [queryParams]="{allowEdit: '1'}"
+          fragment="loading" >
+            {{ server?.name }}
+          </a> -->
+          <a (click)="navigateToServer(server)"
+          (click)="changeActiveState()">
+            {{ server?.name }}
+          </a>
+        </td>
+        <td>{{ server?.status }}</td>
+        <td>
+          <a [routerLink]="['/servers', server?.id, 'edit']"
+          (click)="changeActiveState()">
+            edit
+          </a>
+        </td>
+      </tr>
+    </table>
+  </div>
+  <!-- <div class="col-xs-12 col-sm-4">
+    <app-edit-server [server]="server"></app-edit-server>
+    <hr>
+    <app-server [server]="server"></app-server>
+  </div> -->
+  <div class="col-xs-12">
+    <router-outlet ></router-outlet>
+  </div>
+
+</div>

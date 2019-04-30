@@ -1,0 +1,31 @@
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a href="./"
+         class="navbar-brand">Recipe Book</a>
+    </div>
+    <div class="default navbar-default">
+      <ul class="nav navbar-nav">
+        <!-- setting Recipes/Shopping List as string value -->
+        <li><a href="#"
+             (click)="onRouting('Recipes')">Recipes</a></li>
+        <li><a href="#"
+             (click)="onRouting('Shopping List')">Shopping List</a></li>
+        <!-- SECOND OPTION
+        <li><a href="#" #recipeRouter (click)="onRoutRecipe(recipeRouter)">Recipes</a></li>
+        <li><a href="#" #ShoppingListRouter (click)="onRoutShoppingList(ShoppingListRouter)">Shopping List</a></li> -->
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li class="dropdown" appDropdown>
+          <a href="#"
+             class="dropdown-toggle"
+             role="button">Menage <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Save Data</a></li>
+            <li><a href="#">Fetch Data</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>

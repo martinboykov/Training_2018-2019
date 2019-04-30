@@ -1,0 +1,14 @@
+[
+  {
+    "title": "A",
+    "imageUrl": "../img/book-1228040_640.png",
+    "description": "Very interesting Book!",
+    "price": "5"
+  },
+  {
+    "title": "B",
+    "imageUrl": "../img/book-1228040_640.png",
+    "description": "Other good book!",
+    "price": "5.32"
+  }
+]

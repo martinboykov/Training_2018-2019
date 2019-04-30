@@ -1,0 +1,108 @@
+<!-- Custom Pipe -->
+<h2><u>Custom Pipe</u></h2>
+{{longText | summary:10}}
+<hr />
+
+<!-- Pipes -->
+<h2><u>Pipes</u></h2>
+{{course.title | uppercase}} <br>
+{{course.students | number}} <br>
+{{course.rating | number:'1.2-3'}} <br>
+{{course.price | currency:'AUD'}} <br>
+{{course.releaseDate | date: 'longDate'}}
+<hr />
+
+<!-- Two-way Binding -->
+<h2><u>Two-way Binding</u></h2>
+<input type="text"
+       class="form-control"
+       [value]="variableValue"
+       (keyup.enter)="variableValue = $event.target.value;
+       onKeyUpTwoWay()">
+<br>
+<!-- same as ngModel, which contains the code above inside of it -->
+<!-- ngModel is part of Forms module, therefore FormsModule must be imported in (App or Other)Module -->
+<input type="text"
+       class="form-control"
+       [(ngModel)]="variableValue"
+       (keyup.enter)="onKeyUpTwoWay()">
+<hr />
+
+<!-- Template Variables -->
+<h2><u>Template Variable</u></h2>
+<!-- 1st Approach: getting the value when enter is pressed -->
+<label for="1st Approach">1st Approach</label>
+<input type="text"
+       class="form-control"
+       (keyup.enter)="onKeyUpValueOne($event)">
+<!-- 2nd Approach: getting the value when enter is pressed -->
+<label for="2nd Approach">2nd Approach</label>
+<input type="text"
+       class="form-control"
+       #variable
+       (keyup.enter)="onKeyUpValueTwo(variable.value)">
+<hr />
+
+<!-- Event Filtering -->
+<h2><u>Event Filtering</u></h2>
+<input type="text"
+       class="form-control"
+       (keyup.enter)="onKeyUp($event)">
+<!-- keyup.enter ==> fires up only when user pressees enter -->
+<hr />
+
+<!-- Event Binding -->
+<!-- HTML DOM Events https://www.w3schools.com/jsref/dom_obj_event.asp -->
+<h2><u>Event Binding</u></h2>
+<button class="btn btn-primary"
+        (click)="onSave()">Save</button>
+<br><br>
+
+<!-- Event Bubbling -->
+<div (click)="onDivClicked()">
+  <button class="btn btn-primary"
+          (click)="passEvent($event)">Pass event</button>
+</div>
+<hr />
+
+<!-- Stylle Binding -->
+<!-- DOM style object properties https://www.w3schools.com/jsref/dom_obj_style.asp -->
+<h2> <u>Style Binding</u> </h2>
+<button class="btn btn-primary"
+        [style.backgroundColor]="isActive ? 'blue' : 'white'">Style Binding</button>
+<hr />
+
+<!-- class Binding -->
+<h2> <u>Class Binding</u> </h2>
+<button class="btn btn-primary"
+        [class.active]="isActive">Save</button>
+<!-- if isActive is true, button is set with additional class - "active" -->
+<!-- if isActive is false, button is set with only classes - "btn btn-primary" -->
+<hr />
+
+<!--  property binding and string interpoation -->
+<h2><u>Property Binding and String Interpoation</u></h2>
+<h4>{{title}}</h4>
+<h4 [textContent]="title"></h4>
+<img src="{{ imageUrl }}" />
+<img [src]="imageUrl" />
+<table>
+  <tr>
+    <!--  there is no DOM attribute colspan, so we are using attr selector
+   in order to access the colspan html attribute  -->
+    <!-- In the HTML DOM, the Attr object represents an HTML attribute. -->
+    <!-- ------------------------------------------------------- -->
+    <!--  Some DOM attributes doesnt have represantation in HTML (tectContent, innerHTML, innerText etc.) -->
+    <td [attr.colspan]="2">&#9760;</td>
+    <td>&#9760;</td>
+  </tr>
+  <tr>
+    <td [attr.colspan]="2">&#9749;</td>
+    <td>&#9749;</td>
+  </tr>
+  <tr>
+    <td>&#9786;</td>
+    <td>&#9786;</td>
+    <td>&#9786;</td>
+  </tr>
+</table>

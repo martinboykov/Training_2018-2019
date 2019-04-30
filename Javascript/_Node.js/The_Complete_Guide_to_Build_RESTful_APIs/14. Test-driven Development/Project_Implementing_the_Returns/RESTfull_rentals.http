@@ -1,0 +1,29 @@
+GET http://127.0.0.1:3000/api/rentals
+
+POST http://127.0.0.1:3000/api/rentals
+x-auth-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1YjliYjUxYjMxNTRiOTMwODRiNTQyMmUiLCJpc0FkbWluIjp0cnVlLCJpYXQiOjE1MzY5MzQ1MTl9.yDvHnPxDCYC_faKZOf1BqXrSkXhlIMZXOO0aCOu0l3E
+content-type: application/json
+
+{
+    "customerId": "5b9bbc0b273f602c30eb8f34",
+    "movieId":"5b9bb5ee3154b93084b54237"
+}
+
+// For multiple movies
+# POST http://127.0.0.1:3000/api/rentals
+# x-auth-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1YjhmZWYyNzJjMWViNjIwM2M2Mjk3M2UiLCJpYXQiOjE1MzYxNTk1Mjd9.hHKhw12d-3DJmxnZrw-yYRzvoLbPPnyLfBu4HCocMKs
+# content-type: application/json
+
+# {
+#     "customer": {
+#         "_id": "5b8a753458d0c33b10abfe3f"
+#     },
+#     "movies": [
+#         {
+#             "_id":"5b8e43fa92660f51ec53244c"
+#         },
+#         {
+#             "_id":"5b8e440892660f51ec53244d"
+#         }
+#     ]
+# }

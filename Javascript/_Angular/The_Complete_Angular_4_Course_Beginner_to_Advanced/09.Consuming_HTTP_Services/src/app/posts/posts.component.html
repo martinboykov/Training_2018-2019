@@ -1,0 +1,23 @@
+<br>
+<div class="container">
+  <input (keyup.enter)="createPost(title)"
+         #title
+         type="text"
+         class="form-control">
+  <hr>
+  <ul class="list-group">
+    <li *ngFor="let post of posts"
+        class="list-group-item">
+      <div>
+        <p class="bg-success"><b>post.id</b> {{post.id | json}}</p>
+        <p class="bg-success"><b>post.userId:</b> {{post.userId | json}}</p>
+        <p class="bg-info"><b>post.title:</b> {{post.title | json}}</p>
+        <p class="bg-warning"><b>post.body:</b> {{post.body | json}}</p>
+        <button (click)="updatePost(post)"
+        class="btn btn-default btn-sm">Update</button>
+        <button (click)="deletePost(post)"
+        class="btn btn-danger btn-sm">Delete</button>
+      </div>
+    </li>
+  </ul>
+</div>

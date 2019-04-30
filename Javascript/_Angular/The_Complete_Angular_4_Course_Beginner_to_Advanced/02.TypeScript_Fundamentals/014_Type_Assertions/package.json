@@ -1,0 +1,16 @@
+{
+  "name": "011_Your_First_TypeScript_Program",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "start": "nodemon ./js/main.js",
+    "tsc:watch": "tsc -w -p ."
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "tsc-watch": "^1.0.29"
+  }
+}

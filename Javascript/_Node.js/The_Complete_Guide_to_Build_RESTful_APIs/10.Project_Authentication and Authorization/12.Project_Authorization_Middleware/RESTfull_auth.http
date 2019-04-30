@@ -1,0 +1,9 @@
+POST http://127.0.0.1:3000/api/auth
+content-type: application/json
+
+{
+    "email": "pesho@abv.bg",
+    "password": "123456"
+}
+
+

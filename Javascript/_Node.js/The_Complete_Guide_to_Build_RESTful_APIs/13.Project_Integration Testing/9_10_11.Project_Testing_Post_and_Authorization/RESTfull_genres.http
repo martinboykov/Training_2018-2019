@@ -1,0 +1,23 @@
+
+GET http://127.0.0.1:3000/api/genres
+
+GET http://127.0.0.1:3000/api/genres/5b894cfce35cbc3318c66697
+
+POST http://127.0.0.1:3000/api/genres
+x-auth-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1YjhmZWYyNzJjMWViNjIwM2M2Mjk3M2UiLCJpYXQiOjE1MzYxNTk1Mjd9.hHKhw12d-3DJmxnZrw-yYRzvoLbPPnyLfBu4HCocMKs
+content-type: application/json
+
+{
+    "name": "Test1"
+}
+
+PUT http://127.0.0.1:3000/api/genres/5b8ffb78f5aaac4e707e88d5
+x-auth-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1YjhmZWYyNzJjMWViNjIwM2M2Mjk3M2UiLCJpYXQiOjE1MzYxNTk1Mjd9.hHKhw12d-3DJmxnZrw-yYRzvoLbPPnyLfBu4HCocMKs
+content-type: application/json
+
+{
+    "name": "Updated"
+}
+
+DELETE http://127.0.0.1:3000/api/genres/5b900664e2942b125c926e3a
+x-auth-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1YjhlYThhZTgxMDMyODQyNzhhNzFlMzYiLCJpc0FkbWluIjp0cnVlLCJpYXQiOjE1MzYxNjU0MTd9.ZRP0CbMzMsg7Pf3aEzgjgi48g1cvqHWZtMqtHmhPiRA

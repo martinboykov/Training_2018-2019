@@ -1,0 +1,33 @@
+
+# Admin
+GET http://127.0.0.1:3000/api/users
+x-auth-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1YjlhZGJiYzk4ODU4YTMzZjQ5ZWMzMTgiLCJpc0FkbWluIjpmYWxzZSwiaWF0IjoxNTM2ODc1NDk4fQ.tAMZNcCLz_2kjEbPAv0ZqbkRV1ER2-v2UiHycP2abd8
+
+GET http://127.0.0.1:3000/api/users/id/5b8ea8b48103284278a71e37
+x-auth-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1YjhlYThhZTgxMDMyODQyNzhhNzFlMzYiLCJpc0FkbWluIjp0cnVlLCJpYXQiOjE1MzYyNDY2NDN9.sf3Sz589HDCvFbzYHIDz4AUum0wB3vLpCeJBTC3LC5c
+
+GET http://127.0.0.1:3000/api/users/me
+x-auth-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1YjhlYThhZTgxMDMyODQyNzhhNzFlMzYiLCJpc0FkbWluIjp0cnVlLCJpYXQiOjE1MzYyNDY2NDN9.sf3Sz589HDCvFbzYHIDz4AUum0wB3vLpCeJBTC3LC5c
+
+# regular user
+GET http://127.0.0.1:3000/api/users
+x-auth-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1YjlhZGJiYzk4ODU4YTMzZjQ5ZWMzMTgiLCJpc0FkbWluIjpmYWxzZSwiaWF0IjoxNTM2ODc1NTMxfQ.JhQD5U9XizbjEnVWoNaev22AdSGuoSzIzX2GTHWBvtQ
+
+GET http://127.0.0.1:3000/api/users/id/5b8ea8b48103284278a71e37
+x-auth-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1YjhlYmVmZTQ2MjQ2YzNhYzg1N2JkZjgiLCJpc0FkbWluIjpmYWxzZSwiaWF0IjoxNTM2MjQ1OTE5fQ.ilrwmTqCoe8c0IO_5zwQIb2tAtabEeXSV1c-81zfpJ8
+
+GET http://127.0.0.1:3000/api/users/me
+x-auth-token:  eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1YjlhZGJiYzk4ODU4YTMzZjQ5ZWMzMTgiLCJpc0FkbWluIjpmYWxzZSwiaWF0IjoxNTM2ODc1NTMxfQ.JhQD5U9XizbjEnVWoNaev22AdSGuoSzIzX2GTHWBvtQ
+
+
+
+POST http://127.0.0.1:3000/api/users
+content-type: application/json
+
+{
+    "name": "Gosho",
+    "email": "gosho@abv.bg",
+    "password": "123456"
+}
+
+

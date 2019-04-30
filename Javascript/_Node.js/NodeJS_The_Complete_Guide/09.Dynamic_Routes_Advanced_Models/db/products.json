@@ -1,0 +1,30 @@
+[
+  {
+    "title": "A",
+    "imageUrl": "../img/book-1228040_640.png",
+    "description": "Other good book!",
+    "price": "3.99",
+    "id": "817908430981"
+  },
+  {
+    "title": "B",
+    "imageUrl": "../img/book-1228040_640.png",
+    "description": "Another good book!",
+    "price": "23.99",
+    "id": "117908430981"
+  },
+  {
+    "title": "C",
+    "imageUrl": "../img/book-1228040_640.png",
+    "description": "Another good book!",
+    "price": "13.99",
+    "id": "317908430981"
+  },
+  {
+    "title": "D",
+    "imageUrl": "../img/book-1228040_640.png",
+    "description": "Another good book!",
+    "price": "5.99",
+    "id": "617908430981"
+  }
+]

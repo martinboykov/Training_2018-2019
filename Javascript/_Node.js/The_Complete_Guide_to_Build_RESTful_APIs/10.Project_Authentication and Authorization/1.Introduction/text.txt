@@ -1,0 +1,12 @@
+/api/genres
+/api/movies
+/api/customers
+/api/rentals
+
+Authentication
+Authorization
+
+Register: POST /api/users { name,email:{type:String, unique:true},password }
+
+Login: POST /api/logins -
+treat it as Login recourse and use post to create it

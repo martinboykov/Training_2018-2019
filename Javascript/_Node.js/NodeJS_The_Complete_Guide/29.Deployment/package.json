@@ -1,0 +1,37 @@
+{
+  "name": "NoSQL",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "engines": {
+    "node": "v8.12.0"
+  },
+  "scripts": {
+    "start": "set NODE_ENV=production&&set MONGO_USER=martinboykov&&set MONGO_PASSWORD=TheCatCharli995511&&set  MONGO_DEFAULT_DATABASE=test&&set SESSION_SECRET=my secret&&set SENDGRID_KEY=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&& node app.js",
+    "start-server": "node app.js",
+    "start:dev": "nodemon app.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@types/sequelize": "^4.27.30",
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.18.3",
+    "compression": "^1.7.3",
+    "connect-flash": "^0.1.1",
+    "connect-mongodb-session": "^2.0.5",
+    "csurf": "^1.9.0",
+    "ejs": "^2.6.1",
+    "express": "^4.16.4",
+    "express-session": "^1.15.6",
+    "express-validator": "^5.3.0",
+    "helmet": "^3.15.0",
+    "mongodb": "^3.1.10",
+    "mongoose": "^5.3.13",
+    "morgan": "^1.9.1",
+    "multer": "^1.4.1",
+    "nodemailer": "^4.7.0",
+    "nodemailer-sendgrid-transport": "^0.2.0"
+  }
+}

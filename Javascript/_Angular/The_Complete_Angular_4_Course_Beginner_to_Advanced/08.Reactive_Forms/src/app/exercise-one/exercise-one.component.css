@@ -1,0 +1,16 @@
+.form-control.ng-touched.ng-invalid{
+  border: 1px solid red;
+}
+.form-control.ng-touched.ng-valid{
+  border: 1px solid green;
+}
+/* .debugging{
+  background: rgb(255, 114, 114);
+  color: aliceblue;
+  border-radius: 15px;
+  padding: 15px 10px 5px 15px;
+  margin: 10px;
+} */
+.btn-reset{
+  margin-left: 10px;
+}

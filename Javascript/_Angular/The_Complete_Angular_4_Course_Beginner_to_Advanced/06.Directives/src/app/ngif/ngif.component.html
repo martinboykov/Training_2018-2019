@@ -1,0 +1,35 @@
+<!-- 1st Approach -->
+<!-- ngIf is not best solution if the DOM tree that is generated is big
+  and is toggled on and of (takes too much recourses to generate and destroy over and over aggain) -->
+<!-- ----------------------------- -->
+<!-- <div *ngIf="courses">
+  <b>List of Courses:</b>
+  <div *ngFor="let course of courses, let index;">Course: {{index}}</div>
+</div>
+<div *ngIf="!courses">
+  No courses yet!
+</div> -->
+
+<!-- 2nd Approach -->
+<!-- ngIf is not best solution if the DOM tree that is generated is big
+  and is toggled on and of (takes too much recourses to generate and destroy over and over aggain) -->
+<!-- ----------------------------- -->
+<!-- <div *ngIf="courses.length > 0; else noCourses"></div>
+<b>List of Courses:</b>
+<div *ngFor="let course of courses, let index;">Course: {{index}}</div>
+<ng-template #noCourses>
+  No courses yet!
+</ng-template> -->
+
+<!-- 3rd Approach -->
+<!-- ngIf is not best solution if the DOM tree that is generated is big
+  and is toggled on and of (takes too much recourses to generate and destroy over and over aggain) -->
+<!-- ----------------------------- -->
+<div *ngIf="courses.length > 0; then coursesList else noCourses"></div>
+<ng-template #coursesList>
+  <b>List of Courses:</b>
+  <div *ngFor="let course of courses, let index;">Course: {{index}}</div>
+</ng-template>
+<ng-template #noCourses>
+  No courses yet!
+</ng-template>

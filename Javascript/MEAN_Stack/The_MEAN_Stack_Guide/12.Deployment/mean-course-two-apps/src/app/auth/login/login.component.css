@@ -1,0 +1,25 @@
+mat-card {
+  width: 100%;
+  margin: auto;
+}
+
+mat-form-field,
+textarea {
+  width: 100%;
+}
+
+mat-error {
+  margin-bottom: 15px;
+}
+
+mat-spinner {
+  margin: auto;
+}
+
+.dev-check {
+  border-radius: 15px;
+  margin-top: 15px;
+  padding: 10px 10px 2px 15px;
+  color: gray;
+  font-style: italic;
+}

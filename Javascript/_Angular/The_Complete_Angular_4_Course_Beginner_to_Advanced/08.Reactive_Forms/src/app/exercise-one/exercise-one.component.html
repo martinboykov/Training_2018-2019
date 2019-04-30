@@ -1,0 +1,74 @@
+<form [formGroup]="form"
+      (ngSubmit)="onFormSubmit()">
+  <div class="form-group">
+    <label for="firstname">Firstname</label>
+    <input formControlName="firstname"
+           type="text"
+           id="firstname"
+           name="firstname"
+           class="form-control">
+    <div *ngIf="form.pending">
+      checking validity...
+    </div>
+    <div *ngIf="firstname.invalid && (firstname.dirty || firstname.touched)"
+         class="alert alert-danger">
+      <div *ngIf="!!firstname.errors.required">
+        Firstname is required!
+      </div>
+      <div *ngIf="!!firstname.errors.minlength">
+        Firstname must be atleast
+        {{firstname.errors['minlength'].requiredLength}}
+        characters long!
+      </div>
+      <div *ngIf="!!firstname.errors.maxlength">
+        Firstname must be not more than
+        {{firstname.errors['maxlength'].requiredLength}}
+        characters long!
+      </div>
+      <div *ngIf="!!firstname.errors.invalidFirstname">
+        Firstname cannot contain vulgar word such as:
+        {{firstname.errors['invalidFirstname']}}
+      </div>
+      <div *ngIf="!!firstname.errors.nameIsTaken">
+        This firstname is already taken
+      </div>
+
+    </div>
+  </div>
+  <div class="alert alert-warning">
+    <p><b><u>Debugging</u></b></p>
+    <ul>
+      <li>Form values:</li>
+      <ul>
+        <li>
+          <p>{{form.value | json}}</p>
+        </li>
+      </ul>
+    </ul>
+    <ul>
+      <li>Errors:</li>
+      <ul>
+        <li>
+          <p>{{firstname.errors | json}}</p>
+        </li>
+      </ul>
+    </ul>
+    <ul>
+      <li>Form status:
+        <ul>
+          <li>
+            <p>{{form.status}}</p>
+          </li>
+        </ul>
+      </li>
+    </ul>
+
+
+
+  </div>
+  <button [disabled]="!form.valid"
+          class="btn btn-primary">Submit</button>
+  <button (click)="onFormReset()"
+          type="button"
+          class="btn btn-alert btn-reset">Reset</button>
+</form>

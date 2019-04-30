@@ -1,0 +1,6 @@
+node_modules/
+coverage/
+RESTfull_APIs/
+_DONE
+.eslintignore
+.eslintrc.js

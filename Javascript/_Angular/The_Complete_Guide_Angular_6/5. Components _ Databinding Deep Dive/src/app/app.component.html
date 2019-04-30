@@ -1,0 +1,30 @@
+<div class="container">
+  <!-- Output (Upwards) -->
+  <!-- from is always on left - ChildComponent -->
+  <!-- to (destination) is always on right - ParentComponent -->
+  <app-cockpit (serverCreated)="onServerAdded($event)"
+               (blueprintCreated)="onBlueprintAdded($event)"></app-cockpit>
+  <hr>
+  <div class="row">
+    <div class="col-xs-12">
+
+      <!-- Input (Downwards) -->
+      <!-- from is always on left - ParentComponent -->
+      <!-- to (destination) is always on right - ChildComponent -->
+      <app-server-element *ngFor="let serverElement of serverElements;let i = index"
+                          [srvElement]="serverElement"
+                          [version]="serverElementVersion"
+                          (changesCount)="onChangeActivated($event, i)"
+                          (destroydServer)="onDestroyActivated($event, i)"
+                          >
+        <p #contentParagraph>
+          <strong *ngIf="serverElement.type === 'server'"
+                  style="color: red">{{ serverElement.content }}</strong>
+          <strong *ngIf="serverElement.type === 'blueprint'"
+                  style="color: blue">{{ serverElement.content }}</strong>
+      <em *ngIf="serverElement.version"> - Version: {{serverElement.version}}</em>
+        </p>
+      </app-server-element>
+    </div>
+  </div>
+</div>

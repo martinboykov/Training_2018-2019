@@ -1,0 +1,54 @@
+<h2>Signup</h2>
+<mat-card>
+  <mat-spinner *ngIf="isLoading"></mat-spinner>
+  <form [formGroup]="form"
+        (ngSubmit)="onSignup()"
+        *ngIf="!isLoading">
+    <mat-form-field>
+      <input formControlName="name"
+             matInput
+             type="name"
+             placeholder="Post name">
+    </mat-form-field>
+    <mat-error *ngIf="name.touched && nameErrorRequired">Please provide an name</mat-error>
+    <mat-error *ngIf="name.touched && nameErrorLength">Please provide a password between 2 and 50 characters</mat-error>
+    <br>
+    <mat-form-field>
+      <input formControlName="email"
+             matInput
+             type="email"
+             placeholder="Post email">
+    </mat-form-field>
+    <mat-error *ngIf="email.touched && emailErrorRequired">Please provide an email</mat-error>
+    <mat-error *ngIf="email.touched && emailErrorValidEmail">Please provide a valid email</mat-error>
+    <br>
+    <mat-form-field>
+      <input formControlName="password"
+             matInput
+             type="password"
+             placeholder="Post password">
+    </mat-form-field>
+    <mat-error *ngIf="password.touched && passwordErrorRequired">Please provide a password</mat-error>
+    <mat-error *ngIf="password.touched && passwordErrorLength">Please provide a password between 3 and 50 characters</mat-error>
+    <br>
+    <!-- <p><a [routerLink]="['/signup']"
+         routerLinkActive="router-link-active">Please signup,If you haven't registered yet!</a></p> -->
+    <button [disabled]="!form.valid"
+            mat-raised-button
+            color="primary"
+            type="submit">Signup</button>
+  </form>
+  <div class="dev-check">
+    <p>Form Status: {{ form.status }}</p>
+    <p>Form Values: {{ form.value | json}}</p>
+    <p>Errors:</p>
+    <ul>
+      <li>
+        <p>Title Errors: {{ email.errors | json}}</p>
+      </li>
+      <li>
+        <p>Content Errors: {{ password.errors | json}}</p>
+      </li>
+    </ul>
+  </div>
+</mat-card>

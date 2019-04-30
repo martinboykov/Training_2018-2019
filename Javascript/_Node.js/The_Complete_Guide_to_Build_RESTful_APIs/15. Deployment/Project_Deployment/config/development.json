@@ -1,0 +1,6 @@
+{
+    "name": "nodejs-restfull-apis",
+    "mail": {
+        "host": "dev-mail-server"
+    }
+}

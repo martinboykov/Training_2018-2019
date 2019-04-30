@@ -1,0 +1,45 @@
+{
+    [Function: require]
+    resolve: [Function: resolve],
+    main: Module {
+            id: '.',
+                exports: { },
+            parent: null,
+                filename: 'D:\\Programing\\Video_Tutorials\\_MY_TRAINING\\Javascript\\_Node.js\\The Complete Guide to Build RESTful APIs_2018\\6. Module Wrapper Function\\app.js',
+                    loaded: false,
+                        children: [[Object]],
+                            paths:
+            ['D:\\Programing\\Video_Tutorials\\_MY_TRAINING\\Javascript\\_Node.js\\The Complete Guide to Build RESTful APIs_2018\\6. Module Wrapper Function\\node_modules',
+              'D:\\Programing\\Video_Tutorials\\_MY_TRAINING\\Javascript\\_Node.js\\The Complete Guide to Build RESTful APIs_2018\\node_modules',
+              'D:\\Programing\\Video_Tutorials\\_MY_TRAINING\\Javascript\\_Node.js\\node_modules',
+                'D:\\Programing\\Video_Tutorials\\_MY_TRAINING\\Javascript\\node_modules',
+                'D:\\Programing\\Video_Tutorials\\_MY_TRAINING\\node_modules',
+                'D:\\Programing\\Video_Tutorials\\node_modules',
+                'D:\\Programing\\node_modules',
+                'D:\\node_modules']
+    },
+    extensions: { '.js': [Function], '.json': [Function], '.node': [Function] },
+    cache:
+    {
+        'D:\Programing\Video_Tutorials\_MY_TRAINING\Javascript\_Node.js\The Complete Guide to Build RESTful APIs_2018\6. Module Wrapper Function\app.js':
+                            Module {
+                               id: '.',
+                                   exports: { },
+                               parent: null,
+                                   filename: 'D:\\Programing\\Video_Tutorials\\_MY_TRAINING\\Javascript\\_Node.js\\The Complete Guide to Build RESTful APIs_2018\\6. Module Wrapper Function\\app.js',
+                                       loaded: false,
+                                           children: [Array],
+                                               paths: [Array]
+        },
+        'D:\Programing\Video_Tutorials\_MY_TRAINING\Javascript\_Node.js\The Complete Guide to Build RESTful APIs_2018\6. Module Wrapper Function\logger.js':
+                            Module {
+                                id: 'D:\\Programing\\Video_Tutorials\\_MY_TRAINING\\Javascript\\_Node.js\\The Complete Guide to Build RESTful APIs_2018\\6. Module Wrapper Function\\logger.js',
+                                    exports: { },
+                                parent: [Object],
+                                    filename: 'D:\\Programing\\Video_Tutorials\\_MY_TRAINING\\Javascript\\_Node.js\\The Complete Guide to Build RESTful APIs_2018\\6. Module Wrapper Function\\logger.js',
+                                        loaded: false,
+                                            children: [],
+                                                paths: [Array]
+        }
+    }
+}

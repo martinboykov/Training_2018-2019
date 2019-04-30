@@ -1,0 +1,4 @@
+{
+    "jwtPrivateKey": "123456",
+    "db": "mongodb://localhost/project-restful-api_tests"
+}

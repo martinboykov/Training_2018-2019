@@ -1,0 +1,39 @@
+<h3>Servers Component here!</h3>
+<label for="Server">Server Name</label>
+<input type="text"
+       class="form-control"
+       (input)="onUpdateServerName($event)"> <!-- event binding -->
+<p>{{serverName}}</p> <!-- string interpolation -->
+
+<label for="Server">Another Server Name</label>
+<input type="text"
+       class="form-control"
+       [(ngModel)]="anotherServerName"> <!-- two-way data binding -->
+<p>{{anotherServerName}}</p> <!-- string interpolation -->
+
+<br>
+<button class="btn btn-primary"
+        [disabled]="!allowNewServer"
+        (click)="onCreateServer()">
+  <span *ngIf="serverCreated">Waiting</span>
+  <span *ngIf="!serverCreated">Add Server </span>
+</button>&nbsp;&nbsp;
+<!-- property binding -->
+<!-- event binding -->
+<span *ngIf="serverCreated; else noServer">{{serverCreationStatus}}</span>
+<ng-template #noServer>
+  <span [innerText]="serverCreationStatus"></span><!-- property binding -->
+</ng-template>
+<br>
+<br>
+<ul>
+  <li *ngFor="let server of servers">
+    <p>{{server}}</p>
+  </li>
+</ul>
+<app-server></app-server>
+
+<!-- // lint error. Style guide accurage usage of components as elements  -->
+<!-- <div app-server></div> -->
+<!-- <div class="app-server"></div> -->
+<!-- <div id="app-server"></div> // not applicable in angular -->

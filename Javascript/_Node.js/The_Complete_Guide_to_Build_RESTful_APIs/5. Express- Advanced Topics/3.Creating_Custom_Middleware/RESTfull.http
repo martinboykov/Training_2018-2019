@@ -1,0 +1,18 @@
+// selece the entire request -> right click (Alt+Ctrl+R) -> send request
+GET http://127.0.0.1:3000/api/courses HTTP/1.1
+
+POST http://127.0.0.1:3000/api/courses HTTP/1.1
+content-type: application/json
+
+{
+    "name": "Node.js"
+}
+
+PUT http://127.0.0.1:3000/api/courses/3 HTTP/1.1
+content-type: application/json
+
+{
+    "name": "new"
+}
+
+DELETE  http://127.0.0.1:3000/api/courses/1 HTTP/1.1

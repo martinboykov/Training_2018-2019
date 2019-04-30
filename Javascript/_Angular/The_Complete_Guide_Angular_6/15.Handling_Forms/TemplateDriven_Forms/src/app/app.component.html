@@ -1,0 +1,96 @@
+<div class="container">
+  <div class="row">
+    <div class="col-xs-12 col-sm-10 col-md-8 col-sm-offset-1 col-md-offset-2">
+      <!-- <form (ngSubmit)="onSubmit(form)"
+      #form> -->
+
+      <!-- ngForm -> get access to the object that Angular set automatically -->
+      <form (ngSubmit)="onSubmit(form)"
+            #form="ngForm">
+        <div id="user-data"
+             ngModelGroup="userData"
+             #userData="ngModelGroup">
+          <div class="form-group">
+            <label for="username">Username</label>
+            <!-- adding ngModel, name, #.... -->
+            <input [(ngModel)]="username"
+                   name="username"
+                   required
+                   type="text"
+                   id="username"
+                   class="form-control">
+          </div>
+          <button (click)="suggestUserName()"
+                  class="btn btn-default"
+                  type="button">Suggest an Username</button>
+          <div class="form-group">
+            <label for="email">Mail</label>
+            <!-- adding also email directive -->
+            <input [(ngModel)]="email"
+                   name="email"
+                   required
+                   email
+                   type="email"
+                   id="email"
+                   class="form-control">
+          </div>
+          <!-- adding also email=ngModel so can access as control below-->
+          <span *ngIf="!userData?.control?.controls?.email?.valid &&
+                        userData?.control?.controls?.email?.touched"
+                class="text-danger">Please enter valid email</span>
+        </div>
+        <p *ngIf="!userData?.valid &&
+                     userData?.touched"
+           class="text-danger">User Data is invalid</p>
+        <div class="form-group">
+          <label for="secret">Secret Questions</label>
+          <!-- using default value with [ngModel] -->
+          <select [ngModel]="defaultQuestion"
+                  #secret
+                  name="secret"
+                  required
+                  id="secret"
+                  class="form-control">
+            <option value="pet">Your first Pet?</option>
+            <option value="teacher">Your first teacher?</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <textarea [(ngModel)]="answer"
+                    name="questionAnswer"
+                    rows="3"
+                    class="form-control"></textarea>
+        </div>
+        <p class="text-info">Your Answer: {{answer}}</p>
+        <div class="radio"
+             *ngFor="let gender of genders">
+          <label>
+            <!-- with [value]="gender" we assign value to the radio buttons -->
+            <!-- (optional)  with [ngModel]="genders[i]" we bind and preselect the value of the radiobuttons -->
+            <input [ngModel]="genders[1]"
+                   [value]="gender"
+                   required
+                   name="gender"
+                   type="radio">
+            {{gender}}
+          </label>
+        </div>
+        <button [disabled]="!form.valid"
+                class="btn btn-primary"
+                type="submit">Submit</button>
+      </form>
+      <hr>
+      <div class="row"
+           *ngIf="submitted">
+        <div class="col-xs-12" style="background: rgb(219, 219, 219)">
+          <h3>Your Data:</h3>
+          <p class="text-primary">Username: {{user.username}}</p>
+          <p class="text-primary">Email: {{user.email}}</p>
+          <p class="text-primary">SecretQuestion: {{user.secretQuestion}}</p>
+          <p class="text-primary">Answer: {{user.answer}}</p>
+          <p class="text-primary">Gender: {{user.gender}}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

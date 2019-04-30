@@ -1,0 +1,17 @@
+IMPORTANT:
+We must do test on clean DB, so we ensure repeatability of the tests
+
+
+1. Populating the db so we know that we get exactly the
+same data from /api/genres
+
+    await Genre.collection.insertMany([
+                { name: 'genre1' },
+                { name: 'genre2' },
+            ]);
+
+2. Cleaning after each test run await
+
+    Genre.remove({});
+
+

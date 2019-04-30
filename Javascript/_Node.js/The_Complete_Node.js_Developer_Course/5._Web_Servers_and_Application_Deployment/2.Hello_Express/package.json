@@ -1,0 +1,20 @@
+{
+  "name": "5._Web_Servers_and_Application_Deployment",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-eslint": "^7.2.3",
+    "eslint": "^3.19.0",
+    "eslint-config-google": "^0.9.1"
+  },
+  "dependencies": {
+    "express": "^4.15.3"
+  }
+}

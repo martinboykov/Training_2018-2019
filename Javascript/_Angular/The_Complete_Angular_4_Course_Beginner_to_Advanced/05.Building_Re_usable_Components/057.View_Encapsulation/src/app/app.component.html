@@ -1,0 +1,22 @@
+<div class="container">
+
+  <app-panel >
+    <!-- by usin ng-container is rendered only the content ("Heading"),
+    without the <element class="heading">...</element> -->
+    <ng-container class="heading">Heading</ng-container>
+    <div class="body">Body</div>
+  </app-panel>
+
+  <!-- if buttonToggleDangerPrimary is registered in favorite.component -->
+  <app-favorite [is-favorite]="post.isFavorite"
+                (change-emitter)="onFavoriteChange($event)"
+                (change-state)="onButtonStateChange($event)"
+                [data-obj]="dataCloned"
+                (submit-data)="onDataSubmit($event)"></app-favorite>
+
+  <!-- if buttonToggleDangerPrimary is registered in app.component -->
+  <!-- <app-favorite [is-favorite]="post.isFavorite"
+              [button-toggle]="buttonToggleDangerPrimary"
+              (change-emitter)="onFavoriteChange($event)"
+              (change-state)="onButtonStateChange($event)"></app-favorite> -->
+</div>

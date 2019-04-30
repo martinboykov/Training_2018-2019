@@ -1,0 +1,18 @@
+html
+    body
+        h1 Rentals
+        ul
+            for rental in rentals
+                li
+                  h2='ID: ' + rental._id
+                  h3='Customer: ' + rental.customer.name
+                  h4='Phone: ' + rental.customer.phone
+                  h3='Movie: ' + rental.movie.title
+                  h4='Rental rate: ' + rental.movie.dailyRentalRate
+                  h3='Date out: ' + rental.dateOut
+                  if rental.dateReturned !== undefined
+                    h3='Date returned: ' + rental.dateReturned
+                  if rental.dateReturned !== undefined
+                    h3='Rental fee: ' + rental.rentalFee
+
+

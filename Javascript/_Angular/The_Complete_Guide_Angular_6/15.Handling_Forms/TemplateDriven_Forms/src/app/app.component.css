@@ -1,0 +1,16 @@
+.container {
+  margin-top: 30px;
+}
+
+div.ng-invalid.ng-touched,
+input.ng-invalid.ng-touched,
+select.ng-valid.ng-touched, {
+  border: 1px solid red;
+  background: red;
+}
+
+div.ng-valid.ng-touched,
+input.ng-valid.ng-touched,
+select.ng-valid.ng-touched {
+  border: 1px solid green;
+}

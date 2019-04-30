@@ -1,0 +1,42 @@
+h1 {
+  color: #000099;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 250%;
+}
+
+ul {
+  list-style-type: none;
+  color: blue;
+}
+
+ul :nth-child(1){
+  color: blue;
+}
+ul :nth-child(2){
+  color: #4d4dff
+}
+ul :nth-child(3){
+  color: #8080ff;
+}
+ul :nth-child(4){
+  color: #ccccff;
+}
+
+.img-circle {
+  padding-top: 0;
+  margin:0;
+  align-content: top;
+}
+.circle {
+  padding: 10px;
+  padding-left: 10px;
+  margin:0;
+}
+.profileLink{
+  margin-left:0;
+  padding-left: 0px;
+}
+.navbar-right{
+  padding-left: 10px;
+  padding-right:30px;
+}

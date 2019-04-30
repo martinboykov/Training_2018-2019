@@ -1,0 +1,6 @@
+<!-- using ngif -->
+<!-- <span *ngIf="task.assignee">{{task.assignee.name}}</span> -->
+
+<!-- using safe traversal operator - ? -->
+<!-- usefull when dealing with complex objects -->
+<span>{{task.assignee?.name}}</span>

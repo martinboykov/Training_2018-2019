@@ -1,0 +1,6 @@
+{
+    "mail": {
+        "password": "project_password"
+    },
+    "jwtPrivateKey": "project_jwtPrivateKey"
+}

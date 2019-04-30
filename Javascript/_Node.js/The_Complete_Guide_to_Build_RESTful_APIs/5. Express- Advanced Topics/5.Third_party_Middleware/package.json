@@ -1,0 +1,18 @@
+{
+  "name": "4.Building_Your_First_Web_Server",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "express": "^4.16.3",
+    "helmet": "^3.13.0",
+    "joi": "13.1.0",
+    "morgan": "^1.9.0"
+  }
+}

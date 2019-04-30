@@ -1,0 +1,10 @@
+GET http://127.0.0.1:3000/api/returns
+
+POST http://127.0.0.1:3000/api/returns
+x-auth-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1YjliYjUxYjMxNTRiOTMwODRiNTQyMmUiLCJpc0FkbWluIjp0cnVlLCJpYXQiOjE1MzY5MzQ1MTl9.yDvHnPxDCYC_faKZOf1BqXrSkXhlIMZXOO0aCOu0l3E
+content-type: application/json
+
+{
+    "customerId": "5b9bbc15273f602c30eb8f36",
+    "movieId":"5b9bb6003154b93084b54238"
+}

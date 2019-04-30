@@ -5,3 +5,5 @@ Git/Git Basics/file_to_untrack_and_ignore.txt
 assets/
 node_modules/
 nodemon.json
+environment.ts
+environment.prod.ts

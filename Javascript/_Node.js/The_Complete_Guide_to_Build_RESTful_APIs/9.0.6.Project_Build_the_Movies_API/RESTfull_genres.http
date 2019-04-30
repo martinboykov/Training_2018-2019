@@ -1,0 +1,19 @@
+GET http://127.0.0.1:3000/api/genres
+
+GET http://127.0.0.1:3000/api/genres/5b894cfce35cbc3318c66697
+
+POST http://127.0.0.1:3000/api/genres
+content-type: application/json
+
+{
+    "name": "Test1"
+}
+
+PUT http://127.0.0.1:3000/api/genres/5b8a86621538051c80fb66f5
+content-type: application/json
+
+{
+    "name": "Updated"
+}
+
+DELETE http://127.0.0.1:3000/api/genres/5b8cfd2094aadf49e07177b7

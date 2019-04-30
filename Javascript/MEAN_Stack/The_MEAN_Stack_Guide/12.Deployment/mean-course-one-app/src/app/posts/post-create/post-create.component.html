@@ -1,0 +1,66 @@
+<h2>Create New Post</h2>
+<mat-card>
+  <mat-spinner *ngIf="isLoading"></mat-spinner>
+  <form [formGroup]="postForm"
+        (ngSubmit)="onSavePost()"
+        *ngIf="!isLoading">
+
+    <!-- image selection -->
+    <div class="image-picker">
+      <button mat-stroked-button
+              (click)="filePicker.click()"
+              type="button">Pick Image
+      </button>
+      <input type="file"
+             (change)="onImagePicked($event)"
+             #filePicker>
+    </div>
+    <div class="image-preview"
+         *ngIf="imagePreview !== '' && imagePreview">
+      <img [src]="imagePreview"
+           [alt]="postForm.value.title">
+    </div>
+    <mat-error *ngIf="image.invalid && imageErrorInvalidMeme">Please provide a valid image</mat-error>
+
+    <mat-form-field>
+      <input formControlName="title"
+             matInput
+             type="text"
+             placeholder="Post Title">
+    </mat-form-field>
+    <!-- <mat-error *ngIf="title.touched && title.invalid">Please provide a title</mat-error> -->
+    <mat-error *ngIf="title.touched && titleErrorRequired">Please provide a title</mat-error>
+    <mat-error *ngIf="title.touched && titleErrorLength">The title must be between 3 and 50 characters</mat-error>
+
+    <mat-form-field>
+      <textarea formControlName="content"
+                matInput
+                placeholder="Post Content"
+                rows="6"></textarea>
+    </mat-form-field>
+    <!-- <mat-error *ngIf="content.touched && content.invalid">Please provide a content</mat-error> -->
+    <mat-error *ngIf="content.touched && contentErrorRequired">Please provide a content</mat-error>
+    <mat-error *ngIf="content.touched && contentErrorLength">The content must be between 3 and 250 characters</mat-error>
+
+    <button [disabled]="!postForm.valid"
+            mat-raised-button
+            color="primary"
+            type="submit">Save Post</button>
+  </form>
+  <div class="dev-check">
+    <p>Form Status: {{ postForm.status }}</p>
+    <p>Form Values: {{ postForm.value | json}}</p>
+    <p>Errors:</p>
+    <ul>
+      <li>
+        <p>Title Errors: {{ title.errors | json}}</p>
+      </li>
+      <li>
+        <p>Content Errors: {{ content.errors | json}}</p>
+      </li>
+      <li>
+        <p>Image Errors: {{ image.errors | json}}</p>
+      </li>
+    </ul>
+  </div>
+</mat-card>

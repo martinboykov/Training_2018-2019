@@ -1,0 +1,10 @@
+add --verbose to package.json test
+disabled
+    require('winston-mongodb'); in logging.js
+
+disabled
+    winston.add(winston.transports.MongoDB, {
+        db: 'mongodb://localhost/project-restful-api',
+        level: 'info',
+    });
+    in logging.js

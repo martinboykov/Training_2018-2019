@@ -1,0 +1,12 @@
+<!-- if buttonToggleDangerPrimary is registered in favorite.component -->
+<app-favorite [is-favorite]="post.isFavorite"
+              (change-emitter)="onFavoriteChange($event)"
+              (change-state)="onButtonStateChange($event)"
+              [data-obj]="dataCloned"
+              (submit-data)="onDataSubmit($event)"></app-favorite>
+
+<!-- if buttonToggleDangerPrimary is registered in app.component -->
+<!-- <app-favorite [is-favorite]="post.isFavorite"
+              [button-toggle]="buttonToggleDangerPrimary"
+              (change-emitter)="onFavoriteChange($event)"
+              (change-state)="onButtonStateChange($event)"></app-favorite> -->

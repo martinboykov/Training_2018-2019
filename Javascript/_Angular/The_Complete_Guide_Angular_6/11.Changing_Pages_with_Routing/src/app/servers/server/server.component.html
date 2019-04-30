@@ -1,0 +1,19 @@
+<table class="table table-condensed">
+  <tr class="active">
+    <th>ID</th>
+    <th>Name</th>
+    <th>Status</th>
+    <th></th>
+  </tr>
+  <tr class="success">
+    <td>{{ server?.id }}</td>
+    <td>{{ server?.name }}</td>
+    <td>{{ server?.status }}</td>
+    <td>
+      <!-- <a [routerLink]="['/servers', server?.id, 'edit']"> -->
+      <a (click)="navigateToEdit()">
+        edit
+      </a>
+    </td>
+  </tr>
+</table>

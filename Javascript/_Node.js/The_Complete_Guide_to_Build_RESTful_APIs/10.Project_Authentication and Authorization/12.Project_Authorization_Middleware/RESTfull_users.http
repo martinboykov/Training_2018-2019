@@ -1,0 +1,14 @@
+GET http://127.0.0.1:3000/api/users
+
+GET http://127.0.0.1:3000/api/users/5b8e8c3aaccd1f5b5c7a9d1b
+
+POST http://127.0.0.1:3000/api/users
+content-type: application/json
+
+{
+    "name": "Asen",
+    "email": "asen@abv.bg",
+    "password": "123456"
+}
+
+

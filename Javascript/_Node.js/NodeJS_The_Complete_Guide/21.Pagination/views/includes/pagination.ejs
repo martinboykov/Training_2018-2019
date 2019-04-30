@@ -1,0 +1,30 @@
+<section class="pagination">
+    <% if(fastBackward) { %>
+      <a href="?page=<%= page - 10 %>">
+        <<
+      </a>
+      <% } %>
+  <% if(hasPreviousPage) { %>
+  <a href="?page=<%= page - 1 %>">
+    <
+      </a>
+      <% } %>
+
+      <% for(let _page of pages) { %>
+      <a href="?page=<%= _page %>"
+         class="<%= currentPage == _page ? 'active' : '' %>">
+        <%= _page %>
+      </a>
+      <% } %>
+
+      <% if(hasNextPage) { %>
+      <a href="?page=<%= page + 1 %>">
+        >
+      </a>
+      <% } %>
+      <% if(fastForward) { %>
+      <a href="?page=<%= page + 10 %>">
+        >>
+      </a>
+      <% } %>
+</section>

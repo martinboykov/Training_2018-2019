@@ -1,0 +1,18 @@
+GET http://127.0.0.1:3000/api/rentals
+
+POST http://127.0.0.1:3000/api/rentals
+content-type: application/json
+
+{
+    "customer": {
+        "_id": "5b8a752458d0c33b10abfe3e"
+    },
+    "movies": [
+        {
+            "_id":"5b8e43fa92660f51ec53244c"
+        },
+        {
+            "_id":"5b8e440892660f51ec53244d"
+        }
+    ]
+}

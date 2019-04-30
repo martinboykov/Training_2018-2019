@@ -1,0 +1,19 @@
+GET http://127.0.0.1:3000/api/genres
+
+GET http://127.0.0.1:3000/api/genres/1
+
+POST http://127.0.0.1:3000/api/genres
+content-type: application/json
+
+{
+    "name": "asdsa"
+}
+
+PUT http://127.0.0.1:3000/api/genres/4
+content-type: application/json
+
+{
+    "name": "updated"
+}
+
+DELETE http://127.0.0.1:3000/api/genres/1

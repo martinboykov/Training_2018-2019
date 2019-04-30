@@ -1,0 +1,23 @@
+{
+  "name": "4.Building_Your_First_Web_Server",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "set NODE_ENV=development&& nodemon index",
+    "test": "set NODE_ENV=production&& nodemon index",
+    "_start__comment_start_dev_and_prod_in_one_line": "if-env NODE_ENV=production ?? npm run start:prod || npm run start:dev"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "config": "^2.0.1",
+    "debug": "^3.1.0",
+    "express": "^4.16.3",
+    "helmet": "^3.13.0",
+    "joi": "13.1.0",
+    "morgan": "^1.9.0",
+    "supports-color": "^5.5.0"
+  }
+}

@@ -1,0 +1,20 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Launch localhost",
+            "type": "chrome",
+            "request": "launch",
+            "url": "http://localhost:4200",
+            "webRoot": "${workspaceRoot}/wwwroot",
+            "userDataDir": "D:/Programing/Video_Tutorials/My_Training/Angular/Video/The_Complete_Guide/03_Course_Project"
+        },
+        {
+            "name": "Launch index.html (disable sourcemaps)",
+            "type": "chrome",
+            "request": "launch",
+            "sourceMaps": false,
+            "webRoot": "${workspaceRoot}/src/index.html"
+        }
+    ]
+}
