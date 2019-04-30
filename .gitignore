@@ -4,3 +4,4 @@ Git/Git Basics/file_to_untrack_and_ignore.txt
 *.gz
 assets/
 node_modules/
+nodemon.json

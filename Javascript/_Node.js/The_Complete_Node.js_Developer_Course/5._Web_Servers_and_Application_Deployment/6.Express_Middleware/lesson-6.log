@@ -1,3 +1,0 @@
-- add middleware to see when someone has made request to specific middleware
- and save it to our database (use of  fs.appendFile)
-- add middleware for rendering maintenece page

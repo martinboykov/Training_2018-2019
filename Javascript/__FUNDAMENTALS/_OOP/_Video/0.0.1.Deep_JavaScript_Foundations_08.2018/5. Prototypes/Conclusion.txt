@@ -1,2 +1,0 @@
-“This” and [[Prototype]] chain is the dynamic form of “Lexical Scope” chain.
-
