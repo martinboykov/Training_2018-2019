@@ -9,10 +9,12 @@ function Bar(who) {
     Foo.call(this, who);
 }
 
+Bar.prototype = Object.create(Foo.prototype);
 
 Bar.prototype.speak = function() {
     console.log('Hello, ' + this.identify() + '.');
 };
+Bar.prototype.constructor = Bar;
 
 const b1 = new Bar('b1');
 const b2 = new Bar('b2');

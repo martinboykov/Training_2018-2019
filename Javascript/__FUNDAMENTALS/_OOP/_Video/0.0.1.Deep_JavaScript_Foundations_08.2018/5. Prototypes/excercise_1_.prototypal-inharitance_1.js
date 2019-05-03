@@ -56,21 +56,21 @@ const joe = new Customer('Joe');
 const mike = new Customer('Mike');
 const mime = new Mime('Mimo', 'Mime');
 
-console.log(Object.getPrototypeOf(bob));
+console.log(Object.getPrototypeOf(bob)); // Person {}
 
-ali.greet();
-bob.greet();
-joe.greet();
-rg.greet();
-mike.greet();
-mime.greet();
-console.log(mime.constructor.prototype);
+ali.greet(); // Hi, I am Ali
+bob.greet(); // Hi, I am Bob, the Builder
+joe.greet(); // Hi, I am Joe
+rg.greet(); // Hi, I am Red Green, the Handyman
+mike.greet(); // Hi, I am Mike
+mime.greet(); // Hi, I am Mimo, the Mime!!!
+console.log(mime.constructor.prototype); // Mime { constructor: [Function: Mime], greet: [Function] }
 mime.constructor.prototype.xxx = 'ooo';
-console.log(Employee.prototype.xxx);
-console.log(mime.xxx);
-console.log(mime.name);
-console.log(mime.title);
+console.log(Employee.prototype.xxx); // xxx
+console.log(mime.xxx); // ooo
+console.log(mime.name); // Mimo
+console.log(mime.title); // Mime
 
-// console.log();
-// console.log(Person.prototype.isPrototypeOf(bob));
-// console.log('Instance of? ' + (mime instanceof Employee));
+console.log();
+console.log(Person.prototype.isPrototypeOf(bob)); // true
+console.log(mime instanceof Employee); // true
