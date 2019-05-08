@@ -185,13 +185,13 @@ class DoublyLinkedList {
   // }
 }
 
-const newLinkedList = new DoublyLinkedList();
-newLinkedList.push(1);
-newLinkedList.push(13);
-newLinkedList.push(26);
-newLinkedList.push(28);
-newLinkedList.push(35);
-newLinkedList.push(55);
+// const newLinkedList = new DoublyLinkedList();
+// newLinkedList.push(1);
+// newLinkedList.push(13);
+// newLinkedList.push(26);
+// newLinkedList.push(28);
+// newLinkedList.push(35);
+// newLinkedList.push(55);
 // newLinkedList.pop();
 // newLinkedList.shift();
 // newLinkedList.unshift(111);
@@ -201,4 +201,4 @@ newLinkedList.push(55);
 // console.log(newLinkedList.insert(0, 12));
 // console.log(newLinkedList.remove(0));
 // console.log(newLinkedList.reverse());
-console.log(newLinkedList.printList());
+// console.log(newLinkedList.printList());

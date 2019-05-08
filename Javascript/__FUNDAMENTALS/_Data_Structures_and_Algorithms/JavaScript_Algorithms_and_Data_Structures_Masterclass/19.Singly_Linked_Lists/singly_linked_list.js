@@ -1,6 +1,6 @@
 // BIG O
 // Insertion - O(1)
-// Removal - O(1) from beggining - O(n) from end
+// Removal - O(1) from beggining "shift" - O(n) from end "pop"
 // Searching - O(n)
 // Access - O(n)
 

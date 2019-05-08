@@ -1,4 +1,5 @@
 // TREE TERMINOLOGY
+// Node - the building block of the tree. Can store any kind of value
 // Root - The top currentNode in a tree.
 // Child -A currentNode directly connected to another currentNode when moving away from the Root.
 // currentNode - The converse notion of a child.
@@ -87,11 +88,16 @@ class BinarySearchTree {
   }
 }
 
-const tree = new BinarySearchTree();
-console.log(tree.insert(10));
-console.log(tree.insert(5));
-console.log(tree.insert(1));
+// const tree = new BinarySearchTree();
+// console.log(tree.insert(10));
+// console.log(tree.insert(5));
 // console.log(tree.insert(1));
-console.log(tree.insert(11));
-console.log(tree.find(10));
-// console.log(tree);
+// // console.log(tree.insert(1));
+// console.log(tree.insert(11));
+// console.log(tree.find(10));
+// // console.log(tree);
+
+module.exports = {
+  Node,
+  BinarySearchTree,
+};

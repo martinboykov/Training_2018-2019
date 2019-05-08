@@ -1,1 +1,2 @@
-1. reverse Singly/Doubly linked lists
+1. reverse Singly/Doubly linked lists (19., 20.)
+2. BFS, DFS (23.)

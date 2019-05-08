@@ -7,14 +7,15 @@
 
 // BIG O
 // Insertion - O(1)
-// Removal - O(n)
+// Removal - O(1)
 // Searching - O(n)
 // Access - O(n)
 
-// 2. Using Singly Linked List
+// 2. Using Doubly Linked List
 class Node {
   constructor(value) {
     this.value = value;
+    this.prev = null;
     this.next = null;
   }
 }
@@ -26,41 +27,38 @@ class Queue {
   }
   enqueue(value) {
     // push element into the items
+    if (!value) return null;
     const newNode = new Node(value);
-    const firstBefore = this.first;
-    this.first = newNode;
-    if (!this.last) { // if list was empty
-      this.last = newNode;
-      this.length += 1;
-    }
-    this.first.next = firstBefore;
     this.length += 1;
+    if (!this.first) {
+      this.first = newNode;
+      this.last = newNode;
+      return this;
+    }
+    this.last.next = newNode;
+    newNode.prev = this.last;
+    this.last = newNode;
+    return this;
   }
   dequeue() {
     // return bottom most element in the queue
     // and removes it from the queue
-    const removedNode = this.last;
-    let preLastNode = null;
-    let first = this.first;
-    if (!this.last) return null;
+    if (!this.first) return null;
     if (this.last === this.first) {
       this.last = null;
       this.first = null;
       this.length -= 1;
-      return removedNode.value;
+      return this;
     }
-    while (first.next !== null) {
-      preLastNode = first;
-      first = first.next;
-    }
-    preLastNode.next = null;
-    this.last = preLastNode;
+    const oldfirst = this.first;
+    this.first = this.first.next;
+    this.first.prev = null; // removing the old refs
+    oldfirst.next = null; // removing the old refs
     this.length -= 1;
-    return removedNode.value;
+    return this;
   }
   front() {
-    // return the top most element from the stack
-    // but doesn't delete it.
+    // return the first element in the queue, but doesn't delete it.
     if (!this.first) return null;
     const element = this.first.value;
     return element;
@@ -72,16 +70,16 @@ class Queue {
   }
   printStack() {
     let first = this.first;
-    let str = '{ '; // ' }';
+    let str = '{ ';
     while (first) {
       if (first.next) {
-        str += `${first.value}, `; //  ' ,'
+        str += `${first.value}, `;
       } else {
         str += `${first.value} `;
       }
       first = first.next;
     }
-    str += '}'; // '{'
+    str += '}';
     return str;
     // return str.split('').reverse().join(''); // expensive if we want to read them left to right
   }
@@ -96,10 +94,10 @@ class Queue {
 // console.log(stack.isEmpty());
 // stack.dequeue();
 // stack.dequeue();
-// // stack.dequeue();
-// // console.log(stack.front());
-// // stack.dequeue();
-// // console.log(stack.isEmpty());
+// stack.dequeue();
+// console.log(stack.front());
+// stack.dequeue();
+// console.log(stack.isEmpty());
 // console.log(stack.printStack());
 
 module.exports = {
