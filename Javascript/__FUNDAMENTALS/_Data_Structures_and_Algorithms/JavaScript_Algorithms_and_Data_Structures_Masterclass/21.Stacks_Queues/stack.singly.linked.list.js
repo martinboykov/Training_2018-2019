@@ -24,7 +24,7 @@ class Stack {
     this.last = null;
     this.length = 0;
   }
-  push(value) {
+  push(value) { // unshift
     // push element into the items
     const newNode = new Node(value);
     const firstBefore = this.first;
@@ -36,7 +36,7 @@ class Stack {
     this.first.next = firstBefore;
     this.length += 1;
   }
-  pop() {
+  pop() { // shift
     // return top most element in the stack
     // and removes it from the stack
     if (!this.first) return null;

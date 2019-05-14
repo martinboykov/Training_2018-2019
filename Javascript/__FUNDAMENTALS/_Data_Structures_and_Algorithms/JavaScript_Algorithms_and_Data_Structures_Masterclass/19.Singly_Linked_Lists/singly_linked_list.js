@@ -17,19 +17,7 @@ class SinglyLinkedList {
     this.tail = null;
     this.length = 0;
   }
-  printList() {
-    let head = this.head;
-    let str = '';
-    while (head) {
-      if (head.next) {
-        str += `${head.value}, `;
-      } else {
-        str += `${head.value}`;
-      }
-      head = head.next;
-    }
-    return str;
-  }
+
   // prepend
   unshift(value) { // sets new node as new head
     const newNode = new Node(value);
@@ -166,6 +154,20 @@ class SinglyLinkedList {
     this.tail = this.head;
     this.head = prevNode;
     return true;
+  }
+
+  printList() {
+    let head = this.head;
+    let str = '';
+    while (head) {
+      if (head.next) {
+        str += `${head.value}, `;
+      } else {
+        str += `${head.value}`;
+      }
+      head = head.next;
+    }
+    return str;
   }
 }
 
