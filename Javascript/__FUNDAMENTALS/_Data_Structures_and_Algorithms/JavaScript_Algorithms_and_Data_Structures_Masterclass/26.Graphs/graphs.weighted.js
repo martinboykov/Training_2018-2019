@@ -15,6 +15,12 @@ class WeightedGraph {
     if (!ifExistB) this.list[vertexB].push({ node: vertexA, weight });
     return this.list;
   }
+  removeEdge(vertexA, vertexB) {
+    // ...
+  }
+  removeVertex(vertexA) {
+    // ...
+  }
 }
 const graph = new WeightedGraph();
 graph.addVertex('A');

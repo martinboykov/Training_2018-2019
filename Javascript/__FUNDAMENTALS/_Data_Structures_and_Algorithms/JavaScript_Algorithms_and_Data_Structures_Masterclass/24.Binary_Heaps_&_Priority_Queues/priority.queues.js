@@ -46,9 +46,10 @@ class PriorityQueue { // similar to MinBinaryHeap, but with Nodes(value,priority
       parent = this.values[parentIndex];
     }
     // return this.values;
-    return this.values.map((node)=>node.priority);
+    return this.values.map((node) => node.priority);
   }
   deqeue() { // === extractMin removes the root
+    const root = this.values[0];
     this.values[0] = this.values[this.values.length - 1];
     this.values.pop();
     let parentIndex = 0;
@@ -82,7 +83,8 @@ class PriorityQueue { // similar to MinBinaryHeap, but with Nodes(value,priority
       getChildSmaller();
     }
     // return this.values
-    return this.values.map((node)=>node.priority);
+    // return this.values.map((node) => node.priority);
+    return root; // for djekstra algorithm
 
     function getChildSmaller() {
       if (childLeft && childRight) {
@@ -105,29 +107,32 @@ class PriorityQueue { // similar to MinBinaryHeap, but with Nodes(value,priority
 }
 
 
-const newPriorQueue = new PriorityQueue();
-console.log(newPriorQueue.values);
-console.log(newPriorQueue.enqeue(`# ${Math.floor(Math.random() * 1000)}`, 41));
-console.log(newPriorQueue.enqeue(`# ${Math.floor(Math.random() * 1000)}`, 39));
-console.log(newPriorQueue.enqeue(`# ${Math.floor(Math.random() * 1000)}`, 27));
-console.log(newPriorQueue.enqeue(`# ${Math.floor(Math.random() * 1000)}`, 12));
-console.log(newPriorQueue.enqeue(`# ${Math.floor(Math.random() * 1000)}`, 18));
-console.log(newPriorQueue.enqeue(`# ${Math.floor(Math.random() * 1000)}`, 33));
-console.log(newPriorQueue.enqeue(`# ${Math.floor(Math.random() * 1000)}`, 33));
-console.log(newPriorQueue.enqeue(`# ${Math.floor(Math.random() * 1000)}`, 33));
-console.log(newPriorQueue.enqeue(`# ${Math.floor(Math.random() * 1000)}`, 33));
-console.log(newPriorQueue.enqeue(`# ${Math.floor(Math.random() * 1000)}`, 55));
-console.log(newPriorQueue.enqeue(`# ${Math.floor(Math.random() * 1000)}`, 39));
+// const newPriorQueue = new PriorityQueue();
+// console.log(newPriorQueue.values);
+// console.log(newPriorQueue.enqeue(`# ${Math.floor(Math.random() * 1000)}`, 41));
+// console.log(newPriorQueue.enqeue(`# ${Math.floor(Math.random() * 1000)}`, 39));
+// console.log(newPriorQueue.enqeue(`# ${Math.floor(Math.random() * 1000)}`, 27));
+// console.log(newPriorQueue.enqeue(`# ${Math.floor(Math.random() * 1000)}`, 12));
+// console.log(newPriorQueue.enqeue(`# ${Math.floor(Math.random() * 1000)}`, 18));
+// console.log(newPriorQueue.enqeue(`# ${Math.floor(Math.random() * 1000)}`, 33));
+// console.log(newPriorQueue.enqeue(`# ${Math.floor(Math.random() * 1000)}`, 33));
+// console.log(newPriorQueue.enqeue(`# ${Math.floor(Math.random() * 1000)}`, 33));
+// console.log(newPriorQueue.enqeue(`# ${Math.floor(Math.random() * 1000)}`, 33));
+// console.log(newPriorQueue.enqeue(`# ${Math.floor(Math.random() * 1000)}`, 55));
+// console.log(newPriorQueue.enqeue(`# ${Math.floor(Math.random() * 1000)}`, 39));
 
-console.log(newPriorQueue.deqeue());
-console.log(newPriorQueue.deqeue());
-console.log(newPriorQueue.deqeue());
-console.log(newPriorQueue.deqeue());
-console.log(newPriorQueue.deqeue());
-console.log(newPriorQueue.deqeue());
-console.log(newPriorQueue.deqeue());
-console.log(newPriorQueue.deqeue());
-console.log(newPriorQueue.deqeue());
-console.log(newPriorQueue.deqeue());
-console.log(newPriorQueue.deqeue());
+// console.log(newPriorQueue.deqeue());
+// console.log(newPriorQueue.deqeue());
+// console.log(newPriorQueue.deqeue());
+// console.log(newPriorQueue.deqeue());
+// console.log(newPriorQueue.deqeue());
+// console.log(newPriorQueue.deqeue());
+// console.log(newPriorQueue.deqeue());
+// console.log(newPriorQueue.deqeue());
+// console.log(newPriorQueue.deqeue());
+// console.log(newPriorQueue.deqeue());
+// console.log(newPriorQueue.deqeue());
 
+module.exports = {
+  PriorityQueue,
+};
