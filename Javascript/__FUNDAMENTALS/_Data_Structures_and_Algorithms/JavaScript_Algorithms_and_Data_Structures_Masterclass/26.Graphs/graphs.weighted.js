@@ -1,3 +1,4 @@
+// same as unweighted graph, but with weight for every edge
 // implementing weighted graph (needed for dijkstra algorithm)
 class WeightedGraph {
   constructor() {
@@ -11,8 +12,8 @@ class WeightedGraph {
     const ifExistA = this.list[vertexA].some((el) => el === vertexB); // if vertex b is in A
     const ifExistB = this.list[vertexB].some((el) => el === vertexA); // if vertex A is in B
     if (ifExistA && ifExistB) return null;
-    if (!ifExistA) this.list[vertexA].push({ node: vertexB, weight });
-    if (!ifExistB) this.list[vertexB].push({ node: vertexA, weight });
+    if (!ifExistA) this.list[vertexA].push({ node: vertexB, weight: weight });
+    if (!ifExistB) this.list[vertexB].push({ node: vertexA, weight: weight });
     return this.list;
   }
   removeEdge(vertexA, vertexB) {

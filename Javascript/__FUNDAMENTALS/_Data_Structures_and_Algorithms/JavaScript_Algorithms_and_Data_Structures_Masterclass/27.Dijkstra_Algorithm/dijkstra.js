@@ -15,8 +15,8 @@ class WeightedGraph {
     const ifExistA = this.list[vertexA].some((el) => el === vertexB); // if vertex b is in A
     const ifExistB = this.list[vertexB].some((el) => el === vertexA); // if vertex A is in B
     if (ifExistA && ifExistB) return null;
-    if (!ifExistA) this.list[vertexA].push({ node: vertexB, weight });
-    if (!ifExistB) this.list[vertexB].push({ node: vertexA, weight });
+    if (!ifExistA) this.list[vertexA].push({ node: vertexB, weight: weight });
+    if (!ifExistB) this.list[vertexB].push({ node: vertexA, weight: weight });
     return this.list;
   }
   dijkstra(start, end) {
@@ -24,7 +24,7 @@ class WeightedGraph {
     const previous = {};
     const priorQueue = new PriorityQueue();
     let shortestPath = [];
-    // create objects:  newPriorQueue, distances, previous
+    // loop through graph to create objects: priorQueue, distances, previous
     for (const vertex in this.list) {
       if (this.list.hasOwnProperty(vertex)) {
         previous[vertex] = null;
@@ -32,52 +32,58 @@ class WeightedGraph {
         priorQueue.enqeue(vertex, Infinity);
       }
     }
-    priorQueue.enqeue(start, 0);
+    priorQueue.values[0].priority = 0;
     distances[start] = 0;
 
-    // loop while priority qeue is not empty
+    // 1. Every time we look to visit a new node,
+    // we pick the node with the smallest known distance to visit first.
     while (priorQueue.values.length !== 0) {
-      let smallest = priorQueue.deqeue().value;
-      if (smallest === end) {
-        // done -> build the path to return at end
-        while (previous[smallest]) {
-          shortestPath.push(smallest);
-          smallest = previous[smallest];
-        }
-        shortestPath = shortestPath.concat(smallest).reverse();
-        break;
-      }
-      if (smallest || distances[smallest] !== Infinity) {
-        for (const neighbor in this.list[smallest]) {
-          if (this.list[smallest].hasOwnProperty(neighbor)) {
+      let smallestPQ = priorQueue.deqeue().value; // A <= {value:'A', priority:0} smallestPQ = 'A' in the first iteration
 
-            // getting each neighboring nodes
-            const nextVertex = this.list[smallest][neighbor];
+      // check if:
+      //   - we are not at end
+      //   - if smallestPQ ('A') is defined OR the accumulative weight is NOT Ininity
+      if (smallestPQ !== end &&
+        (smallestPQ || distances[smallestPQ] !== Infinity)) { // 0 <= in the beggining is ("A": 0)
+        // 2. Once we’ve moved to the node we’re going to visit, we look at each of its neighbors
+        for (const indexEdge in this.list[smallestPQ]) { // 0 <= loop through all edges with "A" -> [{node: "B": weight: Infinity}] and {"C": weight}
+          if (this.list[smallestPQ].hasOwnProperty(indexEdge)) {
+            // getting the neighboring edge
+            const edge = this.list[smallestPQ][indexEdge]; // {node: "B": weight: 4} <= {'A': [{"B":2}]}, where indexEdgeGraph corresponds to the arrays (all edges) index
+            // 3. For each neighboring node, we calculate the distance by summing
+            // the total edges that lead to the node we’re checking from the starting node.
+            const edgeWeightAccumulative = distances[smallestPQ] + edge.weight; // weight: 4
+            const edgeVertex = edge.node; // node: "B"
+            // 4. If the new total distance to a node is less than the previous total,
+            // we store the new shorter distance for that node.
+            if (edgeWeightAccumulative < distances[edgeVertex]) {
+              // updating new smallest distance to ... node: "B" (Infinity -> 4)
+              distances[edgeVertex] = edgeWeightAccumulative;
 
-            // calculate distance to neighboring nodes
-            const candidate = distances[smallest] + nextVertex.weight;
-            const nextNeighbor = nextVertex.node;
-            if (candidate < distances[nextNeighbor]) {
-              // updating new smallest disstance to neighbor
-              distances[nextNeighbor] = candidate;
+              // updating the path to edgeGraphIndex
+              previous[edgeVertex] = smallestPQ; // comes from ... 'A' (null -> 'A')
 
-              // updating the path to neighbor
-              previous[nextNeighbor] = smallest;
-
-              // enqueu in priority qeueu
-              priorQueue.enqeue(nextNeighbor, candidate);
+              // enqueu in priority qeueu (add neighbor vertexes of the vertex that forms edge with 'A' -> 'C' and 'B')
+              priorQueue.enqeue(edgeVertex, edgeWeightAccumulative);
             }
           }
         }
+      } else { // "E" === "E"
+        // if at END -> build the path to START
+        while (previous[smallestPQ]) { // as "A" stays null => thats the bottom of iteration cycle
+          shortestPath.push(smallestPQ);
+          smallestPQ = previous[smallestPQ]; // 'E': 'F' -> 'F': 'D' -> 'D': 'C' -> 'C':'A'
+        }
+        shortestPath = shortestPath.concat(smallestPQ).reverse();
+        console.log('priorQueue: ', priorQueue);
+        console.log('distances: ', distances);
+        console.log('previous: ', previous);
+        console.log('shortestPath', shortestPath);
+        console.log('shortestDistance: ', distances[end]);
+        return shortestPath;
       }
     }
-
-
-    console.log(priorQueue);
-    console.log(distances);
-    console.log(previous);
-    console.log(shortestPath);
-    return shortestPath;
+    return shortestPath; // because of eslint
   }
 }
 const graph = new WeightedGraph();

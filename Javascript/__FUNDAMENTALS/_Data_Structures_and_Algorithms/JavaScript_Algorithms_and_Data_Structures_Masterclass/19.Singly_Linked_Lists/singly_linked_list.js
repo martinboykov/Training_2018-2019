@@ -137,23 +137,26 @@ class SinglyLinkedList {
     this.length -= 1;
     return true;
   }
+
   reverse() {
-    let currNode = this.head;
-    let prevNode = null;
-    let nextNode = null;
-    while (currNode) {
-      // Store next node.
-      nextNode = currNode.next;
-      // Change next node of the current node so it would link to previous node.
-      currNode.next = prevNode;
-      // Move prevNode and currNode nodes one step forward.
-      prevNode = currNode;
-      currNode = nextNode;
+    let prev = null;
+    let curr = this.head;
+    let next = null;
+    while (curr) {
+      // POINTERS
+      // NEW - remember the pointer to next node (curr.next) before reversing
+      next = curr.next;
+      // OLD - set the new pointer for reversed node
+      curr.next = prev;
+
+      // NODES SWITCH - OLD
+      prev = curr;
+      curr = next; // from the remembered value at start
     }
-    // Reset head and tail.
-    this.tail = this.head;
-    this.head = prevNode;
-    return true;
+    this.head = this.tail;
+    this.tail = prev;
+
+    return this;
   }
 
   printList() {
@@ -174,13 +177,17 @@ class SinglyLinkedList {
 // const newNode = new Node(1);
 // console.log(newNode);
 const newLinkedList = new SinglyLinkedList();
+
 newLinkedList.push(1);
+
 newLinkedList.push(13);
 newLinkedList.push(28);
 newLinkedList.push(35);
 newLinkedList.push(55);
 newLinkedList.unshift(111);
 newLinkedList.unshift(122);
+newLinkedList.unshift(333);
+
 // console.log(newLinkedList.get(6));
 // console.log(newLinkedList.set(0, 11));
 // console.log(newLinkedList.printList());
@@ -188,5 +195,6 @@ newLinkedList.unshift(122);
 // console.log(newLinkedList.printList());
 // console.log(newLinkedList.remove(7));
 console.log(newLinkedList.printList());
-console.log(newLinkedList.reverse());
+newLinkedList.reverse();
 console.log(newLinkedList.printList());
+

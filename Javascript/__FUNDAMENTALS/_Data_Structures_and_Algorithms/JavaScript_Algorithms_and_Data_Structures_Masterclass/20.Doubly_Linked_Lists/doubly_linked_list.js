@@ -1,6 +1,6 @@
 // BIG O
 // Insertion - O(1)
-// Removal - O(1) always (different from singly linked list <= no traversal from one side)
+// Removal - O(1) from beggining "shift()"; O(1) from end "pop()"; O(n) random "remove(position)"
 // Searching - O(n)
 // Access - O(n)
 
@@ -36,7 +36,6 @@ class DoublyLinkedList {
   }
   // prepend
   unshift(value) { // sets new node as new head
-    if (!value) return null;
     const newNode = new Node(value);
     const oldHead = this.head;
     this.head = newNode;
@@ -53,7 +52,6 @@ class DoublyLinkedList {
 
   // append
   push(value) { // adds new tail
-    if (!value) return null;
     const newNode = new Node(value);
     this.length += 1;
     if (!this.head) {
@@ -103,14 +101,14 @@ class DoublyLinkedList {
   }
 
   get(position) {
-    if (!position) return null;
+    const length = this.length;
     let node;
     let currentPosition;
     if (!this.head) return null;
-    if (this.length < position || position < 0) return null;
-    if (position <= this.length - position) {
+    if (length <= position || position < 0) return null;
+    if (position >= length - position) {
       node = this.tail;
-      currentPosition = this.length - 1;
+      currentPosition = length - 1;
       while (currentPosition > position) {
         node = node.prev;
         currentPosition -= 1;
@@ -126,14 +124,13 @@ class DoublyLinkedList {
     return node;
   }
   set(position, value) {
-    if (!position || !value) return false;
-    const node = this.get(position, value);
+    const node = this.get(position);
     if (!node) return false;
     node.value = value;
     return true;
   }
   insert(position, value) {
-    if (!position || !value) return false;
+    if (position === null || !value) return false;
     if (position < 0 || position > this.length) return false;
     if (position === 0) return !!this.unshift(value);
     if (position === this.length) return !!this.push(value);
@@ -148,7 +145,6 @@ class DoublyLinkedList {
     return true;
   }
   remove(position) {
-    if (!position && position !== 0) return false;
     if (this.length <= position || position < 0) return false;
     if (position === 0) return !!this.shift();
     if (position === this.length - 1) return !!this.pop();
@@ -162,43 +158,48 @@ class DoublyLinkedList {
     this.length -= 1;
     return true;
   }
-  // reverse() { // TODO
-  //   let currNode = this.head;
-  //   let prevNode = null;
-  //   let nextNode = null;
-  //   while (currNode) {
-  //     // Store next node.
-  //     nextNode = currNode.next;
-  //     prevNode = currNode.previous;
-  //     // Change next node of the current node so it would link to previous node.
-  //     // future tail.next = null (in first iteration)
-  //     currNode.next = prevNode;
-  //     currNode.previous = nextNode;
-  //     // Move prevNode and currNode nodes one step forward.
-  //     prevNode = currNode; // head (in first iteration)
-  //     currNode = nextNode; // head.next (in first iteration)
-  //   }
-  //   // Reset head and tail.
-  //   this.tail = this.head;
-  //   this.head = prevNode;
-  //   return true;
-  // }
+
+  reverse() {
+    let prev = null;
+    let curr = this.head;
+    let next = null;
+    while (curr) {
+      // Set Pointers
+      next = curr.next; // before reverse
+      prev = curr.prev; // after reverse
+
+      curr.next = prev; // before reverse
+      curr.prev = next; // after reverse
+
+      // Set Nodes
+      prev = curr;
+      curr = next;
+    }
+    // Reset head and tail
+    this.tail = this.head;
+    this.head = prev;
+    // this.head.prev = prev.prev;
+    return this;
+  }
 }
 
-// const newLinkedList = new DoublyLinkedList();
-// newLinkedList.push(1);
-// newLinkedList.push(13);
-// newLinkedList.push(26);
-// newLinkedList.push(28);
-// newLinkedList.push(35);
-// newLinkedList.push(55);
-// newLinkedList.pop();
-// newLinkedList.shift();
-// newLinkedList.unshift(111);
-// newLinkedList.unshift(122);
-// console.log(newLinkedList.get(7));
-// console.log(newLinkedList.set(7, 11));
-// console.log(newLinkedList.insert(0, 12));
-// console.log(newLinkedList.remove(0));
-// console.log(newLinkedList.reverse());
-// console.log(newLinkedList.printList());
+const newLinkedList = new DoublyLinkedList();
+newLinkedList.push(1);
+newLinkedList.push(13);
+newLinkedList.push(26);
+newLinkedList.push(28);
+newLinkedList.push(35);
+newLinkedList.push(55);
+newLinkedList.pop();
+newLinkedList.shift();
+newLinkedList.unshift(111);
+newLinkedList.unshift(122);
+newLinkedList.unshift(222);
+// console.log(newLinkedList.get(0));
+console.log(newLinkedList.set(7, 11));
+console.log(newLinkedList.insert(0, 12));
+console.log(newLinkedList.remove(0));
+console.log(newLinkedList.printList());
+newLinkedList.reverse();
+console.log(newLinkedList.get(6));
+console.log(newLinkedList.printList());

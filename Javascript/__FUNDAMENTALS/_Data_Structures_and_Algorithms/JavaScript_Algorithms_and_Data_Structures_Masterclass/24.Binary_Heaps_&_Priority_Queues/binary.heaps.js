@@ -52,6 +52,9 @@ class MaxBinaryHeap {
     }
     return this.values;
   }
+  getMax() {
+    return this.values[0];
+  }
   extractMax() { // removes the root
     this.values[0] = this.values[this.values.length - 1];
     this.values.pop();
@@ -90,6 +93,7 @@ class MaxBinaryHeap {
 }
 
 // const newMaxBinHeap = new MaxBinaryHeap();
+// main example
 // console.log(newMaxBinHeap.values);
 // console.log(newMaxBinHeap.insert(41));
 // console.log(newMaxBinHeap.insert(27));
@@ -135,6 +139,9 @@ class MinBinaryHeap {
     }
     return this.values;
   }
+  getMin() {
+    return this.values[0];
+  }
   extractMin() { // removes the root
     this.values[0] = this.values[this.values.length - 1];
     this.values.pop();
@@ -146,11 +153,11 @@ class MinBinaryHeap {
     let childRight = this.values[childRightIndex] || null;
     let childSmallerIndex;
     let childSmaller;
-    getChildSmaller();
+    getSmallerChild();
 
     // bubble down (from root to bottom elements)
     // swapping position only with the smallest child
-    while (parent > childSmaller && childSmaller) {
+    while (childSmaller) {
       // swap parent and the Smaller children
       this.values[parentIndex] = childSmaller;
       this.values[childSmallerIndex] = parent;
@@ -166,11 +173,11 @@ class MinBinaryHeap {
       childRight = this.values[childRightIndex] || null;
 
       // set childSmaller index and value
-      getChildSmaller();
+      getSmallerChild();
     }
     return this.values;
 
-    function getChildSmaller() {
+    function getSmallerChild() {
       if (childLeft && childRight) {
         childSmallerIndex =
           childLeft < childRight ? childLeftIndex : childRightIndex;
@@ -198,6 +205,16 @@ console.log(newMinBinHeap.insert(18));
 console.log(newMinBinHeap.insert(39));
 console.log(newMinBinHeap.insert(33));
 console.log(newMinBinHeap.insert(55));
+console.log(newMinBinHeap.insert(56));
+console.log(newMinBinHeap.insert(57));
+console.log(newMinBinHeap.insert(58));
+console.log(newMinBinHeap.insert(59));
+console.log(newMinBinHeap.insert(50));
+console.log(newMinBinHeap.extractMin());
+console.log(newMinBinHeap.extractMin());
+console.log(newMinBinHeap.extractMin());
+console.log(newMinBinHeap.extractMin());
+console.log(newMinBinHeap.extractMin());
 console.log(newMinBinHeap.extractMin());
 console.log(newMinBinHeap.extractMin());
 console.log(newMinBinHeap.extractMin());
