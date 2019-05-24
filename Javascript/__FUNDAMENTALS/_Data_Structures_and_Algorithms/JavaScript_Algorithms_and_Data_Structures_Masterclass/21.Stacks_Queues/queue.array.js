@@ -52,17 +52,17 @@ class Queue {
   }
 }
 
-const stack = new Queue();
-console.log(stack.isEmpty());
-stack.enqueue(1);
-stack.enqueue(2);
-stack.enqueue(3);
-stack.enqueue(4);
-console.log(stack.isEmpty());
-stack.dequeue();
-stack.dequeue();
-stack.dequeue();
-console.log(stack.front());
-stack.dequeue();
-console.log(stack.isEmpty());
-console.log(stack.printStack());
+// const stack = new Queue();
+// console.log(stack.isEmpty());
+// stack.enqueue(1);
+// stack.enqueue(2);
+// stack.enqueue(3);
+// stack.enqueue(4);
+// console.log(stack.isEmpty());
+// stack.dequeue();
+// stack.dequeue();
+// stack.dequeue();
+// console.log(stack.front());
+// stack.dequeue();
+// console.log(stack.isEmpty());
+// console.log(stack.printStack());

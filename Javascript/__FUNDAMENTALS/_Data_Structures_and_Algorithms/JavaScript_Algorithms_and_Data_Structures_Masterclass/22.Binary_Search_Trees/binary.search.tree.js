@@ -172,18 +172,18 @@ class BinarySearchTree {
 
 // example 2
 // ----------------
-const tree = new BinarySearchTree();
-tree.insert(9);
-tree.insert(4);
-tree.insert(6);
-tree.insert(20);
-tree.insert(170);
-tree.insert(15);
-tree.insert(1);
-console.log(JSON.stringify(tree));
-// console.log(tree.find(0));
-console.log(tree.remove(11));
-console.log(JSON.stringify(tree));
+// const tree = new BinarySearchTree();
+// tree.insert(9);
+// tree.insert(4);
+// tree.insert(6);
+// tree.insert(20);
+// tree.insert(170);
+// tree.insert(15);
+// tree.insert(1);
+// console.log(JSON.stringify(tree));
+// // console.log(tree.find(0));
+// console.log(tree.remove(11));
+// console.log(JSON.stringify(tree));
 
 module.exports = {
   Node,

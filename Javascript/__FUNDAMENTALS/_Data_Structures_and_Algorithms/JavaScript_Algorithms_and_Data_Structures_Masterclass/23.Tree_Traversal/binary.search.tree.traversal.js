@@ -49,16 +49,10 @@ BinarySearchTree.prototype.bfsRecursive = function() { // traverse
   traverse(currentNode);
 
   function traverse(node) {
-    console.log(queue);
-    // console.log(traversedTree);
     queue.dequeue();
     traversedTree.push(node.value);
-    if (node.left) {
-      queue.enqueue(node.left);
-    }
-    if (node.right) {
-      queue.enqueue(node.right);
-    }
+    if (node.left) queue.enqueue(node.left);
+    if (node.right) queue.enqueue(node.right);
     currentNode = queue.front();
     if (!currentNode) return;
     traverse(currentNode);
@@ -97,33 +91,11 @@ BinarySearchTree.prototype.dfsPreOrder = function() { // traverse
 
   // helper function for the recursion
   function traverse(node) {
-    if (!node) return; // bottom of recursion
-    traversedTree.push(node.value);
+    traversedTree.push(node.value); // ---> only this order changes
     if (node.left) traverse(node.left);
     if (node.right) traverse(node.right);
   }
 };
-// --------------------------
-// DFS - PostOrder
-// Recursive
-// --------------------------
-BinarySearchTree.prototype.dfsPostOrder = function() { // traverse
-  const traversedTree = [];
-  traverse(this.root);
-  return traversedTree;
-
-  // helper function for the recursion
-  function traverse(node) {
-    if (!node) return; // bottom of recursion
-    if (node.left) traverse(node.left);
-    if (node.right) traverse(node.right);
-    traversedTree.push(node.value);
-  }
-};
-
-// Iterative
-// ...
-
 // --------------------------
 // DFS - InOrder
 // used commonly with Binary search trees
@@ -136,9 +108,8 @@ BinarySearchTree.prototype.dfsInOrder = function() { // traverse
 
   // helper function for the recursion
   function traverse(node) {
-    if (!node) return; // bottom of recursion
     if (node.left) traverse(node.left);
-    traversedTree.push(node.value);
+    traversedTree.push(node.value); // ---> only this order changes
     if (node.right) traverse(node.right);
   }
 };
@@ -146,6 +117,25 @@ BinarySearchTree.prototype.dfsInOrder = function() { // traverse
 // Iterative
 // ...
 
+// --------------------------
+// DFS - PostOrder
+// Recursive
+// --------------------------
+BinarySearchTree.prototype.dfsPostOrder = function() { // traverse
+  const traversedTree = [];
+  traverse(this.root);
+  return traversedTree;
+
+  // helper function for the recursion
+  function traverse(node) {
+    if (node.left) traverse(node.left);
+    if (node.right) traverse(node.right);
+    traversedTree.push(node.value); // ---> only this order changes
+  }
+};
+
+// Iterative
+// ...
 
 const binaryTree = new BinarySearchTree();
 binaryTree.insert(10);
@@ -156,8 +146,8 @@ binaryTree.insert(3);
 // binaryTree.insert(1);
 binaryTree.insert(8);
 binaryTree.insert(20);
-console.log(binaryTree.bfsRecursive());
-console.log(binaryTree.bfsIterative());
+// console.log(binaryTree.bfsRecursive());
+// console.log(binaryTree.bfsIterative());
 console.log(binaryTree.dfsPreOrder());
 console.log(binaryTree.dfsPostOrder());
 console.log(binaryTree.dfsInOrder());
