@@ -1,14 +1,15 @@
 // -----------
 // BINARY HEAP
 // -----------
+// type of binary tree
 
 // Rules:
 // ------------------
 //   - Each parent has at most TWO CHILD NODES.
-//   - NO GUARANTEES BETWEEN SIBLING NODES.
-//   - A binary heap is as compact as possible. === TAKES THE LEAST AMOUNT OF SPACE
-//     All the children of each node are as full as they can be
-//   - Left children are filled out first.
+//   - LEFT children are filled out FIRST.
+//   - NO OTHER GUARANTEES (left/right is not smaller/bigger) BETWEEN SIBLING NODES.
+//   - A binary heap is as compact as possible ==> TAKES THE LEAST AMOUNT OF SPACE
+//     (All the children of each node are as full as they can be)
 
 // Use Cases:
 // ------------------
@@ -64,17 +65,17 @@ class MaxBinaryHeap {
     let childRightIndex = parentIndex * 2 + 2;
     let childLeft = this.values[childLeftIndex] || null;
     let childRight = this.values[childRightIndex] || null;
-    let childSmallerIndex =
+    let childBiggerIndex =
       childLeft > childRight ? childLeftIndex : childRightIndex;
-    let childSmaller = childLeft > childRight ? childLeft : childRight;
+    let childBigger = childLeft > childRight ? childLeft : childRight;
     // bubble down (from root to bottom elements)
-    while (parent < childSmaller) {
+    while (parent < childBigger) {
       // swap parent and the Smaller children
-      this.values[parentIndex] = childSmaller;
-      this.values[childSmallerIndex] = parent;
+      this.values[parentIndex] = childBigger;
+      this.values[childBiggerIndex] = parent;
 
       // set parent index and value
-      parentIndex = childSmallerIndex;
+      parentIndex = childBiggerIndex;
       parent = this.values[parentIndex];
 
       // set childrens' indexes and values
@@ -84,24 +85,33 @@ class MaxBinaryHeap {
       childRight = this.values[childRightIndex];
 
       // set child Smaller index and value
-      childSmallerIndex =
+      childBiggerIndex =
         childLeft > childRight ? childLeftIndex : childRightIndex;
-      childSmaller = childLeft > childRight ? childLeft : childRight;
+      childBigger = childLeft > childRight ? childLeft : childRight;
     }
     return this.values;
   }
+  heapSort() {
+    const result = [];
+    let currentVal = this.getMax();
+    while (currentVal) {
+      result.push(currentVal);
+      this.extractMax();
+      console.log(this.values);
+      currentVal = this.getMax();
+    }
+    return result;
+  }
 }
-
-// const newMaxBinHeap = new MaxBinaryHeap();
-// main example
-// console.log(newMaxBinHeap.values);
-// console.log(newMaxBinHeap.insert(41));
-// console.log(newMaxBinHeap.insert(27));
-// console.log(newMaxBinHeap.insert(12));
-// console.log(newMaxBinHeap.insert(18));
-// console.log(newMaxBinHeap.insert(39));
-// console.log(newMaxBinHeap.insert(33));
-// console.log(newMaxBinHeap.insert(55));
+const newMaxBinHeap = new MaxBinaryHeap();
+console.log(newMaxBinHeap.values);
+console.log(newMaxBinHeap.insert(41));
+console.log(newMaxBinHeap.insert(27));
+console.log(newMaxBinHeap.insert(12));
+console.log(newMaxBinHeap.insert(18));
+console.log(newMaxBinHeap.insert(39));
+console.log(newMaxBinHeap.insert(33));
+console.log(newMaxBinHeap.insert(55));
 // console.log(newMaxBinHeap.extractMax());
 // console.log(newMaxBinHeap.extractMax());
 // console.log(newMaxBinHeap.extractMax());
@@ -109,6 +119,7 @@ class MaxBinaryHeap {
 // console.log(newMaxBinHeap.extractMax());
 // console.log(newMaxBinHeap.extractMax());
 // console.log(newMaxBinHeap.extractMax());
+console.log(newMaxBinHeap.heapSort());
 
 // 2. Min Binary Heap
 // ------------------
@@ -147,14 +158,14 @@ class MinBinaryHeap {
     this.values.pop();
     let parentIndex = 0;
     let parent = this.values[parentIndex];
-    let childLeftIndex = parentIndex * 2 + 1;
-    let childRightIndex = parentIndex * 2 + 2;
-    let childLeft = this.values[childLeftIndex] || null;
-    let childRight = this.values[childRightIndex] || null;
+    let childLeftIndex;
+    let childRightIndex;
+    let childLeft;
+    let childRight;
     let childSmallerIndex;
     let childSmaller;
-    getSmallerChild();
 
+    getChildren(this.values);
     // bubble down (from root to bottom elements)
     // swapping position only with the smallest child
     while (childSmaller) {
@@ -167,25 +178,30 @@ class MinBinaryHeap {
       parent = this.values[parentIndex];
 
       // set childrens' indexes and values
-      childLeftIndex = parentIndex * 2 + 1;
-      childRightIndex = parentIndex * 2 + 2;
-      childLeft = this.values[childLeftIndex] || null;
-      childRight = this.values[childRightIndex] || null;
-
-      // set childSmaller index and value
-      getSmallerChild();
+      getChildren(this.values);
     }
     return this.values;
 
-    function getSmallerChild() {
-      if (childLeft && childRight) {
+    function getChildren(values) {
+      childLeftIndex = parentIndex * 2 + 1;
+      childRightIndex = parentIndex * 2 + 2;
+      childLeft = values[childLeftIndex] || null;
+      childRight = values[childRightIndex] || null;
+      getChildSmaller();
+    }
+    function getChildSmaller() {
+      if (childLeft &&
+        childRight &&
+        childLeft < parent &&
+        childRight < parent) {
         childSmallerIndex =
           childLeft < childRight ? childLeftIndex : childRightIndex;
-        childSmaller = childLeft < childRight ? childLeft : childRight;
-      } else if (childLeft) {
+        childSmaller =
+          childLeft < childRight ? childLeft : childRight;
+      } else if (childLeft && childLeft < parent) {
         childSmallerIndex = childLeftIndex;
         childSmaller = childLeft;
-      } else if (childRight) {
+      } else if (childRight && childLeft < parent) {
         childSmallerIndex = childRightIndex;
         childSmaller = childRight;
       } else {
@@ -194,31 +210,43 @@ class MinBinaryHeap {
       }
     }
   }
+  heapSort() {
+    const result = [];
+    let currentVal = this.getMin();
+    while (currentVal) {
+      result.push(currentVal);
+      this.extractMin();
+      console.log(this.values);
+      currentVal = this.getMin();
+    }
+    return result;
+  }
 }
 
-const newMinBinHeap = new MinBinaryHeap();
-console.log(newMinBinHeap.values);
-console.log(newMinBinHeap.insert(41));
-console.log(newMinBinHeap.insert(27));
-console.log(newMinBinHeap.insert(12));
-console.log(newMinBinHeap.insert(18));
-console.log(newMinBinHeap.insert(39));
-console.log(newMinBinHeap.insert(33));
-console.log(newMinBinHeap.insert(55));
-console.log(newMinBinHeap.insert(56));
-console.log(newMinBinHeap.insert(57));
-console.log(newMinBinHeap.insert(58));
-console.log(newMinBinHeap.insert(59));
-console.log(newMinBinHeap.insert(50));
-console.log(newMinBinHeap.extractMin());
-console.log(newMinBinHeap.extractMin());
-console.log(newMinBinHeap.extractMin());
-console.log(newMinBinHeap.extractMin());
-console.log(newMinBinHeap.extractMin());
-console.log(newMinBinHeap.extractMin());
-console.log(newMinBinHeap.extractMin());
-console.log(newMinBinHeap.extractMin());
-console.log(newMinBinHeap.extractMin());
-console.log(newMinBinHeap.extractMin());
-console.log(newMinBinHeap.extractMin());
-console.log(newMinBinHeap.extractMin());
+// const newMinBinHeap = new MinBinaryHeap();
+// console.log(newMinBinHeap.values);
+// console.log(newMinBinHeap.insert(41));
+// console.log(newMinBinHeap.insert(27));
+// console.log(newMinBinHeap.insert(12));
+// console.log(newMinBinHeap.insert(18));
+// console.log(newMinBinHeap.insert(39));
+// console.log(newMinBinHeap.insert(33));
+// console.log(newMinBinHeap.insert(55));
+// console.log(newMinBinHeap.insert(56));
+// console.log(newMinBinHeap.insert(57));
+// console.log(newMinBinHeap.insert(58));
+// console.log(newMinBinHeap.insert(59));
+// console.log(newMinBinHeap.insert(50));
+// console.log(newMinBinHeap.extractMin());
+// console.log(newMinBinHeap.extractMin());
+// console.log(newMinBinHeap.extractMin());
+// console.log(newMinBinHeap.extractMin());
+// console.log(newMinBinHeap.extractMin());
+// console.log(newMinBinHeap.extractMin());
+// console.log(newMinBinHeap.extractMin());
+// console.log(newMinBinHeap.extractMin());
+// console.log(newMinBinHeap.extractMin());
+// console.log(newMinBinHeap.extractMin());
+// console.log(newMinBinHeap.extractMin());
+// console.log(newMinBinHeap.extractMin());
+// console.log(newMinBinHeap.heapSort());

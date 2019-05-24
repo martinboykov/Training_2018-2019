@@ -1,4 +1,6 @@
-// Binary tree (unordered type of tree)
+// ------------------
+// BINARY SEARCH TREE
+// ------------------
 
 // Two main ways of TRAVERSING A TREE:
 //   - Breadth-first Search (going across)
@@ -37,36 +39,36 @@ const { Queue } =
 // --------------------------
 // BFS - Recursive
 // --------------------------
-// BinarySearchTree.prototype.bfs = function() { // traverse
-//   const queue = new Queue(); // queue (doubly linked list)
-//   const traversedTree = [];
-//   let currentNode = this.root;
+BinarySearchTree.prototype.bfsRecursive = function() { // traverse
+  const queue = new Queue(); // queue (doubly linked list)
+  const traversedTree = [];
+  let currentNode = this.root;
 
-//   if (!currentNode) return [];
-//   queue.enqueue(currentNode);
-//   traverse(currentNode);
+  if (!currentNode) return [];
+  queue.enqueue(currentNode);
+  traverse(currentNode);
 
-//   function traverse(node) {
-//     console.log(queue);
-//     // console.log(traversedTree);
-//     queue.dequeue();
-//     traversedTree.push(node.value);
-//     if (node.left) {
-//       queue.enqueue(node.left);
-//     }
-//     if (node.right) {
-//       queue.enqueue(node.right);
-//     }
-//     currentNode = queue.front();
-//     if (!currentNode) return;
-//     traverse(currentNode);
-//   }
-//   return traversedTree;
-// };
+  function traverse(node) {
+    console.log(queue);
+    // console.log(traversedTree);
+    queue.dequeue();
+    traversedTree.push(node.value);
+    if (node.left) {
+      queue.enqueue(node.left);
+    }
+    if (node.right) {
+      queue.enqueue(node.right);
+    }
+    currentNode = queue.front();
+    if (!currentNode) return;
+    traverse(currentNode);
+  }
+  return traversedTree;
+};
 // --------------------------
 // BFS - Iterative
 // --------------------------
-BinarySearchTree.prototype.bfs = function() { // traverse
+BinarySearchTree.prototype.bfsIterative = function() { // traverse
   const queue = new Queue(); // queue (doubly linked list)
   const traversedTree = [];
   let currentNode = this.root;
@@ -154,7 +156,8 @@ binaryTree.insert(3);
 // binaryTree.insert(1);
 binaryTree.insert(8);
 binaryTree.insert(20);
-console.log(binaryTree.bfs());
+console.log(binaryTree.bfsRecursive());
+console.log(binaryTree.bfsIterative());
 console.log(binaryTree.dfsPreOrder());
 console.log(binaryTree.dfsPostOrder());
 console.log(binaryTree.dfsInOrder());
