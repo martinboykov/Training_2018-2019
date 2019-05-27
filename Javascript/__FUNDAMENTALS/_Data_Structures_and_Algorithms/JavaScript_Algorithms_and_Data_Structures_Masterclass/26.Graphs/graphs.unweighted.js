@@ -55,8 +55,8 @@ class Graph {
     const ifExistA = this.list[vertexA].some((el) => el === vertexB); // if vertex b is in A
     const ifExistB = this.list[vertexB].some((el) => el === vertexA); // if vertex A is in B
     if (ifExistA && ifExistB) return null;
-    if (!ifExistA) this.list[vertexA].push(vertexB);
-    if (!ifExistB) this.list[vertexB].push(vertexA);
+    if (!ifExistA) this.list[vertexA].push(vertexB); // if AB edge already eists
+    if (!ifExistB) this.list[vertexB].push(vertexA); // if BA edge already eists
     return this.list;
   }
   removeEdge(vertexA, vertexB) {
@@ -75,17 +75,14 @@ class Graph {
   }
 
   dfsR(vertex, visitedVerteces = {}) { // Defpth First (Recursive)
-    if (!this.list[vertex]) return null;
     visitedVerteces[vertex] = true;
-    for (const v of this.list[vertex]) { // verteces forming edges with this vertex
-      // const ifNotVisited = visitedVerteces.every((el) => el !== v); // O(n) - using array as visitedVerteces -> not optimal for performance (no break if el===v is found)
-      const ifNotVisited = !visitedVerteces[v]; // O(1) - using object (hashtable)
-      if (ifNotVisited) {
+    for (const v of this.list[vertex]) { // verteces ['v1', 'v2', ...] forming edges with this vertex;
+      if (!visitedVerteces[v]) { // O(1) - using object (hashtable)
         visitedVerteces[v] = true; // add the vertex (v) to all verteces, been already traversed
         this.dfsR(v, visitedVerteces); // call dfs with vertex (v) and all already treversed verteces
       }
     }
-    return visitedVerteces; // object with verteces as keys and true as their values
+    return Object.keys(visitedVerteces); // the path taken as array
   }
 
   dfsI(vertex) { // Defpth First (Iterative)
@@ -105,7 +102,6 @@ class Graph {
   }
 
   bfsR(vertex, visitedVerteces = {}) { // Breath First (Recursive)
-    if (!this.list[vertex]) return null;
     const list = this.list; // cant access this list inside recursion helper function
     visitedVerteces[vertex] = true;
     const queue = []; // or use queue class from 21.
@@ -125,7 +121,6 @@ class Graph {
     return Object.keys(visitedVerteces); // the path taken as array
   }
   bfsI(vertex) { // Breath First (Iterative)
-    if (!this.list[vertex]) return null;
     const queue = []; // or use queue class from 21. (better Time complexity)
     const visitedVerteces = {};
     queue.unshift(vertex);
@@ -181,3 +176,4 @@ console.log(graph.dfsR('B'));
 console.log(graph.dfsI('A'));
 console.log(graph.bfsR('A'));
 console.log(graph.bfsI('D'));
+

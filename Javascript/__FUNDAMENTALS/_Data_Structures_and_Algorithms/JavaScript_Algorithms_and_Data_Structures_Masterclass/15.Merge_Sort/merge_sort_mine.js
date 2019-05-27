@@ -1,4 +1,4 @@
-/** INSERTION SORT */
+/** MERGE SORT */
 // comparison sort algorithm
 
 // Time Complexity - O(logn) decomposition of array (recursive) (like binary search)

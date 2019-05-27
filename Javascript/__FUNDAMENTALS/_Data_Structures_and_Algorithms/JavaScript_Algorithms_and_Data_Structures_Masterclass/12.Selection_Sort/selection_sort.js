@@ -12,20 +12,24 @@
 function selectionSort(arr) {
     for (let i = 0; i < arr.length; i++) {
         let min = i;
-        for (let j = i+1; j < arr.length; j++) {
+        for (let j = i + 1; j < arr.length; j++) {
             if (arr[j] < arr[min]) {
                 min = j;
             }
         }
-		if (i !== min) {
-			// console.log(arr[i], arr[min]);
-			// console.log(arr);
-        	[arr[i], arr[min]] = [arr[min], arr[i]];
-		}
-    }
+        if (i !== min) {
+            // swap (with destructuring)
+            [arr[i], arr[min]] = [arr[min], arr[i]];
 
+            // wap (with temp value)
+            // const temp = arr[i];
+            // arr[i] = arr[min];
+            // arr[min] = temp;
+        }
+    }
+    console.log(arr);
     return arr;
 }
 
-
-selectionSort([0,2,34,22,10,19,17])
+console.log([0, 2, 34, 22, 10, 19, 17]);
+selectionSort([0, 2, 34, 22, 10, 19, 17]);

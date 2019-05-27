@@ -8,40 +8,42 @@
 // =
 // Resulting Time Complexity        - O(nlogn) -> O(nlogn) -> O(n^2) (extreme case when calling quicksort on sorted array and pivot is in the beggining or end)
 // -------------------------------------------------------------------
-// Space Complexity O(depth of recursion)
+// Space Complexity O(logn)
 
-function pivot(arr, pivotIndex, endIndex) {
-  let storeIndex = pivotIndex + 1;
-  let i = storeIndex;
-  while (i <= endIndex) { // swapping all smaller than arr[pivot]
-    if (arr[i] < arr[pivotIndex]) {
-      const temp = arr[storeIndex];
-      arr[storeIndex] = arr[i];
-      arr[i] = temp;
-      storeIndex += 1;
-    }
-    i += 1;
-  }
-  while (pivotIndex < storeIndex - 1) { // swapping arr[pivot] with leftmost swapped index
-    const temp = arr[pivotIndex + 1];
-    arr[pivotIndex + 1] = arr[pivotIndex];
-    arr[pivotIndex] = temp;
-    pivotIndex += 1;
-  }
-  return pivotIndex;
-}
 
-function quickSort(arr, left = 0, right = arr.length - 1) {
-  if (left < right) {
-    const pivotIndex = pivot(arr, left, right);
-    // console.log([arr, pivotIndex]);
-    quickSort(arr, left, pivotIndex - 1);
-    // console.log('leftArr', arr.slice(left, pivotIndex - 1));
-    quickSort(arr, pivotIndex + 1, right);
-    // console.log('rightArr', arr.slice(pivotIndex + 1, right));
+function quickSort(arr, pivotStartIndex = 0, endIndex = arr.length - 1) {
+  if (pivotStartIndex < endIndex) {
+    const pivotEndIndex = pivot(arr, pivotStartIndex, endIndex);
+    quickSort(arr, pivotStartIndex, pivotEndIndex - 1); // array elements on the left of pivotEndPosition
+    quickSort(arr, pivotEndIndex + 1, endIndex); // array elements on the right of pivotEndPosition
   }
+  // if (pivotStartIndex >= endIndex) bottom of recursion
   return arr;
+
+  function pivot(arr, pivotStartIndex, endIndex) {
+    const swap = (arr, idx1, idx2) => {
+       // [arr[idx1], arr[idx2]] = [arr[idx2], arr[idx1]];
+      const temp = arr[idx1];
+        arr[idx1] = arr[idx2];
+        arr[idx2] = temp;
+    };
+    let swapIndex = pivotStartIndex;
+    let i = swapIndex + 1;
+    while (i <= endIndex) { // swapping all smaller than arr[pivot]
+      if (arr[i] < arr[pivotStartIndex]) {
+        swapIndex += 1;
+        swap(arr, swapIndex, i);
+      }
+      i += 1;
+    }
+    swap(arr, pivotStartIndex, swapIndex);
+    return swapIndex; // its end position
+  }
 }
 console.log([32, 27, 31, 4, 30, 34, 8, 35, 49, 12, 9, 4, 48]);
 console.log(quickSort([32, 27, 31, 4, 30, 34, 8, 35, 49, 12, 9, 4, 48]));
+
+// hits stack overflow for array length >  0,53 mill
+// console.log(quickSort((Array.from(Array(20).keys()).map((el) => Math.floor(Math.random() * 10 ** 2)))));
+
 // console.log(pivot([33, 11, 111, 73, 170, 1], 0, 5));
