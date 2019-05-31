@@ -35,7 +35,7 @@ function same(arrFirst, arrSecond) {
   return true;
 }
 
-// Time Complecity => O = O(a) + O(b) + O(a) + O(b) = O(2*a + 1*b)
+// Time Complecity => O = O(a) + O(b) + O(a) + O(b) = O(2*a + 1*b) = = O(a + b)
 // Space Complecity => O(a+b) (two aditional structures => objects)
 
 const arrA = [2, 3, 1];

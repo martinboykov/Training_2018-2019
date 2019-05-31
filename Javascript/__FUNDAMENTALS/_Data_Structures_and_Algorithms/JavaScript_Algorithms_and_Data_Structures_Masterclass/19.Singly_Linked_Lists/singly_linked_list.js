@@ -176,17 +176,17 @@ class SinglyLinkedList {
 
 // const newNode = new Node(1);
 // console.log(newNode);
-const newLinkedList = new SinglyLinkedList();
+// const newLinkedList = new SinglyLinkedList();
 
-newLinkedList.push(1);
+// newLinkedList.push(1);
 
-newLinkedList.push(13);
-newLinkedList.push(28);
-newLinkedList.push(35);
-newLinkedList.push(55);
-newLinkedList.unshift(111);
-newLinkedList.unshift(122);
-newLinkedList.unshift(333);
+// newLinkedList.push(13);
+// newLinkedList.push(28);
+// newLinkedList.push(35);
+// newLinkedList.push(55);
+// newLinkedList.unshift(111);
+// newLinkedList.unshift(122);
+// newLinkedList.unshift(333);
 
 // console.log(newLinkedList.get(6));
 // console.log(newLinkedList.set(0, 11));
@@ -194,7 +194,11 @@ newLinkedList.unshift(333);
 // console.log(newLinkedList.insert(0, 12));
 // console.log(newLinkedList.printList());
 // console.log(newLinkedList.remove(7));
-console.log(newLinkedList.printList());
-newLinkedList.reverse();
-console.log(newLinkedList.printList());
+// console.log(newLinkedList.printList());
+// newLinkedList.reverse();
+// console.log(newLinkedList.printList());
 
+module.exports = {
+  Node,
+  SinglyLinkedList,
+};

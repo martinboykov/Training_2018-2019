@@ -9,12 +9,14 @@
 // ----------
 // Big O Time
 // ----------
-// same for both BFS and DFS
-
+// BFS and DFS -> O(n)
+// All four traversals require O(n) time as they visit every node exactly once.
 
 // -----------
 // Big O Space
 // -----------
+// BFS -> O(w) where w is maximum width of Binary Tree
+// DFS -> O(h) where h is maximum height of Binary Tree
 // Depends on destribution of the tree nodes
 //   - if its more one-sided (list-like) -> BFS is better (rare case)
 //   - if the destribution is more even (tree-like) -> DFS is better (often case)
@@ -137,20 +139,20 @@ BinarySearchTree.prototype.dfsPostOrder = function() { // traverse
 // Iterative
 // ...
 
-const binaryTree = new BinarySearchTree();
-binaryTree.insert(10);
-binaryTree.insert(6);
-binaryTree.insert(15);
-binaryTree.insert(3);
-// binaryTree.insert(1);
-// binaryTree.insert(1);
-binaryTree.insert(8);
-binaryTree.insert(20);
+// const binaryTree = new BinarySearchTree();
+// binaryTree.insert(10);
+// binaryTree.insert(6);
+// binaryTree.insert(15);
+// binaryTree.insert(3);
+// // binaryTree.insert(1);
+// // binaryTree.insert(1);
+// binaryTree.insert(8);
+// binaryTree.insert(20);
 // console.log(binaryTree.bfsRecursive());
 // console.log(binaryTree.bfsIterative());
-console.log(binaryTree.dfsPreOrder());
-console.log(binaryTree.dfsPostOrder());
-console.log(binaryTree.dfsInOrder());
+// console.log(binaryTree.dfsPreOrder());
+// console.log(binaryTree.dfsInOrder());
+// console.log(binaryTree.dfsPostOrder());
 
 module.exports = {
   BinarySearchTree, // with all bfs and dfs methods
