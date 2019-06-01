@@ -6,7 +6,7 @@
 // Time Complexity - O(n) comparisons per decomposition (sorting)
 // =
 // Resulting Time Complexity - O(nlogn)
-// its always O(nlogn), nomatter the case
+// its always O(nlogn), no matter the case
 // -------------------------------------------
 // Space Complexity O(n) <= ( at bottom of recursion n amount of arrays with one element in them)
 

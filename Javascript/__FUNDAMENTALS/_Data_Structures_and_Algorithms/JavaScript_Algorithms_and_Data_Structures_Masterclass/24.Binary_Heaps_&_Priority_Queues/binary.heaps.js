@@ -19,8 +19,8 @@
 
 // Types:
 // ------------------
-// 1. Max Binary Heap - parent nodes are always larger than child nodes
-// 2. Min Binary Heap - parent nodes are always smaller than child nodes
+// 1. Max Binary Heap - parent nodes are always LARGER than child nodes
+// 2. Min Binary Heap - parent nodes are always SMALLER than child nodes
 
 // 1. Max Binary Heap
 // ------------------
@@ -103,15 +103,15 @@ class MaxBinaryHeap {
     return result;
   }
 }
-const newMaxBinHeap = new MaxBinaryHeap();
-console.log(newMaxBinHeap.values);
-console.log(newMaxBinHeap.insert(41));
-console.log(newMaxBinHeap.insert(27));
-console.log(newMaxBinHeap.insert(12));
-console.log(newMaxBinHeap.insert(18));
-console.log(newMaxBinHeap.insert(39));
-console.log(newMaxBinHeap.insert(33));
-console.log(newMaxBinHeap.insert(55));
+// const newMaxBinHeap = new MaxBinaryHeap();
+// console.log(newMaxBinHeap.values);
+// console.log(newMaxBinHeap.insert(41));
+// console.log(newMaxBinHeap.insert(27));
+// console.log(newMaxBinHeap.insert(12));
+// console.log(newMaxBinHeap.insert(18));
+// console.log(newMaxBinHeap.insert(39));
+// console.log(newMaxBinHeap.insert(33));
+// console.log(newMaxBinHeap.insert(55));
 // console.log(newMaxBinHeap.extractMax());
 // console.log(newMaxBinHeap.extractMax());
 // console.log(newMaxBinHeap.extractMax());
@@ -119,7 +119,7 @@ console.log(newMaxBinHeap.insert(55));
 // console.log(newMaxBinHeap.extractMax());
 // console.log(newMaxBinHeap.extractMax());
 // console.log(newMaxBinHeap.extractMax());
-console.log(newMaxBinHeap.heapSort());
+// console.log(newMaxBinHeap.heapSort());
 
 // 2. Min Binary Heap
 // ------------------
@@ -190,10 +190,8 @@ class MinBinaryHeap {
       getChildSmaller();
     }
     function getChildSmaller() {
-      if (childLeft &&
-        childRight &&
-        childLeft < parent &&
-        childRight < parent) {
+      if (childLeft && childRight &&
+        childLeft < parent && childRight < parent) {
         childSmallerIndex =
           childLeft < childRight ? childLeftIndex : childRightIndex;
         childSmaller =
@@ -216,7 +214,6 @@ class MinBinaryHeap {
     while (currentVal) {
       result.push(currentVal);
       this.extractMin();
-      console.log(this.values);
       currentVal = this.getMin();
     }
     return result;
@@ -226,6 +223,10 @@ class MinBinaryHeap {
 // const newMinBinHeap = new MinBinaryHeap();
 // console.log(newMinBinHeap.values);
 // console.log(newMinBinHeap.insert(41));
+// console.log(newMinBinHeap.insert(57));
+// console.log(newMinBinHeap.insert(58));
+// console.log(newMinBinHeap.insert(59));
+// console.log(newMinBinHeap.insert(50));
 // console.log(newMinBinHeap.insert(27));
 // console.log(newMinBinHeap.insert(12));
 // console.log(newMinBinHeap.insert(18));
@@ -233,10 +234,7 @@ class MinBinaryHeap {
 // console.log(newMinBinHeap.insert(33));
 // console.log(newMinBinHeap.insert(55));
 // console.log(newMinBinHeap.insert(56));
-// console.log(newMinBinHeap.insert(57));
-// console.log(newMinBinHeap.insert(58));
-// console.log(newMinBinHeap.insert(59));
-// console.log(newMinBinHeap.insert(50));
+// console.log(newMinBinHeap.values);
 // console.log(newMinBinHeap.extractMin());
 // console.log(newMinBinHeap.extractMin());
 // console.log(newMinBinHeap.extractMin());
@@ -250,3 +248,6 @@ class MinBinaryHeap {
 // console.log(newMinBinHeap.extractMin());
 // console.log(newMinBinHeap.extractMin());
 // console.log(newMinBinHeap.heapSort());
+
+
+module.exports = { MinBinaryHeap, MaxBinaryHeap };
