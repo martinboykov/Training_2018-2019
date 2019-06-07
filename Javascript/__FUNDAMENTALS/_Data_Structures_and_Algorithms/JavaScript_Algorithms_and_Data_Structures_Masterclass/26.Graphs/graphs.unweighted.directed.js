@@ -1,6 +1,6 @@
-// ----------------
-// UNWEIGHTED GRAPH
-// ----------------
+// -------------------------
+// UNWEIGHTED, DIRECTED GRAPH
+// -------------------------
 
 // DEFINITION
 // ----------
@@ -43,20 +43,23 @@
 // | Storage (Space) | O(|V| + |E|)	   | O(|V^2|)         |
 
 // 2. Adjaceny List (using object)
-class Graph {
+class GraphDirected {
   constructor() {
     this.list = {};
   }
   addVertex(vertex) { // add node
     if (!this.list[vertex]) this.list[vertex] = [];
   }
-  addEdge(vertexA, vertexB) { // add connection
-    if (!this.list[vertexA] || !this.list[vertexB]) return null;
-    const ifExistA = this.list[vertexA].some((el) => el === vertexB); // if vertex b is in A
-    const ifExistB = this.list[vertexB].some((el) => el === vertexA); // if vertex A is in B
-    if (ifExistA && ifExistB) return null;
-    if (!ifExistA) this.list[vertexA].push(vertexB); // if AB edge already eists
-    if (!ifExistB) this.list[vertexB].push(vertexA); // if BA edge already eists
+  addEdge(vertexStart, vertexEnd) { // add connection
+    // check if vertices exists
+    if (!this.list[vertexStart] || !this.list[vertexEnd]) return null;
+
+    // get vertex index in the edge list of the other vertex
+    const indexStart = this.list[vertexStart].findIndex((el) => {
+      return el.node === vertexEnd; // if vertex Start is in vertex End list already, get the index
+    });
+    // if vertex (Start) is not in the list of edges of Vertex (End) => add it
+    if (indexStart < 0) this.list[vertexStart].push(vertexEnd);
     return this.list;
   }
   removeEdge(vertexA, vertexB) {
@@ -106,23 +109,20 @@ class Graph {
     visitedVerteces[vertex] = true;
     const queue = []; // or use queue class from 21.
     queue.unshift(vertex);
-    recursion(vertex);
-    return Object.keys(visitedVerteces); // the path taken as array
-
-    function recursion(currentVertex) {
+    (function recursion(currentVertex) {
       for (const v of list[currentVertex]) { // verteces forming edges with currentVertex
         const ifNotVisited = !visitedVerteces[v]; // O(1) - using object (hashtable)
         if (ifNotVisited) {
-          queue.unshift(v);
           visitedVerteces[v] = true; // mark as visited
+          queue.unshift(v);
         }
       }
       const nextVertex = queue.pop();
-      if (!nextVertex && nextVertex !== 0) return visitedVerteces;
-      return recursion(nextVertex); // call dfs with vertex (v) and all already treversed verteces
-    }
+      if (nextVertex) recursion(nextVertex, visitedVerteces); // call dfs with vertex (v) and all already treversed verteces
+      return visitedVerteces;
+    }(vertex));
+    return Object.keys(visitedVerteces); // the path taken as array
   }
-
   bfsI(vertex) { // Breath First (Iterative)
     const queue = []; // or use queue class from 21. (better Time complexity)
     const visitedVerteces = {};
@@ -139,9 +139,10 @@ class Graph {
   }
 }
 
-module.exports = Graph;
+module.exports = GraphDirected;
 
-// const graph = new Graph();
+
+// const graph = new GraphDirected();
 // graph.addVertex('A');
 
 // check if A gets overwritten:
@@ -178,8 +179,9 @@ module.exports = Graph;
 // graph.removeVertex('C');
 
 // console.log(graph);
-// console.log(graph.dfsR('B'));
-// console.log(graph.dfsI('A'));
-// console.log(graph.bfsR('A'));
-// console.log(graph.bfsI('A'));
+
+// console.log(graph.dfsR('C'));
+// console.log(graph.dfsI('C'));
+// console.log(graph.bfsR('C'));
+// console.log(graph.bfsI('C'));
 

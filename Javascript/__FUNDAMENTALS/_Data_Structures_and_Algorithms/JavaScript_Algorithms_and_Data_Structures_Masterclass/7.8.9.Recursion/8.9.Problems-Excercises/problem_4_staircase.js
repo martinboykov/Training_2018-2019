@@ -6,7 +6,7 @@
 // Time O(logn) Space O(1)
 // ...
 
-// recursion with memoization ("Top Down" Dynamic programmin, while building the table is commonly called "Bottom Up" from what I've seen)
+// recursion with memoization ("Top Down" Dynamic programming, while building the table is commonly called "Bottom Up" from what I've seen)
 // Time O(n) Space O(n)
 // function stepComb(steps, memo = {}) {
 //   if (steps < 0) return 0;

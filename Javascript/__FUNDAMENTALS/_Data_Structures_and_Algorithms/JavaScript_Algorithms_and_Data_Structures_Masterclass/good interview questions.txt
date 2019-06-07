@@ -6,7 +6,9 @@ Singly/ Doubly Linked lists
 . find if SLL/DLL is cycle dependencie
 
 Binary Search Trees
-. BFS, DFS (23.)
+. BFS,
+. DFS (23.)
+  - Top 10 Interview Questions on Depth First Search (DFS): https://www.geeksforgeeks.org/top-10-interview-question-depth-first-search-dfs/
 
 Graphs
 . Graphs, Graph traversal - (26.-27.)

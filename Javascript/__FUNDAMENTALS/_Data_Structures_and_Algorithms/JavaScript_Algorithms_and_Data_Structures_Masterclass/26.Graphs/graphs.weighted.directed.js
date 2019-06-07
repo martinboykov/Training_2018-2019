@@ -1,31 +1,48 @@
-// ----------------
-// WEIGHTED GRAPH
-// ----------------
+// -----------------------
+// WIGHTED, DIRECTED GRAPH
+// -----------------------
 
-// same as unweighted graph, but with weight for every edge
-// implementing weighted graph (needed for dijkstra algorithm)
-class GraphWeighted {
+// DESCRIBTION
+// -------------
+// same as unweighted, directed graphgraph, but with weight for every edge
+// implementing weighted, directed graph
+
+class GraphWeightedDirected {
   constructor() {
     this.list = {};
   }
   addVertex(vertex) { // add node
     if (!this.list[vertex]) this.list[vertex] = [];
   }
-  addEdge(vertexA, vertexB, weight) { // add connection
-    if (!this.list[vertexA] || !this.list[vertexB]) return null;
-    const ifExistA = this.list[vertexA].some((el) => el === vertexB); // if vertex b is in A
-    const ifExistB = this.list[vertexB].some((el) => el === vertexA); // if vertex A is in B
-    if (ifExistA && ifExistB) return null;
-    if (!ifExistA) this.list[vertexA].push({ node: vertexB, weight: weight });
-    if (!ifExistB) this.list[vertexB].push({ node: vertexA, weight: weight });
+  addEdge(vertexStart, vertexEnd, weight) { // add directed connection
+    // check if vertices exists
+    if (!this.list[vertexStart] || !this.list[vertexEnd]) return null;
+
+    // get vertex index in the edge list of the ohter vertex
+    const indexStart = this.list[vertexStart].findIndex((el) => {
+      return el.node === vertexEnd; // if vertex Start is in vertex End list already, get the index
+    });
+    const indexEnd = this.list[vertexEnd].findIndex((el) => {
+      return el.node === vertexStart; // if vertex A is in B already, get the index
+    });
+
+    // if vertex (Start) is not in the list of edges of Vertex (End) => add it
+    if (indexStart < 0) {
+      this.list[vertexStart].push({ node: vertexEnd, weight: weight });
+    }
+    // if vertex (Start/End) is in the list of edges of Vertex (End/Start) => overwrite the weight
+    if (indexStart >= 0) this.list[vertexStart][indexStart].weight = weight; // A: B,w1 -> A: B,w2
+    if (indexEnd >= 0) this.list[vertexEnd][indexEnd].weight = weight; // B: A,w1 -> B: A,w2
     return this.list;
   }
+
   removeEdge(vertexA, vertexB) {
     // ...
   }
   removeVertex(vertexA) {
     // ...
   }
+
   dfsR(vertex, visitedVerteces = {}) { // Defpth First (Recursive)
     visitedVerteces[vertex] = true;
     for (const key in this.list[vertex]) { // verteces ['v1', 'v2', ...] forming edges with this vertex;
@@ -94,15 +111,23 @@ class GraphWeighted {
   }
 }
 
-module.exports = GraphWeighted;
-// const graph = new GraphWeighted();
+module.exports = GraphWeightedDirected;
+
+
+// const graph = new GraphWeightedDirected();
 // graph.addVertex('A');
 // graph.addVertex('B');
 // graph.addVertex('C');
 // graph.addVertex('D');
 // graph.addVertex('E');
 // graph.addVertex('F');
-// graph.addEdge('A', 'B', 4);
+// // graph.addEdge('A', 'B', 4);
+// // console.log(graph.list);
+// // graph.addEdge('A', 'B', 8);
+// // console.log(graph.list);
+// // graph.addEdge('B', 'A', 6);
+// // console.log(graph.list);
+
 // graph.addEdge('A', 'C', 2);
 // graph.addEdge('B', 'E', 3);
 // graph.addEdge('C', 'D', 2);
@@ -110,7 +135,6 @@ module.exports = GraphWeighted;
 // graph.addEdge('D', 'E', 3);
 // graph.addEdge('D', 'F', 1);
 // graph.addEdge('E', 'F', 1);
-// console.log(graph.list);
 // console.log(graph.dfsR('A'));
 // console.log(graph.dfsI('A'));
 // console.log(graph.bfsR('A'));
