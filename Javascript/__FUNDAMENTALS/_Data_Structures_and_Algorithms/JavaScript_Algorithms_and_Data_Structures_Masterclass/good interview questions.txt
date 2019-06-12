@@ -1,5 +1,6 @@
 Dynamic Programming
 . https://www.geeksforgeeks.org/dynamic-programming/
+. https://www.youtube.com/watch?v=vYquumk4nWw&list=PLBZBJbE_rGRU5PrgZ9NBHJwcaZsNpf8yD
 
 Singly/ Doubly Linked lists
 . reverse Singly/Doubly linked lists (19., 20.)
