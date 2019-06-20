@@ -52,7 +52,7 @@ class SinglyLinkedList {
   pop() { // removes current tail and sets the previous node as tail
     const removedNode = this.tail;
     let preLastNode = null;
-    let head = this.head;
+    let node = this.head;
     if (!this.tail) return null;
     if (this.tail === this.head) {
       this.tail = null;
@@ -60,9 +60,9 @@ class SinglyLinkedList {
       this.length -= 1;
       return removedNode;
     }
-    while (head.next !== null) {
-      preLastNode = head;
-      head = head.next;
+    while (node.next !== null) {
+      preLastNode = node;
+      node = node.next;
     }
     preLastNode.next = null;
     this.tail = preLastNode;

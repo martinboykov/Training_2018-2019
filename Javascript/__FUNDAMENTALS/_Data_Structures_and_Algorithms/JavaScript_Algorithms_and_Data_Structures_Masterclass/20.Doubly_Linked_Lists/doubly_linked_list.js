@@ -183,23 +183,29 @@ class DoublyLinkedList {
   }
 }
 
-const newLinkedList = new DoublyLinkedList();
-newLinkedList.push(1);
-newLinkedList.push(13);
-newLinkedList.push(26);
-newLinkedList.push(28);
-newLinkedList.push(35);
-newLinkedList.push(55);
-newLinkedList.pop();
-newLinkedList.shift();
-newLinkedList.unshift(111);
-newLinkedList.unshift(122);
-newLinkedList.unshift(222);
-// console.log(newLinkedList.get(0));
-console.log(newLinkedList.set(7, 11));
-console.log(newLinkedList.insert(0, 12));
-console.log(newLinkedList.remove(0));
-console.log(newLinkedList.printList());
-newLinkedList.reverse();
-console.log(newLinkedList.get(6));
-console.log(newLinkedList.printList());
+module.exports = {
+  Node,
+  DoublyLinkedList,
+};
+
+
+// const newLinkedList = new DoublyLinkedList();
+// newLinkedList.push(1);
+// newLinkedList.push(13);
+// newLinkedList.push(26);
+// newLinkedList.push(28);
+// newLinkedList.push(35);
+// newLinkedList.push(55);
+// newLinkedList.pop();
+// newLinkedList.shift();
+// newLinkedList.unshift(111);
+// newLinkedList.unshift(122);
+// newLinkedList.unshift(222);
+// // console.log(newLinkedList.get(0));
+// console.log(newLinkedList.set(7, 11));
+// console.log(newLinkedList.insert(0, 12));
+// console.log(newLinkedList.remove(0));
+// console.log(newLinkedList.printList());
+// newLinkedList.reverse();
+// console.log(newLinkedList.get(6));
+// console.log(newLinkedList.printList());
