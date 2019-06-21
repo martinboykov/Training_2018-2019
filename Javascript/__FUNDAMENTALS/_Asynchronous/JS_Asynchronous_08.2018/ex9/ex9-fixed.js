@@ -1,4 +1,4 @@
-$(document).ready(function(){
+$(document).ready(function() {
 	var $btn = $("#btn"),
 		$list = $("#list"),
 		clicks = ASQ.csp.chan(),
@@ -14,28 +14,28 @@ $(document).ready(function(){
 	);
 
 	// push click event messages into channel
-	function listenToClicks(evt){
+	function listenToClicks(evt) {
 		if (!queuedClick) {
-			queuedClick = ASQ.csp.putAsync(clicks,evt);
-			queuedClick.then(function(){
+			queuedClick = ASQ.csp.putAsync(clicks, evt);
+			queuedClick.then(function() {
 				queuedClick = null;
 			});
 		}
 	}
 
 	// sample clicks channel
-	function *sampleClicks() {
+	function* sampleClicks() {
 		while (true) {
 			yield ASQ.csp.take(
 				ASQ.csp.timeout(1000)
 			);
 			yield ASQ.csp.take(clicks);
-			yield ASQ.csp.put(msgs,"clicked!");
+			yield ASQ.csp.put(msgs, "clicked!");
 		}
 	}
 
 	// subscribe to sampled message channel
-	function *logClick() {
+	function* logClick() {
 		while (true) {
 			var msg = yield ASQ.csp.take(msgs);
 			$list.append($("<div>" + msg + "</div>"));
