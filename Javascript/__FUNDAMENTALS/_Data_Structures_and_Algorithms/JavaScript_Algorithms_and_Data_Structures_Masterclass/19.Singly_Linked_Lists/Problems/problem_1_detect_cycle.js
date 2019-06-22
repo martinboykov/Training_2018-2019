@@ -10,6 +10,22 @@
 
 const { SinglyLinkedList } = require('../singly_linked_list');
 
+
+// Solution 1: with renaiming
+// function detectCycle(head, k) {
+//   if (!head) return 0;
+//   let ifCycle = false;
+//   let curr = head;
+//   while (curr) {
+//     console.log(curr);
+//     if (!curr.value) return 1;
+//     curr.value = false;
+//     curr = curr.next;
+//   }
+//   return 0;
+// }
+
+// Solution 2: without renaiming
 function hasCycle(sll) {
   let slowLooper = sll.head;
   let fastLooper = sll.head.next;
@@ -21,7 +37,6 @@ function hasCycle(sll) {
   }
   return false;
 }
-
 
 const singlyLinkedList = new SinglyLinkedList();
 singlyLinkedList.push(1);

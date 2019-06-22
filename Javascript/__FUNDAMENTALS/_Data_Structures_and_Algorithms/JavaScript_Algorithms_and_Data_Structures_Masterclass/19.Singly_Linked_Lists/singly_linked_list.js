@@ -79,14 +79,14 @@ class SinglyLinkedList {
       this.length -= 1;
       return this;
     }
-    const afterHeadNode = this.head.next;
+    const afterHeadNode = this.head.next; // creates only new pointer (reference to object)
     this.head = afterHeadNode;
     this.length -= 1;
     return this;
   }
 
   get(position) {
-    let node = this.head;
+    let node = this.head; // creates new node
     let currentPosition = 0;
     if (!this.head) return null;
     if (this.length <= position || position < 0) return null;
@@ -97,7 +97,7 @@ class SinglyLinkedList {
     return node;
   }
   set(position, value) {
-    let node = this.head;
+    let node = this.head; // creates new node
     let currentPosition = 0;
     if (!this.head) {
       const newNode = new Node(value);
@@ -108,7 +108,7 @@ class SinglyLinkedList {
     }
     if (this.length <= position || position < 0) return false;
     while (currentPosition < position) {
-      node = node.next;
+      node = node.next; // creates new node
       currentPosition += 1;
     }
     node.value = value;
@@ -170,7 +170,7 @@ class SinglyLinkedList {
       }
       head = head.next;
     }
-    return str;
+    return str || null;
   }
 }
 
