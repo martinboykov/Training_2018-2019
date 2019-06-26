@@ -26,6 +26,12 @@ class PriorityQueue { // similar to MinBinaryHeap, but with Nodes(value,priority
   constructor() {
     this.values = [];
   }
+  hasValue(value) {
+    return this.values.some((v) => v.value === value);
+  }
+  isEmpty() {
+    return !this.values.length;
+  }
   enqeue(val, prior) { // push
     const newNode = new Node(val, prior);
     this.values.push(newNode);

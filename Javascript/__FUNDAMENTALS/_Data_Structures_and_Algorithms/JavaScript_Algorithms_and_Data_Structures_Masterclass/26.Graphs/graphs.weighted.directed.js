@@ -135,6 +135,10 @@ module.exports = GraphWeightedDirected;
 // graph.addEdge('D', 'E', 3);
 // graph.addEdge('D', 'F', 1);
 // graph.addEdge('E', 'F', 1);
+
+// A -> C -> D -> E -> F
+//
+
 // console.log(graph.dfsR('A'));
 // console.log(graph.dfsI('A'));
 // console.log(graph.bfsR('A'));

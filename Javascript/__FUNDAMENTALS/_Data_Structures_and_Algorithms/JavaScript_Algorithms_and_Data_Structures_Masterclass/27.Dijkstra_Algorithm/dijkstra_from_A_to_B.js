@@ -1,4 +1,4 @@
-// implementing weighted graph (needed for dijkstra algorithm)
+// implementing undirected, weighted graph (needed for dijkstra algorithm)
 const {
   PriorityQueue,
 } = require('../24.Binary_Heaps_&_Priority_Queues/priority.queues');
@@ -79,7 +79,7 @@ class WeightedGraph {
         console.log('distances: ', distances);
         console.log('previous: ', previous);
         console.log('shortestPath', shortestPath);
-        console.log('shortestDistance: ', distances[end]);
+        // console.log('shortestDistance: ', distances[end]);
         return shortestPath;
       }
     }
@@ -108,6 +108,6 @@ graph.addEdge('E', 'F', 1);
 //    \  |  /
 //     \ | /
 //       F
-//  console.log(graph.list);
+ console.log(graph.list);
 graph.dijkstra('A', 'E');
 
