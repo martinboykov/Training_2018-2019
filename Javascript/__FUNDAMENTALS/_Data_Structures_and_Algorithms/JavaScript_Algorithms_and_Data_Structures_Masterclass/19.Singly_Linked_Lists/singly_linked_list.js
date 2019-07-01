@@ -175,7 +175,7 @@ class SinglyLinkedList {
 }
 
 // const newNode = new Node(1);
-// console.log(newNode);
+// // console.log(newNode);
 // const newLinkedList = new SinglyLinkedList();
 
 // newLinkedList.push(1);
@@ -189,6 +189,7 @@ class SinglyLinkedList {
 // newLinkedList.unshift(333);
 
 // console.log(newLinkedList.get(6));
+
 // console.log(newLinkedList.set(0, 11));
 // console.log(newLinkedList.printList());
 // console.log(newLinkedList.insert(0, 12));
@@ -197,6 +198,7 @@ class SinglyLinkedList {
 // console.log(newLinkedList.printList());
 // newLinkedList.reverse();
 // console.log(newLinkedList.printList());
+
 
 module.exports = {
   Node,
