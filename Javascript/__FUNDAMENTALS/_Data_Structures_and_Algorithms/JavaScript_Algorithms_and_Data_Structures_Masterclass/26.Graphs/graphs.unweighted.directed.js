@@ -43,7 +43,7 @@
 // | Storage (Space) | O(|V| + |E|)	   | O(|V^2|)         |
 
 // 2. Adjaceny List (using object)
-class GraphDirected {
+class DirectedGraph {
   constructor() {
     this.list = {};
   }
@@ -139,7 +139,7 @@ class GraphDirected {
   }
 }
 
-module.exports = GraphDirected;
+module.exports = { DirectedGraph };
 
 
 // const graph = new GraphDirected();

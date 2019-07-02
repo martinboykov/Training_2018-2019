@@ -10,11 +10,11 @@ function detectCycle(graph) {
   const parentArray = {};
   const visitedVertices = {};
   const queue = new Queue();
-  Object.keys(graph.list).forEach((v) => {
+  const vertices = Object.keys(graph.list);
+  vertices.forEach((v) => {
     parentArray[v] = -1;
   });
   console.log(parentArray);
-  const vertices = Object.keys(graph.list);
 
   for (let startVertex of vertices) {
     if (!visitedVertices[startVertex]) {
