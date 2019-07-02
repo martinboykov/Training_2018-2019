@@ -1,0 +1,16 @@
+
+
+https://www.geeksforgeeks.org/activity-selection-problem-greedy-algo-1/
+
+Greedy is an algorithmic paradigm that builds up a solution piece by piece, always choosing the next piece that offers the most obvious and immediate benefit.
+In contrer to Dynamic programming, Greedy algorithm does not reconsider its choises.
+
+https://www.youtube.com/watch?v=ARvQcqJ_-NY
+https://www.youtube.com/watch?v=HzeK7g8cD0Y
+
+
+Target Problems: OPTIMIZATION PROBLEMS
+  -> Find min or max result with specific condition (constraint)
+  / Get min cost to travel from A to B (the time must be less than 12hrs)/
+     --> Feasable solutions - All solutions that fit the condition
+     --> Optimal solutions - Best solution that fits the condition (only one)

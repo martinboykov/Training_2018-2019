@@ -55,6 +55,7 @@ class PriorityQueue { // similar to MinBinaryHeap, but with Nodes(value,priority
     return this.values.map((node) => node.priority);
   }
   deqeue() { // === extractMin removes the root
+    if (this.values.length === 0) return null;
     const root = this.values[0];
     this.values[0] = this.values[this.values.length - 1];
     this.values.pop();

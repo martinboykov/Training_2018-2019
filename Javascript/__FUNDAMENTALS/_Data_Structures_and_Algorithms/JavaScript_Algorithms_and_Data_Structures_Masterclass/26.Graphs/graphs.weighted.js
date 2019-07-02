@@ -4,7 +4,7 @@
 
 // same as unweighted graph, but with weight for every edge
 // implementing weighted graph (needed for dijkstra algorithm)
-class GraphWeighted {
+class GraphWeightedUndirected {
   constructor() {
     this.list = {};
   }
@@ -94,7 +94,8 @@ class GraphWeighted {
   }
 }
 
-module.exports = GraphWeighted;
+module.exports = { GraphWeightedUndirected };
+
 // const graph = new GraphWeighted();
 // graph.addVertex('A');
 // graph.addVertex('B');
