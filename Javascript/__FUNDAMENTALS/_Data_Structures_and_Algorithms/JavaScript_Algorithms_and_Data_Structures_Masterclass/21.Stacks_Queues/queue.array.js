@@ -52,6 +52,8 @@ class Queue {
   }
 }
 
+module.exports = { Queue };
+
 // const stack = new Queue();
 // console.log(stack.isEmpty());
 // stack.enqueue(1);

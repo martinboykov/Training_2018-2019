@@ -43,7 +43,7 @@
 // | Storage (Space) | O(|V| + |E|)	   | O(|V^2|)         |
 
 // 2. Adjaceny List (using object)
-class Graph {
+class UndirectedGraph {
   constructor() {
     this.list = {};
   }
@@ -138,8 +138,7 @@ class Graph {
     return Object.keys(visitedVerteces); // the path taken
   }
 }
-
-module.exports = Graph;
+module.exports = { UndirectedGraph };
 
 // const graph = new Graph();
 // graph.addVertex('A');

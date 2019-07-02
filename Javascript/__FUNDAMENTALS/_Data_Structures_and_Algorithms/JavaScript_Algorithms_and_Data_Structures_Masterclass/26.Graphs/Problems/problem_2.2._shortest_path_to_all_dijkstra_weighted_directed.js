@@ -1,3 +1,5 @@
+// PART OF Top 10 algorithms in Interview Questions: https://www.geeksforgeeks.org/top-10-algorithms-in-interview-questions/
+
 // modified Dijkstra algorithm - can handle negative values??? check abdul video to test it
 // it stops only after ALL vertices are visited (original dijkstra stops after reaches goal by visiting the vertex on minimal distance)
 // implemented shortPathToAll() - performing modified dijkstra algorithm to all vertices;
