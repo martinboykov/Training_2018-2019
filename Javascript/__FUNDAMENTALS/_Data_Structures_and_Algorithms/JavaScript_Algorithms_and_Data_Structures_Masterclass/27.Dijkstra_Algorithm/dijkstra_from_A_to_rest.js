@@ -32,6 +32,8 @@ class WeightedGraph {
       distances[vertex] = Infinity;
       previousVertices[vertex] = null;
     });
+
+    // go throught all vertices and find save distance from startVertex (if startVertex doesnt have and edge with the vertex, the distance is infinity)
     vertices.forEach((vertex) => {
       if (vertex === startVertex) {
         // Distance to the vertex itself is 0.
@@ -55,54 +57,50 @@ class WeightedGraph {
     });
     console.log('distances', distances);
     console.log('previousVertices', previousVertices);
+
     // We are already at the startVertex so the distance to it is zero.
     distances[startVertex] = 0;
 
     // Init vertices queue.
     queue.enqeue(startVertex, distances[startVertex]);
+
     // Iterate over the priority queue of vertices until it is empty.
     while (!queue.isEmpty()) {
-      console.log('queue', queue);
       // Fetch next closest vertex.
       const currentVertex = queue.deqeue();
-      console.log('currentVertex', currentVertex);
+
       // Iterate over every unvisited neighbor of the current vertex.
       graph.list[currentVertex.value].forEach((neighbor) => {
-        console.log('neighbor', neighbor);
         // Don't visit already visited vertices.
         if (!visitedVertices[neighbor.node]) {
           // Update distances to every neighbor from current vertex.
           const edge = neighbor.weight;
-
           const existingDistanceToNeighbor = distances[neighbor.node];
-          const distanceToNeighborFromCurrent = distances[currentVertex.value] + edge;
+          const distanceToNeighborFromCurrent =
+            distances[currentVertex.value] + edge;
 
           // If we've found shorter path to the neighbor - update it.
           if (distanceToNeighborFromCurrent < existingDistanceToNeighbor) {
+            // update the distance to this vertex
             distances[neighbor.node] = distanceToNeighborFromCurrent;
-
+            // Remember previous closest vertex.
+            previousVertices[neighbor.node] = currentVertex.value;
             // Change priority of the neighbor in a queue since it might have became closer.
             if (queue.hasValue(neighbor.node)) {
               // queue.changePriority(neighbor, distances[neighbor.node]);
-              const root = queue.deqeue();
-              queue.enqeue(root.value, distances[root.value]);
             }
-
-            // Remember previous closest vertex.
-            previousVertices[neighbor.node] = currentVertex.value;
-            console.log('previousVertices', previousVertices);
           }
-          // Add neighbor to the queue for further visiting.
-          if (!queue.hasValue(neighbor.node) && !visitedVertices[neighbor.node] && neighbor.node !== currentVertex.value) {
+          // Add neighbor, which was not already visited and is not in the queue to the queue for further visiting.
+          if (!queue.hasValue(neighbor.node) &&
+            !visitedVertices[neighbor.node] &&
+            neighbor.node !== currentVertex.value) {
             queue.enqeue(neighbor.node, distances[neighbor.node]);
           }
         }
       });
-
       // Add current vertex to visited ones to avoid visiting it again later.
       visitedVertices[currentVertex.value] = currentVertex;
     }
-    console.log('visitedVertices', visitedVertices);
     // Return the set of shortest distances to all vertices and the set of
     // shortest paths to all vertices in a graph.
     return {
