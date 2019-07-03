@@ -17,7 +17,7 @@
 // Binary search tree:
 //  ....
 //  +
-//  - NODEparent > NODEleft, NODEleft > NODEright(Every node on the left of a parent is always less than the parent and the node on the right)
+//  - NODEparent > NODEleft, NODEright > NODEleft(Every node on the left of a parent is always less than the parent and the node on the right)
 //  - NODEparent < NODEright, NODEleft < NODEright(Every node on the right of a parent is always bigger than the parent and the node on the left)
 
 // Big O of BST
