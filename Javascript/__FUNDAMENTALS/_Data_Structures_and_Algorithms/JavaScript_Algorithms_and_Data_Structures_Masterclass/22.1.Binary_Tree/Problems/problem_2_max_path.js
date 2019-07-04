@@ -1,6 +1,6 @@
 // https://www.geeksforgeeks.org/top-10-algorithms-in-interview-questions/
 
-// Find Minimum Depth of a Binary Tree - https://www.geeksforgeeks.org/find-minimum-depth-of-a-binary-tree/
+// Maximum Path Sum in a Binary Tree -  https://www.geeksforgeeks.org/find-maximum-path-sum-in-a-binary-tree/
 
 const { BinaryTree } = require('../binary.tree');
 
