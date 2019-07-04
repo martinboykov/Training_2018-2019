@@ -2,7 +2,7 @@
 
 // Maximum Path Sum in a Binary Tree -  https://www.geeksforgeeks.org/find-maximum-path-sum-in-a-binary-tree/
 
-const { BinaryTree } = require('../binary.tree');
+const { Node, BinaryTree } = require('../binary.tree');
 
 BinaryTree.prototype.findMaxUtil = function(node, memo) {
   if (!node || node === -Infinity) return 0;
@@ -25,19 +25,12 @@ function findMaxPath(tree) {
 }
 
 const tree = new BinaryTree();
-tree.insert(10);
-tree.insert(2);
-tree.insert(10);
-tree.insert(20);
-tree.insert(1);
-tree.insert(0);
-tree.insert(-25);
-tree.insert(0);
-tree.insert(0);
-tree.insert(0);
-tree.insert(0);
-tree.insert(0);
-tree.insert(0);
-tree.insert(3);
-tree.insert(4);
+tree.root = new Node(10);
+tree.root.left = new Node(2);
+tree.root.right = new Node(10);
+tree.root.left.left = new Node(20);
+tree.root.left.right = new Node(1);
+tree.root.right.right = new Node(-25);
+tree.root.right.right.left = new Node(3);
+tree.root.right.right.right = new Node(4);
 console.log(findMaxPath(tree));
