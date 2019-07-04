@@ -32,7 +32,13 @@ class PriorityQueue { // similar to MinBinaryHeap, but with Nodes(value,priority
   isEmpty() {
     return !this.values.length;
   }
-  enqeue(val, prior) { // push
+  front() {
+    // return the top most element from the stack
+    // but does'nt delete it.
+    if (this.values.length === 0) return null;
+    return this.values[this.values.length - 1];
+  }
+  enqueue(val, prior) { // push
     const newNode = new Node(val, prior);
     this.values.push(newNode);
     let childIndex = this.values.length - 1;
@@ -54,7 +60,7 @@ class PriorityQueue { // similar to MinBinaryHeap, but with Nodes(value,priority
     // return this.values;
     return this.values.map((node) => node.priority);
   }
-  deqeue() { // === extractMin removes the root
+  dequeue() { // === extractMin removes the root
     if (this.values.length === 0) return null;
     const root = this.values[0];
     this.values[0] = this.values[this.values.length - 1];
@@ -139,6 +145,18 @@ class PriorityQueue { // similar to MinBinaryHeap, but with Nodes(value,priority
 // console.log(newPriorQueue.deqeue());
 // console.log(newPriorQueue.deqeue());
 // console.log(newPriorQueue.deqeue());
+
+// const pQ = new PriorityQueue();
+// pQ.enqeue(20, 0);
+// pQ.enqeue(8, 1);
+// pQ.enqeue(22, 1);
+// pQ.enqeue(5, 2);
+// pQ.enqeue(3, 2);
+// pQ.enqeue(25, 2);
+// pQ.enqeue(10, 3);
+// pQ.enqeue(14, 3);
+// console.log(pQ);
+
 
 module.exports = {
   PriorityQueue,
