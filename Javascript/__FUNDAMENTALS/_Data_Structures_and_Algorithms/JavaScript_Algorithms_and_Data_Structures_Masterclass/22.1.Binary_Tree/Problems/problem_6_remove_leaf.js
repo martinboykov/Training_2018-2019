@@ -10,7 +10,7 @@ const { PriorityQueue } =
 
 // traversing with dfsPreorder // O(n)
 // Doesnt print nodes above each other in corretc order
-BinaryTree.prototype.verticalOrderTraversalUtil = // O(n)
+BinaryTree.prototype.removeLeafPathsUtil = // O(n)
   function(node, k, level = 1) {
     if (!node) return 0;
     const previousLevel = level - 1;
