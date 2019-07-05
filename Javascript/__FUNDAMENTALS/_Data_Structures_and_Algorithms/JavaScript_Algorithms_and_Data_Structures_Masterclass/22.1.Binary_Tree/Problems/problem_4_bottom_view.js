@@ -12,34 +12,6 @@ const { Queue } =
 const { PriorityQueue } =
   require('../../24.Binary_Heaps_&_Priority_Queues/priority.queues');
 
-// BinaryTree.prototype.verticalOrderTraversalUtil =
-//   function(node, memo, level = 0) {
-//     const queue = new Queue();
-//     queue.enqueue(node);
-//     memo[level] = [node.value];
-//     // if (!node) return null;
-//     while (!queue.isEmpty()) { // O(n)
-//       const currNode = queue.dequeue();
-//       let currLevel = 0;
-//       Object.keys(memo).forEach((key) => { // O(h),  h - height of treee
-//         const ifAtLevel = memo[key].some((n) => n === currNode.value);
-//         if (ifAtLevel) currLevel = +key;
-//       });
-//       // if (!memo[currLevel]) memo[currLevel] = [];
-//       // memo[currLevel].push(currNode.value);
-//       if (currNode.left) {
-//         if (!memo[currLevel - 1]) memo[currLevel - 1] = [];
-//         memo[currLevel - 1].push(currNode.left.value);
-//         queue.enqueue(currNode.left);
-//       }
-//       if (currNode.right) {
-//         if (!memo[currLevel + 1]) memo[currLevel + 1] = [];
-//         memo[currLevel + 1].push(currNode.right.value);
-//         queue.enqueue(currNode.right);
-//       }
-//     }
-//     return memo;
-//   };
 BinaryTree.prototype.verticalOrderTraversalUtil =
   function(node, memo, level = 0) {
     const queue = new PriorityQueue();
