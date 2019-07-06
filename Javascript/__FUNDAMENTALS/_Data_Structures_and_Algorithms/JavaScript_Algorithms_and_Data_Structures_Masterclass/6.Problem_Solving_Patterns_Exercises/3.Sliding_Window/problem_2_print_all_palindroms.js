@@ -1,7 +1,7 @@
 // Top 10 algorithms in Interview Questions - https://www.geeksforgeeks.org/top-10-algorithms-in-interview-questions/
 // Given a string, print all possible palindromic partitions - https://www.geeksforgeeks.org/given-a-string-print-all-possible-palindromic-partition/
 
-// Space: O(n) - depth of recursion; O(1) - iterative
+// Space: O(n) - depth of recursion;
 // Recursive with memoization
 // function getPalindromsUtil(arr, memo = {}) {
 //   if (arr.length === 1) return null;
@@ -23,7 +23,7 @@
 //   getPalindromsUtil(arr.slice(0, arr.length - 1), memo); // Time O(n) nitin -> niti -> nit -> ni -> n -> null
 //   return memo;
 // }
-// Space: O(n) - depth of recursion; O(1) - iterative
+// Space: O(n) - iterative
 // Iterative
 function getPalindromsUtil(arr, memo = {}) {
   while (arr.length > 1) {
@@ -42,7 +42,7 @@ function getPalindromsUtil(arr, memo = {}) {
     if (isPalindrom) memo[arr] = [arr.join('')];
 
     // arr without left
-    let arrPart = arr.slice(1);
+    let arrPart = arr.slice(1); // Space: O(n-1)
     left = 0;
     right = arrPart.length - 1;
     isPalindrom = true;
