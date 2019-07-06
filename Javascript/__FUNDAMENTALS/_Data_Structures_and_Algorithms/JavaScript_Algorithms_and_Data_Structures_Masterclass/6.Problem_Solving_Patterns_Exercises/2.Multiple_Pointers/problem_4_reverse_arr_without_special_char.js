@@ -1,6 +1,8 @@
 // Top 10 algorithms in Interview Questions - https://www.geeksforgeeks.org/top-10-algorithms-in-interview-questions/
 // Reverse an array without affecting special characters - https://www.geeksforgeeks.org/reverse-an-array-without-affecting-special-characters/
 
+// Time - O(n)
+// Space - O(n)
 function reverseArr(str) {
   const arr = str.split('');
   let left = 0;
