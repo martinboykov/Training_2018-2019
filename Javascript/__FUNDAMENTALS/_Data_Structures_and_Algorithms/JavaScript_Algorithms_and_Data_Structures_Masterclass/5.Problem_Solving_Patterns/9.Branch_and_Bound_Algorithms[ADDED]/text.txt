@@ -1,3 +1,7 @@
 Branch and Bound Algorithm - https://www.geeksforgeeks.org/branch-and-bound-algorithm/
 Target Problems: OPTIMIZATION PROBLEMS
-it finds the solution using BFS, unlike backtracking (recursion), where is used DFS
+It finds the solution using BFS, unlike backtracking (recursion), where is used DFS - https://www.youtube.com/watch?v=1FEP_sNb62k
+
+Examples:
+https://www.youtube.com/watch?v=1FEP_sNb62k
+
