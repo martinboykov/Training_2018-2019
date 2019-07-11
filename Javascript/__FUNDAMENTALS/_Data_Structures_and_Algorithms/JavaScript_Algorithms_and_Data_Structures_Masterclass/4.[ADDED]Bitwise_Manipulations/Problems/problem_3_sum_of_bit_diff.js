@@ -1,5 +1,5 @@
 // Top 10 algorithms in Interview Questions - https://www.geeksforgeeks.org/top-10-algorithms-in-interview-questions/
-// Find nth Magic Number - https://www.geeksforgeeks.org/find-nth-magic-number/
+// Sum of bit differences among all pairs - https://www.geeksforgeeks.org/sum-of-bit-differences-among-all-pairs/
 
 // with bitwise operators
 // Time: O(n < x < nlogn)
