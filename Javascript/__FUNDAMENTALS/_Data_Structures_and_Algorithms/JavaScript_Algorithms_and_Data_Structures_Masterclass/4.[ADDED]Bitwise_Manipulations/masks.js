@@ -13,7 +13,7 @@ console.log('-------------');
 // &
 // 00100000 (1<<n) here n=5
 // ------------
-// 00100000 (is not zero)
+// 00100000 (n is not zero)
 
 let num1 = 44;
 function checkNthBit(num, n) {
@@ -34,7 +34,7 @@ console.log('-------------');
 // &
 // 00100000 (1<<n) here n=1
 // ------------
-// 00101110 (is not zero)
+// 00101110 (n is not zero)
 
 num1 = 44;
 function setNthBit(num, n) {
@@ -49,13 +49,13 @@ console.log(num1);
 
 // Clear n-th bit
 console.log('-------------');
-console.log(`Set n-th bit`);
+console.log(`Clear n-th bit`);
 console.log('-------------');
 // 00101100
 // &
 // 00100000 (1<<n) here n=5
 // ------------
-// 00101110 (is not zero)
+// 00101110 (n is not zero)
 
 num1 = 44;
 function clearNthBit(num, n) {
