@@ -53,13 +53,32 @@ class MaxBinaryHeap {
     }
     return this.values;
   }
+  deleteByValue(val) {
+    const index = this.values.indexOf(val);
+    if (this.values.length === 1) {
+      this.values = [];
+      return this.values;
+    } else if (index === this.values.length - 1) {
+      return this.values.pop();
+    }
+    const bottom = this.values[this.values.length - 1];
+    this.values.pop();
+    this.values[index] = bottom;
+    const parentIndex = index;
+    this.bubbleDown(parentIndex);
+    return this.values;
+  }
   getMax() {
     return this.values[0];
   }
   extractMax() { // removes the root
     this.values[0] = this.values[this.values.length - 1];
     this.values.pop();
-    let parentIndex = 0;
+    const parentIndex = 0;
+    this.bubbleDown(parentIndex);
+    return this.values;
+  }
+  bubbleDown(parentIndex) {
     let parent = this.values[parentIndex];
     let childLeftIndex = parentIndex * 2 + 1;
     let childRightIndex = parentIndex * 2 + 2;
@@ -89,7 +108,6 @@ class MaxBinaryHeap {
         childLeft > childRight ? childLeftIndex : childRightIndex;
       childBigger = childLeft > childRight ? childLeft : childRight;
     }
-    return this.values;
   }
   heapSort() {
     const result = [];
@@ -103,15 +121,23 @@ class MaxBinaryHeap {
     return result;
   }
 }
-// const newMaxBinHeap = new MaxBinaryHeap();
-// console.log(newMaxBinHeap.values);
-// console.log(newMaxBinHeap.insert(41));
+const newMaxBinHeap = new MaxBinaryHeap();
+console.log(newMaxBinHeap.values);
+console.log(newMaxBinHeap.insert(41));
+console.log(newMaxBinHeap.insert(27));
+
+console.log(newMaxBinHeap.deleteByValue(27));
+
 // console.log(newMaxBinHeap.insert(27));
 // console.log(newMaxBinHeap.insert(12));
 // console.log(newMaxBinHeap.insert(18));
 // console.log(newMaxBinHeap.insert(39));
 // console.log(newMaxBinHeap.insert(33));
 // console.log(newMaxBinHeap.insert(55));
+//  console.log(newMaxBinHeap.deleteByValue(33));
+// console.log(newMaxBinHeap.deleteByValue(12));
+// newMaxBinHeap.heapSort();
+
 // console.log(newMaxBinHeap.extractMax());
 // console.log(newMaxBinHeap.extractMax());
 // console.log(newMaxBinHeap.extractMax());
@@ -150,6 +176,7 @@ class MinBinaryHeap {
     }
     return this.values;
   }
+
   getMin() {
     return this.values[0];
   }
