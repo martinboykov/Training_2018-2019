@@ -1,0 +1,19 @@
+{
+  "name": "JavaScript_Algorithms_and_Data_Structures_Masterclass",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest --watchAll"
+  },
+  "keywords": [],
+  "author": "Martin Martinov (https://www.linkedin.com/in/martinboykov/)",
+  "license": "ISC",
+  "dependencies": {
+    "babel-eslint": "^10.0.2",
+    "eslint": "^6.1.0",
+    "eslint-config-google": "^0.13.0",
+    "eslint-plugin-jest": "^22.14.0",
+    "jest": "^24.8.0"
+  }
+}
