@@ -7,25 +7,27 @@ function getMaxCost(B) {
     const deltaHighToLow = Math.abs(B[i - 1] - 1); // ..., 1 , i-1 , i
     const deltaLowToHigh = Math.abs(B[i] - 1); //  // ..., . ,  1  , i
     const lowNext = Math.max(low, hi + deltaHighToLow); //
-    console.log('lowNext', lowNext);
     const hiNext = low + deltaLowToHigh;
-    console.log('hiNext', hiNext);
+    hi = low + deltaLowToHigh;
     low = lowNext;
-    hi = hiNext;
+    console.log();
+
+    console.log('deltaHighToLow', deltaHighToLow, 'deltaLowToHigh', deltaLowToHigh, 'lowNext', lowNext, 'low', low, 'hi', hi);
+
   }
   return Math.max(hi, low);
 }
 
 const arr = [10, 1, 10, 1, 10]; // 36
 // const arr1 = [2, 3, 8, 5]; // 15
-// const arr2 = [4, 7, 9]; // 12
+const arr2 = [4, 7, 9]; // 12
 // const arr3 = [100, 2, 100, 2, 100]; // 396
 // const arr4 = [69, 19, 15, 81, 93, 100, 35, 18, 81, 16, 65, 20, 4, 45, 81, 83, 90, 14, 82, 85, 43, 7, 64, 76, 33, 47, 95, 12, 78, 93, 14, 22, 97, 36, 65, 66, 36, 26, 59, 81, 81, 82, 44, 79, 89, 94, 32, 94, 22, 33, 19, 46, 46, 62, 19, 47, 70, 91, 97, 62, 17, 43, 11, 25, 74, 73, 64, 98, 73, 7, 40, 8, 2, 96, 89, 81, 80, 17, 88, 13, 31, 44, 64]; // 5001
 // const arr5 = [100000, 1000, 100000, 10000, 8, 2, 1000, 100, 100000, 10000, 9, 100000, 100000, 10000]; // ...
 // const arr6 = [43, 36, 62, 20, 71, 56, 27, 48, 66, 94, 14, 39, 4, 47, 19, 20, 14, 94, 95, 42, 84, 3, 49, 33, 51, 41, 1, 60, 80, 33, 47, 96, 39, 32, 4, 96, 17, 72]; // ...
-console.log(getMaxCost(arr));
+// console.log(getMaxCost(arr));
 // console.log(getMaxCost(arr1));
-// console.log(getMaxCost(arr2));
+console.log(getMaxCost(arr2));
 // console.log(getMaxCost(arr3));
 // console.log(getMaxCost(arr4));
 // console.log(getMaxCost(arr5));
