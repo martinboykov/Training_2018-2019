@@ -11,31 +11,31 @@
 // Space Complexity O(logn)
 function quickSort(arr, pivotStartIndex = 0, endIndex = arr.length - 1) {
   if (pivotStartIndex < endIndex) {
-    const pivotEndIndex = pivot(arr, pivotStartIndex, endIndex);
+    const pivotEndIndex = pivotUtil(arr, pivotStartIndex, endIndex);
     quickSort(arr, pivotStartIndex, pivotEndIndex - 1); // array elements on the left of pivotEndPosition
     quickSort(arr, pivotEndIndex + 1, endIndex); // array elements on the right of pivotEndPosition
   }
   // if (pivotStartIndex >= endIndex) bottom of recursion
   return arr;
-  function pivot(arr, pivotStartIndex, endIndex) {
-    let swapIndex = pivotStartIndex;
-    let i = swapIndex + 1;
-    while (i <= endIndex) { // swapping all smaller than arr[pivot]
-      if (arr[i] < arr[pivotStartIndex]) {
-        swapIndex += 1;
-        swap(arr, swapIndex, i);
-      }
-      i += 1;
+}
+function pivotUtil(arr, pivotStartIndex, endIndex) {
+  let swapIndex = pivotStartIndex;
+  let i = swapIndex + 1;
+  while (i <= endIndex) { // swapping all smaller than arr[pivot]
+    if (arr[i] < arr[pivotStartIndex]) {
+      swapIndex += 1;
+      swapUtil(arr, swapIndex, i);
     }
-    swap(arr, pivotStartIndex, swapIndex);
-    return swapIndex; // its end position
+    i += 1;
   }
-  function swap(arr, idx1, idx2) {
-    // [arr[idx1], arr[idx2]] = [arr[idx2], arr[idx1]];
-    const temp = arr[idx1];
-    arr[idx1] = arr[idx2];
-    arr[idx2] = temp;
-  }
+  swapUtil(arr, pivotStartIndex, swapIndex);
+  return swapIndex; // its end position
+}
+function swapUtil(arr, idx1, idx2) {
+  // [arr[idx1], arr[idx2]] = [arr[idx2], arr[idx1]];
+  const temp = arr[idx1];
+  arr[idx1] = arr[idx2];
+  arr[idx2] = temp;
 }
 
 // console.log([32, 27, 31, -4, 0, 34, 8, 35, 49, 12, 9, 4, 48]);
