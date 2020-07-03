@@ -13,8 +13,10 @@ Person.prototype.greet = function() {
 console.log('"Person"');
 console.log(Person.prototype);
 console.log(Person.prototype.constructor);
-console.log();
-// /////////////////////////////////////////
+let newPerson = new Person('bau');
+console.log(newPerson);
+console.log('===================================');
+
 const Employee = function(name, title) {
     Person.call(this, name);
     this.title = title;
@@ -32,8 +34,13 @@ Employee.prototype.greet = function() {
 console.log('"Employee"');
 console.log(Employee.prototype);
 console.log(Employee.prototype.constructor);
-console.log();
-// ////////////////////////////////////////////
+let newEmployee = new Employee('Jo', 'warrior');
+newEmployee.scream = function() { return ('scream ' + 'the name ' + this.name) };
+console.log(newEmployee);
+console.log(newEmployee.scream());
+let newEmployee1 = new Employee('Jo1', 'warrior');
+console.log(newEmployee1);
+console.log('===================================');
 const Customer = function(name) {
     Person.call(this, name);
 };
@@ -89,3 +96,4 @@ console.log();
 // console.log();
 // console.log(Person.prototype.isPrototypeOf(bob)); // true
 // console.log(mime instanceof Employee); // true
+

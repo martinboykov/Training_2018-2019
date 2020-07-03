@@ -14,9 +14,16 @@
 //     displayName();
 // }
 // init();
+// this.a = 5;
+// for (let i = 0; i < 5; i++) {
 
-for (let i = 0; i < 5; i++) {
-    setTimeout(function() {
+//     setTimeout(function () {
+//         console.log(this);
+//     }, 1000);
+// }
+for (var i = 0; i < 5; i++) {
+    console.log(i);
+    setTimeout(() => {
         console.log(i);
-    }, 3000);
+    }, 1000);
 }
